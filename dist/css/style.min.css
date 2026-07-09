@@ -16880,7 +16880,7 @@ a.hover-orange:hover {
   top: 0;
   background-color: #fff;
   height: 100vh;
-  z-index: 2;
+  z-index: 3;
   flex-direction: column;
   left: 0;
   width: 100%;
