@@ -17437,9 +17437,11 @@ a.hover-orange:hover {
   position: absolute;
   bottom: 24px;
   left: 24px;
+  right: 24px;
   transition: color 0.2s linear;
   max-width: 365px;
   font-family: var(--second-family);
+  display: block;
 }
 @media (max-width: 1199px) {
   .catGrid .catCardTitle {
@@ -17448,6 +17450,7 @@ a.hover-orange:hover {
     font-weight: 500;
     bottom: 16px;
     left: 16px;
+    right: 16px;
   }
 }
 .catGrid .catCardImg {
