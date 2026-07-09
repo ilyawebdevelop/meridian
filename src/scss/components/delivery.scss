@@ -1,10 +1,6 @@
 .deliveryCol {
   width: 165px;
-  overflow: hidden;
-  -webkit-line-clamp: 3;
-  display: -webkit-box;
-  /* Включаем флексбоксы */
-  -webkit-box-orient: vertical;
+
 
   /* Вертикальная ориентация */
   @media(max-width: 991px) {
