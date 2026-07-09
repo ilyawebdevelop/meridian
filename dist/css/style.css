@@ -17455,6 +17455,7 @@ a.hover-orange:hover {
 }
 .catGrid .catCardImg {
   position: relative;
+  display: flex;
 }
 .catGrid .catCardImg:hover .catCardTitle {
   color: var(--orange);
