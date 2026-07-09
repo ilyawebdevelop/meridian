@@ -17458,6 +17458,7 @@ a.hover-orange:hover {
   height: 160px;
   left: 0;
   bottom: 0;
+  background: -webkit-gradient(linear, left bottom, left top, from(rgba(0, 0, 0, 0.7)), to(rgba(0, 0, 0, 0)));
   background: linear-gradient(0deg, rgba(0, 0, 0, 0.7) 0%, rgba(0, 0, 0, 0) 100%);
   border-radius: 8px;
 }
