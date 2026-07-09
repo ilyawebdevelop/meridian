@@ -15139,7 +15139,7 @@ h6,
   background-position: right 12px center;
 }
 .searchField .search-clear {
-  right: 55px;
+  right: 45px;
   position: absolute;
   top: 50%;
   transition: opacity 0.2s linear;
