@@ -1,0 +1,511 @@
+<!DOCTYPE html>
+<html lang="en" xmlns="http://www.w3.org/1999/xhtml">
+	<head>
+		<meta charset="utf-8"/>
+		<meta http-equiv="X-UA-Compatible" content="IE=Edge"/>
+		<title>SVG stack preview | svg-sprite</title>
+		<style>@charset "UTF-8";body{padding:0;margin:0;color:#666;background:#fafafa;font-family:Arial,Helvetica,sans-serif;font-size:1em;line-height:1.4}header{display:block;padding:3em 3em 2em 3em;background-color:#fff}header p{margin:2em 0 0 0}section{border-top:1px solid #eee;padding:2em 3em 0 3em}section ul{margin:0;padding:0}section li{display:inline;display:inline-block;background-color:#fff;position:relative;margin:0 2em 2em 0;vertical-align:top;border:1px solid #ccc;padding:1em 1em 3em 1em;cursor:default}.icon-box{margin:0;width:144px;height:144px;position:relative;background:#ccc url("data:image/gif;base64,R0lGODlhDAAMAIAAAMzMzP///yH/C1hNUCBEYXRhWE1QPD94cGFja2V0IGJlZ2luPSLvu78iIGlkPSJXNU0wTXBDZWhpSHpyZVN6TlRjemtjOWQiPz4gPHg6eG1wbWV0YSB4bWxuczp4PSJhZG9iZTpuczptZXRhLyIgeDp4bXB0az0iQWRvYmUgWE1QIENvcmUgNS4wLWMwNjEgNjQuMTQwOTQ5LCAyMDEwLzEyLzA3LTEwOjU3OjAxICAgICAgICAiPiA8cmRmOlJERiB4bWxuczpyZGY9Imh0dHA6Ly93d3cudzMub3JnLzE5OTkvMDIvMjItcmRmLXN5bnRheC1ucyMiPiA8cmRmOkRlc2NyaXB0aW9uIHJkZjphYm91dD0iIiB4bWxuczp4bXA9Imh0dHA6Ly9ucy5hZG9iZS5jb20veGFwLzEuMC8iIHhtbG5zOnhtcE1NPSJodHRwOi8vbnMuYWRvYmUuY29tL3hhcC8xLjAvbW0vIiB4bWxuczpzdFJlZj0iaHR0cDovL25zLmFkb2JlLmNvbS94YXAvMS4wL3NUeXBlL1Jlc291cmNlUmVmIyIgeG1wOkNyZWF0b3JUb29sPSJBZG9iZSBQaG90b3Nob3AgQ1M1LjEgV2luZG93cyIgeG1wTU06SW5zdGFuY2VJRD0ieG1wLmlpZDozQjk4OTI0MUY5NTIxMUUyQkJDMEI5NEFEM0Y1QTYwQyIgeG1wTU06RG9jdW1lbnRJRD0ieG1wLmRpZDozQjk4OTI0MkY5NTIxMUUyQkJDMEI5NEFEM0Y1QTYwQyI+IDx4bXBNTTpEZXJpdmVkRnJvbSBzdFJlZjppbnN0YW5jZUlEPSJ4bXAuaWlkOjNCOTg5MjNGRjk1MjExRTJCQkMwQjk0QUQzRjVBNjBDIiBzdFJlZjpkb2N1bWVudElEPSJ4bXAuZGlkOjNCOTg5MjQwRjk1MjExRTJCQkMwQjk0QUQzRjVBNjBDIi8+IDwvcmRmOkRlc2NyaXB0aW9uPiA8L3JkZjpSREY+IDwveDp4bXBtZXRhPiA8P3hwYWNrZXQgZW5kPSJyIj8+Af/+/fz7+vn49/b19PPy8fDv7u3s6+rp6Ofm5eTj4uHg397d3Nva2djX1tXU09LR0M/OzczLysnIx8bFxMPCwcC/vr28u7q5uLe2tbSzsrGwr66trKuqqainpqWko6KhoJ+enZybmpmYl5aVlJOSkZCPjo2Mi4qJiIeGhYSDgoGAf359fHt6eXh3dnV0c3JxcG9ubWxramloZ2ZlZGNiYWBfXl1cW1pZWFdWVVRTUlFQT05NTEtKSUhHRkVEQ0JBQD8+PTw7Ojk4NzY1NDMyMTAvLi0sKyopKCcmJSQjIiEgHx4dHBsaGRgXFhUUExIREA8ODQwLCgkIBwYFBAMCAQAAIfkEAAAAAAAsAAAAAAwADAAAAhaEH6mHmmzcgzJAUG/NVGrfOZ8YLlABADs=") top left repeat;border:1px solid #ccc;display:table-cell;vertical-align:middle;text-align:center}.icon{display:inline;display:inline-block}h1{margin-top:0}h2{margin:0;padding:0;font-size:1em;font-weight:normal;white-space:nowrap;overflow:hidden;text-overflow:ellipsis;position:absolute;left:1em;right:1em;bottom:1em}footer{display:block;margin:0;padding:0 3em 3em 3em}footer p{margin:0;font-size:.7em}footer a{color:#0f7595;margin-left:0}</style>
+
+<!--
+
+Sprite shape dimensions
+====================================================================================================
+You will need to set the sprite shape dimensions via CSS when you use them as stack SVGs, otherwise
+they would become a huge 100% in size. You may use the following dimension classes for doing so.
+They might well be outsourced to an external stylesheet of course.
+
+-->
+
+<style type="text/css">
+	.svg-about-dims { width: 20px; height: 20px; }
+	.svg-arrow-down-dims { width: 20px; height: 20px; }
+	.svg-arrow-left-dims { width: 24px; height: 24px; }
+	.svg-available-dims { width: 20px; height: 20px; }
+	.svg-available_sort-dims { width: 24px; height: 24px; }
+	.svg-buyers-dims { width: 20px; height: 20px; }
+	.svg-catalog-dims { width: 20px; height: 20px; }
+	.svg-catalog-btn-dims { width: 24px; height: 24px; }
+	.svg-cats-dims { width: 24px; height: 24px; }
+	.svg-child-dims { width: 20px; height: 20px; }
+	.svg-detsk-dims { width: 20px; height: 20px; }
+	.svg-divans-dims { width: 20px; height: 20px; }
+	.svg-file-close-dims { width: 24px; height: 24px; }
+	.svg-file-remove-dims { width: 24px; height: 24px; }
+	.svg-file-update-dims { width: 24px; height: 24px; }
+	.svg-filter-dims { width: 20px; height: 20px; }
+	.svg-guest-dims { width: 20px; height: 20px; }
+	.svg-home-dims { width: 20px; height: 20px; }
+	.svg-kab-dims { width: 20px; height: 20px; }
+	.svg-kitchen-dims { width: 20px; height: 20px; }
+	.svg-komod-dims { width: 20px; height: 20px; }
+	.svg-krovat-dims { width: 20px; height: 20px; }
+	.svg-mail-dims { width: 16px; height: 16px; }
+	.svg-message-dims { width: 16px; height: 16px; }
+	.svg-money-dims { width: 20px; height: 20px; }
+	.svg-nav-arrow-next-dims { width: 20px; height: 20px; }
+	.svg-nav-arrow-prev-dims { width: 20px; height: 20px; }
+	.svg-office-dims { width: 20px; height: 20px; }
+	.svg-popular_sort-dims { width: 24px; height: 24px; }
+	.svg-price_sort-dims { width: 24px; height: 24px; }
+	.svg-prihozh-dims { width: 20px; height: 20px; }
+	.svg-product_type-dims { width: 24px; height: 24px; }
+	.svg-remove-dims { width: 24px; height: 24px; }
+	.svg-room-dims { width: 20px; height: 20px; }
+	.svg-room_type-dims { width: 24px; height: 24px; }
+	.svg-rooms-dims { width: 24px; height: 24px; }
+	.svg-search-dims { width: 20px; height: 20px; }
+	.svg-share-dims { width: 20px; height: 20px; }
+	.svg-shkaf-dims { width: 20px; height: 20px; }
+	.svg-shops-dims { width: 20px; height: 20px; }
+	.svg-sort-dims { width: 20px; height: 20px; }
+	.svg-star-dims { width: 20px; height: 20px; }
+	.svg-stel-dims { width: 20px; height: 20px; }
+	.svg-stol-dims { width: 20px; height: 20px; }
+	.svg-stul-dims { width: 20px; height: 20px; }
+</style>
+
+<!--
+====================================================================================================
+-->
+
+	</head>
+	<body>
+		<header>
+			<h1>SVG stack preview</h1>
+			<p>This preview features an SVG stack. Please have a look at the HTML source for further details and be aware of the following constraints:</p>
+			<ul>
+				<li>Your browser has to <a href="http://caniuse.com/#feat=svg-fragment" target="_blank" rel="noopener noreferrer">support SVG fragment identifiers</a> for SVG stacks to work.</li>
+				<li>Support for SVG fragment identifiers hasn't always been that decent. For older browsers you will have to use some prolyfill like <a href="https://github.com/preciousforever/SVG-Stacker/blob/master/fixsvgstack.jquery.js" target="_blank" rel="noopener noreferrer">fixsvgstack.jquery.js</a>.</li>
+			</ul>
+		</header>
+		<section>
+
+<!--
+
+SVG stack
+====================================================================================================
+These SVG images make use of fragment identifiers (IDs) to reference certain portions of the
+external sprite. By default, all shapes inside the sprite are hidden by CSS. The `:target` pseudo
+selector is used to show the very shape that is referenced by the fragment identifier.
+
+-->
+
+			<ul>
+
+				<li title="about">
+					<div class="icon-box">
+
+						<!-- about -->
+						<img src="../icons/icons.svg#about" class="svg-about-dims" alt="about"/>
+
+					</div>
+					<h2>about</h2>
+				</li>
+				<li title="arrow-down">
+					<div class="icon-box">
+
+						<!-- arrow-down -->
+						<img src="../icons/icons.svg#arrow-down" class="svg-arrow-down-dims" alt="arrow-down"/>
+
+					</div>
+					<h2>arrow-down</h2>
+				</li>
+				<li title="arrow-left">
+					<div class="icon-box">
+
+						<!-- arrow-left -->
+						<img src="../icons/icons.svg#arrow-left" class="svg-arrow-left-dims" alt="arrow-left"/>
+
+					</div>
+					<h2>arrow-left</h2>
+				</li>
+				<li title="available">
+					<div class="icon-box">
+
+						<!-- available -->
+						<img src="../icons/icons.svg#available" class="svg-available-dims" alt="available"/>
+
+					</div>
+					<h2>available</h2>
+				</li>
+				<li title="available_sort">
+					<div class="icon-box">
+
+						<!-- available_sort -->
+						<img src="../icons/icons.svg#available_sort" class="svg-available_sort-dims" alt="available_sort"/>
+
+					</div>
+					<h2>available_sort</h2>
+				</li>
+				<li title="buyers">
+					<div class="icon-box">
+
+						<!-- buyers -->
+						<img src="../icons/icons.svg#buyers" class="svg-buyers-dims" alt="buyers"/>
+
+					</div>
+					<h2>buyers</h2>
+				</li>
+				<li title="catalog">
+					<div class="icon-box">
+
+						<!-- catalog -->
+						<img src="../icons/icons.svg#catalog" class="svg-catalog-dims" alt="catalog"/>
+
+					</div>
+					<h2>catalog</h2>
+				</li>
+				<li title="catalog-btn">
+					<div class="icon-box">
+
+						<!-- catalog-btn -->
+						<img src="../icons/icons.svg#catalog-btn" class="svg-catalog-btn-dims" alt="catalog-btn"/>
+
+					</div>
+					<h2>catalog-btn</h2>
+				</li>
+				<li title="cats">
+					<div class="icon-box">
+
+						<!-- cats -->
+						<img src="../icons/icons.svg#cats" class="svg-cats-dims" alt="cats"/>
+
+					</div>
+					<h2>cats</h2>
+				</li>
+				<li title="child">
+					<div class="icon-box">
+
+						<!-- child -->
+						<img src="../icons/icons.svg#child" class="svg-child-dims" alt="child"/>
+
+					</div>
+					<h2>child</h2>
+				</li>
+				<li title="detsk">
+					<div class="icon-box">
+
+						<!-- detsk -->
+						<img src="../icons/icons.svg#detsk" class="svg-detsk-dims" alt="detsk"/>
+
+					</div>
+					<h2>detsk</h2>
+				</li>
+				<li title="divans">
+					<div class="icon-box">
+
+						<!-- divans -->
+						<img src="../icons/icons.svg#divans" class="svg-divans-dims" alt="divans"/>
+
+					</div>
+					<h2>divans</h2>
+				</li>
+				<li title="file-close">
+					<div class="icon-box">
+
+						<!-- file-close -->
+						<img src="../icons/icons.svg#file-close" class="svg-file-close-dims" alt="file-close"/>
+
+					</div>
+					<h2>file-close</h2>
+				</li>
+				<li title="file-remove">
+					<div class="icon-box">
+
+						<!-- file-remove -->
+						<img src="../icons/icons.svg#file-remove" class="svg-file-remove-dims" alt="file-remove"/>
+
+					</div>
+					<h2>file-remove</h2>
+				</li>
+				<li title="file-update">
+					<div class="icon-box">
+
+						<!-- file-update -->
+						<img src="../icons/icons.svg#file-update" class="svg-file-update-dims" alt="file-update"/>
+
+					</div>
+					<h2>file-update</h2>
+				</li>
+				<li title="filter">
+					<div class="icon-box">
+
+						<!-- filter -->
+						<img src="../icons/icons.svg#filter" class="svg-filter-dims" alt="filter"/>
+
+					</div>
+					<h2>filter</h2>
+				</li>
+				<li title="guest">
+					<div class="icon-box">
+
+						<!-- guest -->
+						<img src="../icons/icons.svg#guest" class="svg-guest-dims" alt="guest"/>
+
+					</div>
+					<h2>guest</h2>
+				</li>
+				<li title="home">
+					<div class="icon-box">
+
+						<!-- home -->
+						<img src="../icons/icons.svg#home" class="svg-home-dims" alt="home"/>
+
+					</div>
+					<h2>home</h2>
+				</li>
+				<li title="kab">
+					<div class="icon-box">
+
+						<!-- kab -->
+						<img src="../icons/icons.svg#kab" class="svg-kab-dims" alt="kab"/>
+
+					</div>
+					<h2>kab</h2>
+				</li>
+				<li title="kitchen">
+					<div class="icon-box">
+
+						<!-- kitchen -->
+						<img src="../icons/icons.svg#kitchen" class="svg-kitchen-dims" alt="kitchen"/>
+
+					</div>
+					<h2>kitchen</h2>
+				</li>
+				<li title="komod">
+					<div class="icon-box">
+
+						<!-- komod -->
+						<img src="../icons/icons.svg#komod" class="svg-komod-dims" alt="komod"/>
+
+					</div>
+					<h2>komod</h2>
+				</li>
+				<li title="krovat">
+					<div class="icon-box">
+
+						<!-- krovat -->
+						<img src="../icons/icons.svg#krovat" class="svg-krovat-dims" alt="krovat"/>
+
+					</div>
+					<h2>krovat</h2>
+				</li>
+				<li title="mail">
+					<div class="icon-box">
+
+						<!-- mail -->
+						<img src="../icons/icons.svg#mail" class="svg-mail-dims" alt="mail"/>
+
+					</div>
+					<h2>mail</h2>
+				</li>
+				<li title="message">
+					<div class="icon-box">
+
+						<!-- message -->
+						<img src="../icons/icons.svg#message" class="svg-message-dims" alt="message"/>
+
+					</div>
+					<h2>message</h2>
+				</li>
+				<li title="money">
+					<div class="icon-box">
+
+						<!-- money -->
+						<img src="../icons/icons.svg#money" class="svg-money-dims" alt="money"/>
+
+					</div>
+					<h2>money</h2>
+				</li>
+				<li title="nav-arrow-next">
+					<div class="icon-box">
+
+						<!-- nav-arrow-next -->
+						<img src="../icons/icons.svg#nav-arrow-next" class="svg-nav-arrow-next-dims" alt="nav-arrow-next"/>
+
+					</div>
+					<h2>nav-arrow-next</h2>
+				</li>
+				<li title="nav-arrow-prev">
+					<div class="icon-box">
+
+						<!-- nav-arrow-prev -->
+						<img src="../icons/icons.svg#nav-arrow-prev" class="svg-nav-arrow-prev-dims" alt="nav-arrow-prev"/>
+
+					</div>
+					<h2>nav-arrow-prev</h2>
+				</li>
+				<li title="office">
+					<div class="icon-box">
+
+						<!-- office -->
+						<img src="../icons/icons.svg#office" class="svg-office-dims" alt="office"/>
+
+					</div>
+					<h2>office</h2>
+				</li>
+				<li title="popular_sort">
+					<div class="icon-box">
+
+						<!-- popular_sort -->
+						<img src="../icons/icons.svg#popular_sort" class="svg-popular_sort-dims" alt="popular_sort"/>
+
+					</div>
+					<h2>popular_sort</h2>
+				</li>
+				<li title="price_sort">
+					<div class="icon-box">
+
+						<!-- price_sort -->
+						<img src="../icons/icons.svg#price_sort" class="svg-price_sort-dims" alt="price_sort"/>
+
+					</div>
+					<h2>price_sort</h2>
+				</li>
+				<li title="prihozh">
+					<div class="icon-box">
+
+						<!-- prihozh -->
+						<img src="../icons/icons.svg#prihozh" class="svg-prihozh-dims" alt="prihozh"/>
+
+					</div>
+					<h2>prihozh</h2>
+				</li>
+				<li title="product_type">
+					<div class="icon-box">
+
+						<!-- product_type -->
+						<img src="../icons/icons.svg#product_type" class="svg-product_type-dims" alt="product_type"/>
+
+					</div>
+					<h2>product_type</h2>
+				</li>
+				<li title="remove">
+					<div class="icon-box">
+
+						<!-- remove -->
+						<img src="../icons/icons.svg#remove" class="svg-remove-dims" alt="remove"/>
+
+					</div>
+					<h2>remove</h2>
+				</li>
+				<li title="room">
+					<div class="icon-box">
+
+						<!-- room -->
+						<img src="../icons/icons.svg#room" class="svg-room-dims" alt="room"/>
+
+					</div>
+					<h2>room</h2>
+				</li>
+				<li title="room_type">
+					<div class="icon-box">
+
+						<!-- room_type -->
+						<img src="../icons/icons.svg#room_type" class="svg-room_type-dims" alt="room_type"/>
+
+					</div>
+					<h2>room_type</h2>
+				</li>
+				<li title="rooms">
+					<div class="icon-box">
+
+						<!-- rooms -->
+						<img src="../icons/icons.svg#rooms" class="svg-rooms-dims" alt="rooms"/>
+
+					</div>
+					<h2>rooms</h2>
+				</li>
+				<li title="search">
+					<div class="icon-box">
+
+						<!-- search -->
+						<img src="../icons/icons.svg#search" class="svg-search-dims" alt="search"/>
+
+					</div>
+					<h2>search</h2>
+				</li>
+				<li title="share">
+					<div class="icon-box">
+
+						<!-- share -->
+						<img src="../icons/icons.svg#share" class="svg-share-dims" alt="share"/>
+
+					</div>
+					<h2>share</h2>
+				</li>
+				<li title="shkaf">
+					<div class="icon-box">
+
+						<!-- shkaf -->
+						<img src="../icons/icons.svg#shkaf" class="svg-shkaf-dims" alt="shkaf"/>
+
+					</div>
+					<h2>shkaf</h2>
+				</li>
+				<li title="shops">
+					<div class="icon-box">
+
+						<!-- shops -->
+						<img src="../icons/icons.svg#shops" class="svg-shops-dims" alt="shops"/>
+
+					</div>
+					<h2>shops</h2>
+				</li>
+				<li title="sort">
+					<div class="icon-box">
+
+						<!-- sort -->
+						<img src="../icons/icons.svg#sort" class="svg-sort-dims" alt="sort"/>
+
+					</div>
+					<h2>sort</h2>
+				</li>
+				<li title="star">
+					<div class="icon-box">
+
+						<!-- star -->
+						<img src="../icons/icons.svg#star" class="svg-star-dims" alt="star"/>
+
+					</div>
+					<h2>star</h2>
+				</li>
+				<li title="stel">
+					<div class="icon-box">
+
+						<!-- stel -->
+						<img src="../icons/icons.svg#stel" class="svg-stel-dims" alt="stel"/>
+
+					</div>
+					<h2>stel</h2>
+				</li>
+				<li title="stol">
+					<div class="icon-box">
+
+						<!-- stol -->
+						<img src="../icons/icons.svg#stol" class="svg-stol-dims" alt="stol"/>
+
+					</div>
+					<h2>stol</h2>
+				</li>
+				<li title="stul">
+					<div class="icon-box">
+
+						<!-- stul -->
+						<img src="../icons/icons.svg#stul" class="svg-stul-dims" alt="stul"/>
+
+					</div>
+					<h2>stul</h2>
+				</li>
+			</ul>
+
+<!--
+====================================================================================================
+-->
+
+		</section>
+		<footer>
+			<p>Generated at Thu, 09 Jul 2026 06:28:58 GMT by <a href="https://github.com/svg-sprite/svg-sprite" target="_blank" rel="noopener noreferrer">svg-sprite</a>.</p>
+		</footer>
+	</body>
+</html>

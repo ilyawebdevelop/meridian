@@ -1,0 +1,72 @@
+<section class="sect pt-0">
+  <div class="container">
+    <h1 class="mb-3">Результаты поиска</h1>
+    <div class="w-100 mb-30 mb-lg-24 fz-lg-14">По запросу <span class="fw-bold">Диван</span> найдено 271 товар</div>
+    <div class="row">
+      <div class="col-lg-3 col-xxl-2">
+        <div class="sidebar catalog-sidebar pt-4 pt-lg-1">
+
+          <a class="page-prev-link mb-70 d-none d-lg-flex align-items-center gap-10 h6" href="#">
+            <div class="page-prev-btn">
+              <img src="@img/icons/prev-link.svg" alt="icon">
+            </div>
+            Все категории
+          </a>
+          @@include('../catalog/filter.html',{})
+
+        </div>
+      </div>
+      <div class="col-lg-9 col-xxl-10">
+        <div class="d-flex gap-5 justify-content-between mb-20">
+          <div class="d-flex flex-column gap-3" style="max-width: 650px;">
+            <h1>Диваны и кресла</h1>
+            <div class="d-none d-lg-block">
+              @@include('../catalog/cat-descr.html',{})
+            </div>
+
+            <div class="d-flex gap-4-1 flex-wrap">
+              <a class="color-orange fw-medium" href="#">Прямые диваны</a>
+              <a class="color-orange fw-medium" href="#">Угловые диваны</a>
+              <a class="color-orange fw-medium" href="#">Кресла</a>
+              <a class="color-orange fw-medium" href="#">Кресла-кровати </a>
+              <a class="color-orange fw-medium" href="#">Пуфы и банкетки</a>
+            </div>
+          </div>
+          <div class="catalogPageImage d-none d-lg-block">
+            <img src="@img/admin/catalog/image-4.jpg" alt="image">
+          </div>
+        </div>
+        @@include('../catalog/filter-sort-mobile.html',{})
+        @@include('../catalog/active-filter.html',{})
+        @@include('../catalog/cat-sort.html',{})
+
+        <div class="catalogGrid">
+          @@include('../catalog/card-1.html',{})
+          @@include('../catalog/card-2.html',{})
+          @@include('../catalog/card-3.html',{})
+          @@include('../catalog/card-4.html',{})
+          @@include('../catalog/card-1.html',{})
+          @@include('../catalog/card-2.html',{})
+          @@include('../catalog/card-3.html',{})
+          @@include('../catalog/card-4.html',{})
+          @@include('../catalog/card-1.html',{})
+          @@include('../catalog/card-2.html',{})
+          @@include('../catalog/card-3.html',{})
+          @@include('../catalog/card-4.html',{})
+          @@include('../catalog/card-1.html',{})
+          @@include('../catalog/card-2.html',{})
+          @@include('../catalog/card-3.html',{})
+        </div>
+        <div class="mt-4 pt-3">
+          @@include('../catalog/load-more.html',{})
+        </div>
+
+        <div class="mt-4 pt-3">
+          @@include('../catalog/pagination.html',{})
+        </div>
+
+
+      </div>
+    </div>
+  </div>
+</section>

@@ -1,0 +1,14 @@
+.map {
+  iframe {
+    height: 500px;
+    width: 100%;
+    @media(max-width: 991px){
+      height: 400px;
+    }
+  }
+}
+.contactsphoneicon {
+  @media(max-width: 1199px){
+    width: 24px;
+  }
+}

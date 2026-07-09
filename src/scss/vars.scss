@@ -1,0 +1,34 @@
+// Font-weights
+$light: 300;
+$regular: 400;
+$medium: 500;
+$semibold: 600;
+$bold: 700;
+$extrabold: 800;
+$black: 900;
+
+// Containers
+:root {
+  --content-width: 1820px;
+  --content-fluid-width: 1700px;
+  --container-offset: 15px;
+  --container-width: calc(var(--content-width) + (var(--container-offset) * 2));
+  --container-fluid-width: calc(var(--content-fluid-width) + (var(--container-offset) * 2));
+  --font-family: "Source Sans 3", sans-serif;
+  --second-family: "Ubuntu", sans-serif;
+  --third-family: "Montserrat", sans-serif;
+  --main-color: #2c2d2e;
+	--orange: #fe5a11;
+	--orange-dark: #e42e00;
+	--black: #2c2d2e;
+	--white: #fff;
+  --green: #40C057;
+	--background: #f2f4f6;
+	--light: #e6e9eb;
+	--light-dark: #e2e6ea;
+	--grey: #83888d;
+  
+  --success: #27c340;
+  --error: #e02828;
+  
+}

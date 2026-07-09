@@ -1,0 +1,37 @@
+.deliveryCol {
+  width: 165px;
+  overflow: hidden;
+  -webkit-line-clamp: 3;
+  display: -webkit-box;
+  /* Включаем флексбоксы */
+  -webkit-box-orient: vertical;
+
+  /* Вертикальная ориентация */
+  @media(max-width: 991px) {
+    width: calc(50% - 12px);
+
+  }
+}
+
+.deliveryRow {
+  display: none;
+
+  &:nth-child(1),
+  &:nth-child(2),
+  &:nth-child(3),
+  &:nth-child(4) {
+    display: flex;
+  }
+}
+
+.deliveryCols {
+  @media(max-width: 991px){
+    flex-wrap: wrap;
+    row-gap: 0!important;
+  }
+  &.active {
+    .deliveryRow {
+      display: flex;
+    }
+  }
+}

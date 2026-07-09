@@ -1,0 +1,67 @@
+.news {
+  &Card {
+    &Img {
+      &:hover {
+        opacity: .85;
+      }
+
+      img {
+        width: 100%;
+        height: 320px;
+        object-fit: cover;
+        @media(max-width: 1400px){
+          height: 300px;
+        }
+        @media(max-width: 991px){
+          height: 260px;
+        }
+        @media(max-width: 767px){
+          height: 200px;
+        }
+        @media(max-width: 575px){
+          height: 240px;
+        }
+      }
+    }
+
+    &Title {
+      width: fit-content;
+      @media(max-width: 991px){
+        font-size: 16px;
+        line-height: 22px;
+      }
+
+      &:hover {
+        color: var(--orange);
+      }
+    }
+
+    &Descr {
+      overflow: hidden;
+      -webkit-line-clamp: 3;
+      display: -webkit-box;
+      /* Включаем флексбоксы */
+      -webkit-box-orient: vertical;
+      /* Вертикальная ориентация */
+    }
+  }
+}
+.newsGrid {
+  display: grid;
+  grid-template-columns: repeat(12, 1fr);
+  gap: 20px;
+  .newsCard {
+    grid-column: 4 span;
+    @media(max-width: 1199px){
+      grid-column: 6 span;
+    }
+    @media(max-width: 575px){
+      grid-column: 12 span;
+    }
+  }
+}
+.newsSlider {
+  @media(max-width: 575px){
+    overflow: visible;
+  }
+}

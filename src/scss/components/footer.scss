@@ -1,0 +1,109 @@
+// Footer
+.footer {
+  &T {
+    background-color: var(--black);
+    padding-top: 60px;
+    padding-bottom: 60px;
+
+    @media(max-width: 991px) {
+      padding-top: 32px;
+      padding-bottom: 40px;
+    }
+  }
+
+  &Logo {
+    img {
+      width: 80px;
+
+      @media(max-width: 575px) {
+        width: 173px;
+      }
+    }
+  }
+
+  &Nav {
+    h5 {
+      margin-bottom: 20px;
+    }
+
+    ul {
+      li {
+        &:not(:last-child) {
+          margin-bottom: 12px;
+        }
+
+        a {
+          font-size: 14px;
+          line-height: 20px;
+          color: #fff;
+
+          &:hover {
+            color: var(--orange);
+          }
+        }
+      }
+    }
+  }
+}
+
+.footer-logo-m {
+  width: 32px;
+}
+
+.navBar {
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  width: 100%;
+  padding-left: 20px;
+  padding-right: 20px;
+  background-color: #fff;
+  border-top: 1px solid var(--light);
+  padding-top: 4px;
+  z-index: 2;
+  
+
+  ul {
+    display: flex;
+    justify-content: space-around;
+    @media(max-width: 575px){
+      justify-content: space-between;
+    }
+
+    li {
+      &.active {
+        a {
+        
+          svg {
+            stroke: var(--orange);
+          }
+        }
+      }
+      a {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
+        row-gap: 8px;
+        font-size: 12px;
+        line-height: 130%;
+        padding-top: 8px;
+        &:hover {
+        
+          svg {
+            stroke: var(--orange);
+          }
+        }
+
+        svg {
+          width: 20px;
+          height: 20px;
+          fill: transparent;
+          stroke: var(--main-color);
+          stroke-width: 1.5px;
+        }
+      }
+    }
+  }
+}

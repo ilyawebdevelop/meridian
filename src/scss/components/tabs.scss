@@ -1,0 +1,49 @@
+.tabs {
+  &__nav {
+    display: flex;
+    width: fit-content;
+
+    &-btn {
+      height: 50px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-size: 18px;
+      line-height: 26px;
+      background: var(--background);
+      transition: color .2s linear, border-color .2s linear;
+      border-bottom: 2px solid transparent;
+
+      @media(max-width: 991px) {
+        font-size: 14px;
+        line-height: 20px;
+        height: 36px;
+      }
+
+      &:hover {
+        border-color: var(--orange);
+      }
+
+      &--active {
+
+        border-color: var(--orange);
+      }
+    }
+  }
+
+  &__panel {
+    display: none;
+
+    &--active {
+      display: block;
+    }
+  }
+}
+
+.productTabs {
+  .tabs__panel {
+    @media(max-width: 991px) {
+      display: block;
+    }
+  }
+}

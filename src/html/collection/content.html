@@ -1,0 +1,103 @@
+<section class="sect pt-0">
+  <div class="container">
+    <div class="row">
+      <div class="col-lg-3 col-xxl-2">
+        @@include('../catalog/sidebar-collection.html',{})
+        <div class="sidebar catalog-sidebar pt-4 pt-lg-3">
+
+          <a class="page-prev-link mb-30 d-none d-lg-flex align-items-center gap-10 h6" href="#">
+            <div class="page-prev-btn">
+              <img src="@img/icons/prev-link.svg" alt="icon">
+            </div>
+            Спальня
+          </a>
+          <div class="mb-4 d-none d-lg-block">
+            <img src="@img/admin/catalog/image-6.jpg" alt="image" class="filter-img">
+          </div>
+
+          @@include('../catalog/filter-collection.html',{})
+
+        </div>
+      </div>
+      <div class="col-lg-9 col-xxl-10 sliderW">
+        <h1 class="mb-3 mb-lg-4">Коллекции для спальни</h1>
+        <button class="button bg h-32 px-2 catalogMobCollectionBtn catalogMobActionBtn mb-3 d-flex d-lg-none"
+          type="button">
+          <svg>
+            <use xlink:href="img/icons/icons.svg#filter"></use>
+          </svg>
+          Все коллекции
+        </button>
+        <div class="swiper catIntroSlider mb-20">
+          <div class="swiper-wrapper">
+            <a href="@img/admin/catalog/image-6.jpg" class="swiper-slide catIntroSlide" data-fancybox="catIntroGal">
+              <img src="@img/admin/catalog/image-6.jpg" alt="image">
+            </a>
+            <a href="@img/admin/catalog/image-5.jpg" class="swiper-slide catIntroSlide" data-fancybox="catIntroGal">
+              <img src="@img/admin/catalog/image-5.jpg" alt="image">
+            </a>
+            <a href="@img/admin/catalog/image-4.jpg" class="swiper-slide catIntroSlide" data-fancybox="catIntroGal">
+              <img src="@img/admin/catalog/image-4.jpg" alt="image">
+            </a>
+          </div>
+        </div>
+        <div class="d-flex justify-content-between gap-3 align-items-start">
+          <div class="d-flex flex-column">
+            <div class="h2 h2-lg-h4 mb-3">
+              Модульная спальня «Герта»
+            </div>
+            <div class="d-none d-lg-block">
+              <div class="mb-20" style="max-width: 910px;">
+                Спальня «Герта» — это изысканная модульная серия, включающая двуспальную кровать, два стильных шкафа,
+                две
+                тумбы и комод, создающие гармонию и уют в вашем интерьере.
+              </div>
+            </div>
+          </div>
+          <div class="d-none d-lg-flex gap-3">
+            <button class="navArrow navArrowPrev">
+              <svg>
+                <use xlink:href="img/icons/icons.svg#nav-arrow-prev"></use>
+              </svg>
+            </button>
+            <button class="navArrow navArrowNext">
+              <svg>
+                <use xlink:href="img/icons/icons.svg#nav-arrow-next"></use>
+              </svg>
+            </button>
+          </div>
+        </div>
+
+        @@include('../catalog/filter-sort-mobile.html',{})
+        @@include('../catalog/active-filter.html',{})
+        @@include('../catalog/cat-sort.html',{})
+
+        <div class="catalogGrid">
+          @@include('../catalog/card-1.html',{})
+          @@include('../catalog/card-2.html',{})
+          @@include('../catalog/card-3.html',{})
+          @@include('../catalog/card-4.html',{})
+          @@include('../catalog/card-1.html',{})
+          @@include('../catalog/card-2.html',{})
+          @@include('../catalog/card-3.html',{})
+          @@include('../catalog/card-4.html',{})
+          @@include('../catalog/card-1.html',{})
+          @@include('../catalog/card-2.html',{})
+          @@include('../catalog/card-3.html',{})
+          @@include('../catalog/card-4.html',{})
+          @@include('../catalog/card-1.html',{})
+          @@include('../catalog/card-2.html',{})
+          @@include('../catalog/card-3.html',{})
+        </div>
+
+        <div class="d-block d-lg-none mt-4">
+          <div class="mb-20" style="max-width: 910px;">
+            Спальня «Герта» — это изысканная модульная серия, включающая двуспальную кровать, два стильных шкафа, две
+            тумбы и комод, создающие гармонию и уют в вашем интерьере.
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </div>
+</section>

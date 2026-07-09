@@ -1,0 +1,76 @@
+.accordion {
+  padding-right: 60px;
+  @media(max-width: 1199px){
+    padding-right: 0;
+  }
+}
+.accordion-item {
+  background-color: transparent;
+  border: none;
+  color: var(--main-color);
+  padding-bottom: 20px;
+}
+
+.accordion-button {
+  padding: 0;
+  background-color: transparent;
+  color: var(--main-color);
+  font-size: 20px;
+  line-height: 26px;
+  font-weight: 700;
+  margin-bottom: 0;
+  transition: color .2s linear;
+  column-gap: 5px;
+  @media(max-width: 991px){
+    font-size: 16px;
+  }
+  &:hover {
+    color: var(--orange);
+  }
+
+  &:focus {
+    box-shadow: none;
+  }
+
+  &:focus:not(:focus-visible) {
+    box-shadow: none;
+  }
+}
+
+.accordion-body {
+  padding: 0;
+  padding-top: 10px;
+  @media(max-width: 991px){
+   font-size: 14px; 
+  }
+}
+
+.accordion-item:first-of-type>.accordion-header .accordion-button {
+  border-top-left-radius: 0;
+  border-top-right-radius: 0;
+}
+
+.accordion-button:not(.collapsed) {
+  background-color: transparent;
+  box-shadow: none;
+  color: var(--main-color);
+}
+
+.accordion-item:first-of-type {
+  border-top-left-radius: 0;
+  border-top-right-radius: 0;
+  border: none;
+  background-color: transparent;
+}
+
+.accordion-button::after {
+  background-image: url('@img/icons/plus.svg');
+  width: 24px;
+  height: 24px;
+  flex-shrink: 0;
+}
+
+.accordion-button:not(.collapsed)::after {
+  background-image: url('@img/icons/minus.svg');
+  transform: rotate(0deg);
+}

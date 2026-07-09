@@ -1,0 +1,26 @@
+.socials {
+  ul {
+    display: flex;
+    column-gap: 5px;
+
+    li {
+      a {
+        border-radius: 50%;
+        background-color: #f4f1e4;
+        display: flex;
+        width: 35px;
+        height: 35px;
+        align-items: center;
+        justify-content: center;
+        @media(max-width: 370px){
+          width: 30px;
+          height: 30px;
+        }
+
+        &:hover {
+          opacity: .8;
+        }
+      }
+    }
+  }
+}

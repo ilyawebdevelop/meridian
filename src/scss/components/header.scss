@@ -1,0 +1,383 @@
+// Header
+.header {
+  &Logo {
+    &:hover {
+      opacity: .85;
+    }
+
+    img {
+      width: 208px;
+
+      @media(max-width: 991px) {
+        width: 170px;
+      }
+
+      @media(max-width: 375px) {
+        width: 150px;
+      }
+
+      @media(max-width: 350px) {
+        width: 130px;
+      }
+    }
+  }
+
+  &Nav {
+    @media(max-width: 991px) {
+      overflow-x: auto;
+      padding-bottom: 3px;
+    }
+
+    @media(max-width: 575px) {
+      margin-left: -16px;
+      padding-left: 16px;
+      margin-right: -16px;
+
+    }
+
+    ul {
+      li {
+        display: flex;
+
+        &:last-child {
+          @media(max-width: 575px) {
+            padding-right: 20px;
+          }
+        }
+
+        a {
+          font-size: 18px;
+          font-weight: 500;
+          white-space: nowrap;
+
+          @media(max-width: 991px) {
+            background-color: var(--background);
+            font-size: 14px;
+            padding: 4px 8px;
+            border-radius: 2px;
+          }
+
+          &:hover {
+            color: var(--orange);
+          }
+        }
+      }
+    }
+  }
+
+  .searchField {
+    @media(max-width: 991px) {
+      display: none;
+    }
+  }
+}
+
+.headerCatalog {
+  padding-bottom: 20px;
+  position: absolute;
+  top: 116px;
+  z-index: 3;
+  right: 0;
+  left: 0;
+  margin: auto;
+  background-color: #fff;
+  width: 100%;
+
+  &.active {
+    display: block;
+    -webkit-animation: shows 0.2s;
+    animation: shows 0.2s;
+  }
+
+  @media(max-width: 991px) {
+    position: fixed;
+    top: 0;
+    height: calc(100vh - 57px);
+    overflow-y: auto;
+  }
+}
+
+.headerCatalogNav {
+  a {
+    display: flex;
+    align-items: center;
+    gap: 16px;
+    padding-right: 52px;
+    padding-top: 13px;
+    padding-bottom: 13px;
+    padding-left: 16px;
+    font-weight: 500;
+    font-family: var(--second-family);
+    background-position: right 16px center;
+    background-repeat: no-repeat;
+    background-size: 20px;
+    transition: none;
+
+    @media(max-width: 991px) {
+      border-bottom: 1px solid var(--light);
+    }
+
+    svg {
+      width: 20px;
+      height: 20px;
+      stroke: transparent;
+      fill: var(--grey);
+      flex-shrink: 0;
+    }
+
+    &:hover {
+      background-color: var(--background);
+      background-image: url('@img/icons/arrow-right.svg');
+
+      svg {
+        fill: var(--orange);
+      }
+    }
+  }
+}
+
+.headerCatalogTabsNav {
+  border-bottom: 1px solid var(--light-dark);
+  width: 100%;
+
+  @media(max-width: 575px) {
+    background-color: var(--background);
+  }
+
+  li {
+    width: 50%;
+
+    button {
+      width: 100%;
+      background-color: transparent;
+      justify-content: flex-start;
+      padding-left: 12px;
+      column-gap: 12px;
+      font-size: 18px;
+      font-weight: 500;
+      font-family: var(--second-family);
+      height: 56px;
+
+      @media(max-width: 1400px) {
+        justify-content: center;
+        font-size: 16px;
+        height: 54px;
+        padding-left: 8px;
+      }
+
+      svg {
+        width: 24px;
+        height: 24px;
+        fill: transparent;
+        stroke: var(--grey);
+        stroke-width: 1.5px;
+      }
+
+      &.tabs__nav-btn--active {
+        svg {
+          stroke: var(--orange);
+        }
+      }
+    }
+  }
+}
+
+.headerCatalogContent {
+  padding-top: 40px;
+  padding-left: 48px;
+  border-left: 1px solid var(--light-dark);
+  display: none;
+
+  @media(max-width: 991px) {
+    position: fixed;
+    left: 0;
+    width: 100%;
+    top: 67px;
+    background-color: #fff;
+    height: calc(100vh - 124px);
+    overflow-y: auto;
+    padding-left: 0;
+    padding-top: 0;
+    padding-bottom: 50px;
+  }
+
+  .container {
+    @media(max-width: 575px) {
+      padding-left: 0;
+      padding-right: 0;
+    }
+  }
+}
+
+.headerCatalogContentNav {
+  width: 450px;
+  flex-shrink: 0;
+
+  @media(max-width: 1400px) {
+    width: 350px;
+  }
+
+  @media(max-width: 991px) {
+    width: 100%;
+  }
+
+  ul {
+    li {
+      &:not(:last-child) {
+        margin-bottom: 17px;
+
+        @media(max-width: 991px) {
+          margin-bottom: 0;
+        }
+      }
+
+      a {
+        font-weight: bold;
+        font-family: var(--second-family);
+
+        @media(max-width: 991px) {
+          padding-top: 9px;
+          padding-bottom: 9px;
+          display: flex;
+          border-bottom: 1px solid var(--light);
+          padding-left: 52px;
+          border-radius: 8px;
+          font-weight: 500;
+        }
+
+        &:hover {
+          color: var(--orange);
+        }
+      }
+    }
+  }
+}
+
+.headerCatalogMenuImage {
+  width: calc(100% - 480px);
+  height: fit-content;
+  border-radius: 8px;
+
+  @media(max-width: 1400px) {
+
+    width: calc(100% - 350px);
+  }
+
+  @media(max-width: 991px) {
+    display: none;
+  }
+}
+
+.headerCatalogGrid {
+  display: grid;
+  grid-template-columns: repeat(12, 1fr);
+}
+
+.headerCatalogL {
+  grid-column: 3 span;
+
+  @media(max-width: 1400px) {
+    grid-column: 4 span;
+  }
+
+  @media(max-width: 991px) {
+    grid-column: 12 span;
+  }
+}
+
+.headerCatalogR {
+  grid-column: 9 span;
+
+  @media(max-width: 1400px) {
+    grid-column: 8 span;
+  }
+
+  @media(max-width: 991px) {
+    grid-column: 12 span;
+  }
+}
+
+.headerCatalog {
+  display: none;
+}
+
+.headerMainMobile {
+  display: flex;
+  width: 100%;
+
+  @media(max-width: 991px) {
+    display: none;
+    position: fixed;
+    top: 0;
+    background-color: #fff;
+    height: 100vh;
+    z-index: 3;
+    flex-direction: column;
+    left: 0;
+    padding-top: 5px;
+    padding-bottom: 50px;
+    overflow-y: scroll;
+  }
+
+  &.active {
+    display: flex;
+    -webkit-animation: shows 0.2s;
+    animation: shows 0.2s;
+  }
+
+  .container {
+    width: fit-content;
+
+    @media(max-width: 991px) {
+      width: 100%;
+    }
+  }
+}
+
+
+
+.smile-icon {
+  @media(max-width: 991px) {
+    width: 20px;
+  }
+}
+
+.headerPhone {
+  img {
+    @media(max-width: 991px) {
+      width: 20px;
+      margin-right: 4px;
+    }
+  }
+}
+
+.headerMobileSearchW {
+  position: fixed;
+  top: 0;
+  background-color: #fff;
+  height: 100vh;
+  z-index: 2;
+  flex-direction: column;
+  left: 0;
+  width: 100%;
+  padding-bottom: 50px;
+  display: none;
+  overflow-y: scroll;
+
+  &.active {
+    display: flex;
+    -webkit-animation: shows 0.2s;
+    animation: shows 0.2s;
+  }
+}
+
+.container:has(.headerCatalogGrid) {
+  padding-left: 0;
+  padding-right: 0;
+}
+
+.headerCatalogContentHeadMobile {
+  @media(max-width: 991px) {
+    background-color: var(--background);
+  }
+}

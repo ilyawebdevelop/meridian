@@ -1,0 +1,138 @@
+<div class="filter">
+  <div class="container">
+    <div class="d-flex justify-content-between align-items-center gap-2 mb-4">
+
+      <div class="d-flex gap-2 align-items-center">
+        <button class="filterBtnClose d-flex d-lg-none">
+          <svg>
+            <use xlink:href="img/icons/icons.svg#arrow-left"></use>
+          </svg>
+        </button>
+        <h5>Фильтры</h5>
+      </div>
+
+      <a class="d-block d-lg-none fw-medium color-grey hover-orange" href="#">Сбросить все</a>
+    </div>
+
+    <div class="filterItem">
+      <div class="filterItemHead mb-4 d-flex justify-content-between gap-2 align-items-center active">
+        <h6>Характеристики</h6>
+        <img src="@img/icons/filter-arrow.svg" alt="icon">
+      </div>
+      <div class="filterItemBody" style="display: block;">
+        <div class="checkbox-item">
+          <input type="checkbox" id="param_1">
+          <label for="param_1">Фильтр </label>
+        </div>
+        <div class="checkbox-item">
+          <input type="checkbox" id="param_2" checked>
+          <label for="param_2">Фильтр Фильтр </label>
+        </div>
+        <div class="checkbox-item">
+          <input type="checkbox" id="param_3">
+          <label for="param_3">Фильтр </label>
+        </div>
+      </div>
+    </div>
+    <div class="filterItem">
+      <div class="filterItemHead mb-4 d-flex justify-content-between gap-2 align-items-center active">
+        <h6>Цена</h6>
+        <img src="@img/icons/filter-arrow.svg" alt="icon">
+      </div>
+      <div class="filterItemBody" style="display: block;">
+        <div class="d-flex gap-10">
+          <div class="inputW">
+            <input type="number" class="formInput h-40 px-12" placeholder="От">
+          </div>
+          <div class="inputW">
+            <input type="number" class="formInput h-40 px-12" placeholder="До" value="80000">
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="filterItem">
+      <div class="filterItemHead mb-4 d-flex justify-content-between gap-2 align-items-center active">
+        <h6>Наличие</h6>
+        <img src="@img/icons/filter-arrow.svg" alt="icon">
+      </div>
+      <div class="filterItemBody" style="display: block;">
+        <div class="checkbox-item">
+          <input type="checkbox" id="avail_1">
+          <label for="avail_1">Есть в магазине </label>
+        </div>
+        <div class="checkbox-item">
+          <input type="checkbox" id="avail_2" checked>
+          <label for="avail_2">Есть на складе </label>
+        </div>
+        <div class="checkbox-item">
+          <input type="checkbox" id="avail_3">
+          <label for="avail_3">Под заказ </label>
+        </div>
+      </div>
+    </div>
+    <div class="filterItem">
+      <div class="filterItemHead mb-10 d-flex justify-content-between gap-2 align-items-center active">
+        <div class="d-flex align-items-center gap-10">
+          <h6>Производитель</h6>
+          <div class="count">1</div>
+        </div>
+
+        <img src="@img/icons/filter-arrow.svg" alt="icon">
+      </div>
+      <div class="filterItemBody" style="display: block;">
+        <div class="searchField position-relative w-100 mb-20">
+          <input class="formInput formInput--search h-40 pl-12 pr-75 bg-right-12" type="search" placeholder="Поиск">
+          <button class="search-clear" type="button"><img src="@img/icons/search-clear.svg" alt="icon"></button>
+        </div>
+        <div class="max-h-240">
+          <div class="checkbox-item">
+            <input type="checkbox" id="marka_1">
+            <label for="marka_1">Производитель </label>
+          </div>
+          <div class="checkbox-item">
+            <input type="checkbox" id="marka_2" checked>
+            <label for="marka_2">Производитель </label>
+          </div>
+          <div class="checkbox-item">
+            <input type="checkbox" id="marka_3">
+            <label for="marka_3">Производитель </label>
+          </div>
+          <div class="checkbox-item">
+            <input type="checkbox" id="marka_4">
+            <label for="marka_4">Производитель </label>
+          </div>
+          <div class="checkbox-item">
+            <input type="checkbox" id="marka_5">
+            <label for="marka_5">Производитель </label>
+          </div>
+          <div class="checkbox-item">
+            <input type="checkbox" id="marka_11">
+            <label for="marka_11">Производитель </label>
+          </div>
+          <div class="checkbox-item">
+            <input type="checkbox" id="marka_12" checked>
+            <label for="marka_12">Производитель Производитель </label>
+          </div>
+          <div class="checkbox-item">
+            <input type="checkbox" id="marka_13">
+            <label for="marka_13">Производитель </label>
+          </div>
+          <div class="checkbox-item">
+            <input type="checkbox" id="marka_14">
+            <label for="marka_14">Производитель </label>
+          </div>
+          <div class="checkbox-item">
+            <input type="checkbox" id="marka_15">
+            <label for="marka_15">Производитель </label>
+          </div>
+        </div>
+
+      </div>
+    </div>
+    <button class="button button--orange fz-18 h-50px d-flex d-lg-none w-100">
+      Применить
+    </button>
+
+  </div>
+
+</div>

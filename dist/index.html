@@ -1,0 +1,4342 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="icon" type="image/png" href="img/favicon.png">
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	<link
+		href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Source+Sans+3:ital,wght@0,200..900;1,200..900&family=Ubuntu:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500;1,700&display=swap"
+		rel="stylesheet">
+
+	<link rel="stylesheet" href="css/style.min.css">
+
+	<title>Главная</title>
+</head>
+
+<body>
+
+	<div class="wrapper">
+		<header class="header headerMain">
+  <div class="headerT pb-3 border-b-gray">
+  <div class="container">
+    <div
+      class="headerMainMobile align-items-center justify-content-start justify-content-lg-between gap-3 gap-lg-40 pt-1 pt-lg-2">
+
+      <div class="w-100 d-block align-items-center d-lg-none border-b-gray py-3 px-2">
+        <div class="container">
+
+          <div class="d-flex justify-content-between gap-3">
+            <button class="headerMainMobileClose" type="button">
+              <img src="img/icons/close-black.svg" alt="icon">
+            </button>
+            <button class="headerMainMobileSearchBtn" type="button">
+              <img src="img/icons/search-black.svg" alt="icon">
+              Найти мебель
+            </button>
+          </div>
+
+        </div>
+      </div>
+      <div class="d-flex align-items-center gap-20 gap-lg-40 flex-column flex-lg-row w-lg-100 w-fit">
+        <div class="container">
+          <a href="#" class="headerMainMobileLogo d-flex d-lg-none mb-40">
+            <img src="img/admin/logo/logo.svg" alt="logo">
+          </a>
+          <div class="d-flex gap-20 flex-column flex-lg-row pl-lg-50">
+            <a class="fz-12 fz-lg-18 hover-orange fw-lg-medium" href="#">Адреса магазинов</a>
+            <a class="fz-12 fz-lg-18 hover-orange fw-lg-medium" href="#">Покупателям</a>
+            <a class="fz-12 fz-lg-18 hover-orange fw-lg-medium" href="#">О нас</a>
+          </div>
+        </div>
+
+        <div class="container">
+          <div class="d-flex gap-2 align-items-start align-items-lg-center flex-column flex-lg-row pl-lg-50">
+            <a href="tel:+73822726723" class="headerPhone hover-orange d-flex gap-1 align-items-center fz-12 fz-lg-18">
+              <img src="img/icons/phone.svg" alt="icon">
+              +7 (3822) 72-67-23
+            </a>
+            <span class="color-grey fz-12">Ежедневно с 10.00 до 19.00 (Томск, МСК+4)</span>
+          </div>
+        </div>
+
+      </div>
+      <div class="container mx-auto mx-lg-unset">
+        <div class="d-flex flex-column flex-lg-row align-items-start align-items-lg-center gap-3 gap-lg-2 pl-lg-50">
+          <button class="button gap-3 gap-lg-1 button--orange fz-12 fz-lg-18 py-1 h-24 h-lg-50 fw-medium px-12 px-lg-16"
+            data-fancybox data-src="#modalOrder">
+            <svg class="w-16 h-16 w-lg-24 h-lg-24">
+              <use xlink:href="img/icons/icons.svg#message"></use>
+            </svg>
+            Напишите нам
+          </button>
+          <span class="d-flex align-items-center gap-2 gap-lg-1">
+            <img class="smile-icon" src="img/icons/smile.svg" alt="icon">
+            <span class="fz-12 fz-lg-14 color-grey">Ответит живой человек</span>
+          </span>
+        </div>
+      </div>
+
+    </div>
+    <div class="d-flex justify-content-between align-items-center gap-20 gap-lg-16 gap-390-10 pt-3">
+      <div class="hamburger" id="toggle">
+        <div class="top-bun"></div>
+        <div class="meat"></div>
+        <div class="bottom-bun"></div>
+      </div><!-- /Hamburger Menu -->
+      <button class="headerSearchBtn d-flex align-items-center justify-content-center d-lg-none">
+        <svg>
+          <use xlink:href="img/icons/icons.svg#search"></use>
+        </svg>
+      </button>
+      <a href="#" class="headerLogo logo flex-shrink-0">
+        <img src="img/admin/logo/logo.svg" alt="logo">
+      </a>
+      <button class="headerCatalogBtn px-3 fw-medium d-none d-lg-flex align-items-center gap-12 fz-18 flex-shrink-0"
+        type="submit">
+        <svg>
+          <use xlink:href="img/icons/icons.svg#catalog-btn"></use>
+        </svg>
+        Каталог мебели
+      </button>
+      <div class="searchField position-relative w-100">
+        <input class="formInput formInput--search pl-3 pr-75" type="search" placeholder="Найти мебель">
+        <button class="search-clear" type="button"><img src="img/icons/search-clear.svg" alt="icon"></button>
+      </div>
+      <a href="tel:73822726723" class="headerMobilePhone">
+        <img src="img/icons/phone-black.svg" alt="icon">
+      </a>
+      <a href="#" class="headerMobileMessage" data-fancybox data-src="#modalOrder">
+        <img src="img/icons/message.svg" alt="icon">
+      </a>
+    </div>
+  </div>
+
+</div>
+  <div class="headerNavW py-12 py-lg-4">
+    <div class="container">
+      <nav class="headerNav">
+  <ul class="d-flex flex-lg-wrap gap-40 gap-xl-20 gap-sm-4px">
+    <li><a href="#">Диваны</a></li>
+    <li><a href="#">Мебель-трансформер 3в1</a></li>
+    <li><a href="#">Кровати</a></li>
+    <li><a href="#">Матрасы</a></li>
+    <li><a href="#">Шкафы</a></li>
+    <li><a href="#">Кухни</a></li>
+    <li><a href="#">Столы и стулья</a></li>
+  </ul>
+</nav>
+    </div>
+  </div>
+</header>
+<div class="headerCatalog">
+  <div class="d-block d-lg-none pt-4 pb-3 border-b-gray">
+    <div class="container">
+      <div class="d-flex gap-2 justify-content-between align-items-center">
+        <h4 class="h4-lg-20">Каталог</h4>
+        <button class="headerCatalogClose" type="button">
+          <img src="img/icons/close-black.svg" alt="icon">
+        </button>
+      </div>
+    </div>
+
+  </div>
+  <div class="container">
+    <div class="headerCatalogGrid">
+      <div class="headerCatalogL">
+        <div class="headerCatalogTabs tabs_2" data-tabs="popup_2">
+          <ul class="headerCatalogTabsNav tabs__nav mb-2 mb-lg-3">
+            <li class="tabs__nav-item">
+              <button class="tabs__nav-btn" type="button">
+                <svg>
+                  <use xlink:href="img/icons/icons.svg#rooms"></use>
+                </svg>
+                Комнаты
+              </button>
+            </li>
+            <li class="tabs__nav-item">
+              <button class="tabs__nav-btn" type="button">
+                <svg>
+                  <use xlink:href="img/icons/icons.svg#cats"></use>
+                </svg>
+                Категории
+              </button>
+            </li>
+          </ul>
+          <div class="tabs__content">
+            <div class="tabs__panel">
+              <div class="d-flex flex-column headerCatalogNav">
+                <a href="#" class="headerCatalogNavLink" data-menu="room_1">
+                  <svg>
+                    <use xlink:href="img/icons/icons.svg#room"></use>
+                  </svg>
+                  Спальня
+                </a>
+                <a href="#" class="headerCatalogNavLink" data-menu="room_2">
+                  <svg>
+                    <use xlink:href="img/icons/icons.svg#guest"></use>
+                  </svg>
+                  Гостиная
+                </a>
+                <a href="#" class="headerCatalogNavLink" data-menu="room_3">
+                  <svg>
+                    <use xlink:href="img/icons/icons.svg#child"></use>
+                  </svg>
+                  Детская
+                </a>
+                <a href="#" class="headerCatalogNavLink" data-menu="room_4">
+                  <svg>
+                    <use xlink:href="img/icons/icons.svg#kitchen"></use>
+                  </svg>
+                  Кухня
+                </a>
+                <a href="#" class="headerCatalogNavLink" data-menu="room_5">
+                  <svg>
+                    <use xlink:href="img/icons/icons.svg#prihozh"></use>
+                  </svg>
+                  Прихожая
+                </a>
+                <a href="#" class="headerCatalogNavLink" data-menu="room_6">
+                  <svg>
+                    <use xlink:href="img/icons/icons.svg#office"></use>
+                  </svg>
+                  Домашний офис
+                </a>
+              </div>
+            </div>
+            <div class="tabs__panel">
+              <div class="d-flex flex-column headerCatalogNav">
+                <a href="#" class="headerCatalogNavLink" data-menu="cat_1">
+                  <svg>
+                    <use xlink:href="img/icons/icons.svg#divans"></use>
+                  </svg>
+                  Диваны и кресла
+                </a>
+                <a href="#" class="headerCatalogNavLink" data-menu="cat_2">
+                  <svg>
+                    <use xlink:href="img/icons/icons.svg#krovat"></use>
+                  </svg>
+                  Кровати и матрасы 
+                </a>
+                <a href="#" class="headerCatalogNavLink" data-menu="cat_3">
+                  <svg>
+                    <use xlink:href="img/icons/icons.svg#shkaf"></use>
+                  </svg>
+                  Шкафы и системы хранения
+                </a>
+                <a href="#" class="headerCatalogNavLink" data-menu="cat_4">
+                  <svg>
+                    <use xlink:href="img/icons/icons.svg#komod"></use>
+                  </svg>
+                  Комоды и тумбы
+                </a>
+                <a href="#" class="headerCatalogNavLink" data-menu="cat_5">
+                  <svg>
+                    <use xlink:href="img/icons/icons.svg#stol"></use>
+                  </svg>
+                  Столы
+                </a>
+                <a href="#" class="headerCatalogNavLink" data-menu="cat_6">
+                  <svg>
+                    <use xlink:href="img/icons/icons.svg#stul"></use>
+                  </svg>
+                  Стулья и табуреты
+                </a>
+                <a href="#" class="headerCatalogNavLink" data-menu="cat_7">
+                  <svg>
+                    <use xlink:href="img/icons/icons.svg#stel"></use>
+                  </svg>
+                  Стеллажи и полки
+                </a>
+                <a href="#" class="headerCatalogNavLink" data-menu="cat_8">
+                  <svg>
+                    <use xlink:href="img/icons/icons.svg#detsk"></use>
+                  </svg>
+                  Детская мебель
+                </a>
+                <a href="#" class="headerCatalogNavLink" data-menu="cat_9">
+                  <svg>
+                    <use xlink:href="img/icons/icons.svg#kab"></use>
+                  </svg>
+                  Мебель для офиса и кабинета
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="headerCatalogR">
+
+        <div class="headerCatalogContent" data-menu="room_1">
+          <div class="container">
+            <div class="d-flex gap-30">
+              <nav class="headerCatalogContentNav">
+                <div class="d-flex gap-3 mb-0 mb-lg-4 headerCatalogContentHeadMobile px-3 px-lg-0 py-3 py-lg-0">
+                  <button class="headerCatalogContentPrev" type="button">
+                    <img src="img/icons/prev-arrow.svg" alt="icon">
+                  </button>
+                  <h4 class="fw-bold fw-lg-medium">Спальня</h4>
+                </div>
+
+                <ul>
+                  <li>
+                    <a href="#">Коллекции для спальни </a>
+                  </li>
+                  <li>
+                    <a href="#">Мебель-трансформер (шкаф + диван + кровать)</a>
+                  </li>
+                  <li>
+                    <a href="#">Двуспальные кровати</a>
+                  </li>
+                  <li>
+                    <a href="#">Односпальные кровати</a>
+                  </li>
+                  <li>
+                    <a href="#">Прикроватные тумбы </a>
+                  </li>
+                  <li>
+                    <a href="#">Комоды</a>
+                  </li>
+                  <li>
+                    <a href="#">Шкафы</a>
+                  </li>
+                  <li>
+                    <a href="#">Шкафы-купе</a>
+                  </li>
+                  <li>
+                    <a href="#">Туалетные столики</a>
+                  </li>
+                  <li>
+                    <a href="#">Зеркала</a>
+                  </li>
+                  <li>
+                    <a href="#">Банкетки / пуфы</a>
+                  </li>
+                  <li>
+                    <a href="#">Матрасы </a>
+                  </li>
+                </ul>
+                <a class="fw-medium mt-4 mt-lg-5 d-block color-orange ml-lg-52" href="#">Все товары раздела</a>
+              </nav>
+              <img class="headerCatalogMenuImage" src="img/admin/catalog/image-6.jpg" alt="image">
+            </div>
+          </div>
+        </div>
+        <div class="headerCatalogContent" data-menu="room_2">
+          <div class="container">
+
+            <div class="d-flex gap-30">
+              <nav class="headerCatalogContentNav">
+                <div class="d-flex gap-3 mb-0 mb-lg-4 headerCatalogContentHeadMobile px-3 px-lg-0 py-3 py-lg-0">
+                  <button class="headerCatalogContentPrev" type="button">
+                    <img src="img/icons/prev-arrow.svg" alt="icon">
+                  </button>
+                  <h4 class="fw-bold fw-lg-medium">Гостиная</h4>
+                </div>
+
+                <ul>
+
+                  <li>
+                    <a href="#">Комоды</a>
+                  </li>
+                  <li>
+                    <a href="#">Шкафы</a>
+                  </li>
+                  <li>
+                    <a href="#">Шкафы-купе</a>
+                  </li>
+                  <li>
+                    <a href="#">Туалетные столики</a>
+                  </li>
+                  <li>
+                    <a href="#">Зеркала</a>
+                  </li>
+                  <li>
+                    <a href="#">Банкетки / пуфы</a>
+                  </li>
+                  <li>
+                    <a href="#">Матрасы </a>
+                  </li>
+                </ul>
+                <a class="fw-medium mt-4 mt-lg-5 d-block color-orange ml-lg-52" href="#">Все товары раздела</a>
+              </nav>
+              <img class="headerCatalogMenuImage" src="img/admin/catalog/image-5.jpg" alt="image">
+            </div>
+          </div>
+        </div>
+        <div class="headerCatalogContent" data-menu="room_3">
+          <div class="container">
+            <div class="d-flex gap-30">
+              <nav class="headerCatalogContentNav">
+                <div class="d-flex gap-3 mb-0 mb-lg-4 headerCatalogContentHeadMobile px-3 px-lg-0 py-3 py-lg-0">
+                  <button class="headerCatalogContentPrev" type="button">
+                    <img src="img/icons/prev-arrow.svg" alt="icon">
+                  </button>
+                  <h4 class="fw-bold fw-lg-medium">Детская</h4>
+                </div>
+
+                <ul>
+                  <li>
+                    <a href="#">Коллекции для спальни </a>
+                  </li>
+                  <li>
+                    <a href="#">Мебель-трансформер (шкаф + диван + кровать)</a>
+                  </li>
+                  <li>
+                    <a href="#">Двуспальные кровати</a>
+                  </li>
+                  <li>
+                    <a href="#">Односпальные кровати</a>
+                  </li>
+                  <li>
+                    <a href="#">Прикроватные тумбы </a>
+                  </li>
+                  <li>
+                    <a href="#">Комоды</a>
+                  </li>
+                  <li>
+                    <a href="#">Шкафы</a>
+                  </li>
+                  <li>
+                    <a href="#">Шкафы-купе</a>
+                  </li>
+                  <li>
+                    <a href="#">Туалетные столики</a>
+                  </li>
+                  <li>
+                    <a href="#">Зеркала</a>
+                  </li>
+                  <li>
+                    <a href="#">Банкетки / пуфы</a>
+                  </li>
+                  <li>
+                    <a href="#">Матрасы </a>
+                  </li>
+                </ul>
+                <a class="fw-medium mt-4 mt-lg-5 d-block color-orange ml-lg-52" href="#">Все товары раздела</a>
+              </nav>
+              <img class="headerCatalogMenuImage" src="img/admin/catalog/image-6.jpg" alt="image">
+            </div>
+          </div>
+        </div>
+        <div class="headerCatalogContent" data-menu="room_4">
+          <div class="container">
+            <div class="d-flex gap-30">
+              <nav class="headerCatalogContentNav">
+                <div class="d-flex gap-3 mb-0 mb-lg-4 headerCatalogContentHeadMobile px-3 px-lg-0 py-3 py-lg-0">
+                  <button class="headerCatalogContentPrev" type="button">
+                    <img src="img/icons/prev-arrow.svg" alt="icon">
+                  </button>
+                  <h4 class="fw-bold fw-lg-medium">Кухня</h4>
+                </div>
+                <ul>
+                  <li>
+                    <a href="#">Коллекции для спальни </a>
+                  </li>
+                  <li>
+                    <a href="#">Мебель-трансформер (шкаф + диван + кровать)</a>
+                  </li>
+                  <li>
+                    <a href="#">Двуспальные кровати</a>
+                  </li>
+
+                  <li>
+                    <a href="#">Комоды</a>
+                  </li>
+                  <li>
+                    <a href="#">Шкафы</a>
+                  </li>
+                  <li>
+                    <a href="#">Шкафы-купе</a>
+                  </li>
+                  <li>
+                    <a href="#">Туалетные столики</a>
+                  </li>
+                  <li>
+                    <a href="#">Зеркала</a>
+                  </li>
+                  <li>
+                    <a href="#">Банкетки / пуфы</a>
+                  </li>
+                  <li>
+                    <a href="#">Матрасы </a>
+                  </li>
+                </ul>
+                <a class="fw-medium mt-4 mt-lg-5 d-block color-orange ml-lg-52" href="#">Все товары раздела</a>
+              </nav>
+              <img class="headerCatalogMenuImage" src="img/admin/catalog/image-6.jpg" alt="image">
+            </div>
+          </div>
+        </div>
+        <div class="headerCatalogContent" data-menu="room_5">
+          <div class="container">
+            <div class="d-flex gap-30">
+              <nav class="headerCatalogContentNav">
+                <div class="d-flex gap-3 mb-0 mb-lg-4 headerCatalogContentHeadMobile px-3 px-lg-0 py-3 py-lg-0">
+                  <button class="headerCatalogContentPrev" type="button">
+                    <img src="img/icons/prev-arrow.svg" alt="icon">
+                  </button>
+                  <h4 class="fw-bold fw-lg-medium">Прихожая</h4>
+                </div>
+                <ul>
+                  <li>
+                    <a href="#">Коллекции для спальни </a>
+                  </li>
+                  <li>
+                    <a href="#">Мебель-трансформер (шкаф + диван + кровать)</a>
+                  </li>
+                  <li>
+                    <a href="#">Двуспальные кровати</a>
+                  </li>
+                  <li>
+                    <a href="#">Односпальные кровати</a>
+                  </li>
+                  <li>
+                    <a href="#">Прикроватные тумбы </a>
+                  </li>
+                  <li>
+                    <a href="#">Комоды</a>
+                  </li>
+                  <li>
+                    <a href="#">Шкафы</a>
+                  </li>
+                  <li>
+                    <a href="#">Шкафы-купе</a>
+                  </li>
+                  <li>
+                    <a href="#">Туалетные столики</a>
+                  </li>
+                  <li>
+                    <a href="#">Зеркала</a>
+                  </li>
+                  <li>
+                    <a href="#">Банкетки / пуфы</a>
+                  </li>
+                  <li>
+                    <a href="#">Матрасы </a>
+                  </li>
+                </ul>
+                <a class="fw-medium mt-4 mt-lg-5 d-block color-orange ml-lg-52" href="#">Все товары раздела</a>
+              </nav>
+              <img class="headerCatalogMenuImage" src="img/admin/catalog/image-5.jpg" alt="image">
+            </div>
+          </div>
+        </div>
+        <div class="headerCatalogContent" data-menu="room_6">
+          <div class="container">
+            <div class="d-flex gap-30">
+              <nav class="headerCatalogContentNav">
+                <div class="d-flex gap-3 mb-0 mb-lg-4 headerCatalogContentHeadMobile px-3 px-lg-0 py-3 py-lg-0">
+                  <button class="headerCatalogContentPrev" type="button">
+                    <img src="img/icons/prev-arrow.svg" alt="icon">
+                  </button>
+                  <h4 class="fw-bold fw-lg-medium">Дом офис</h4>
+                </div>
+
+                <ul>
+                  <li>
+                    <a href="#">Коллекции для спальни </a>
+                  </li>
+                  <li>
+                    <a href="#">Мебель-трансформер (шкаф + диван + кровать)</a>
+                  </li>
+
+                  <li>
+                    <a href="#">Шкафы-купе</a>
+                  </li>
+                  <li>
+                    <a href="#">Туалетные столики</a>
+                  </li>
+                  <li>
+                    <a href="#">Зеркала</a>
+                  </li>
+                  <li>
+                    <a href="#">Банкетки / пуфы</a>
+                  </li>
+                  <li>
+                    <a href="#">Матрасы </a>
+                  </li>
+                </ul>
+                <a class="fw-medium mt-4 mt-lg-5 d-block color-orange ml-lg-52" href="#">Все товары раздела</a>
+              </nav>
+              <img class="headerCatalogMenuImage" src="img/admin/catalog/image-6.jpg" alt="image">
+            </div>
+          </div>
+
+        </div>
+        <div class="headerCatalogContent" data-menu="cat_1">
+          <div class="container">
+            <div class="d-flex gap-30">
+              <nav class="headerCatalogContentNav">
+                <div class="d-flex gap-3 mb-0 mb-lg-4 headerCatalogContentHeadMobile px-3 px-lg-0 py-3 py-lg-0">
+                  <button class="headerCatalogContentPrev" type="button">
+                    <img src="img/icons/prev-arrow.svg" alt="icon">
+                  </button>
+                  <h4 class="fw-bold fw-lg-medium">Диваны и кресла</h4>
+                </div>
+                <ul>
+                  <li>
+                    <a href="#">Коллекции для спальни </a>
+                  </li>
+                  <li>
+                    <a href="#">Мебель-трансформер (шкаф + диван + кровать)</a>
+                  </li>
+                  <li>
+                    <a href="#">Двуспальные кровати</a>
+                  </li>
+                  <li>
+                    <a href="#">Односпальные кровати</a>
+                  </li>
+                  <li>
+                    <a href="#">Прикроватные тумбы </a>
+                  </li>
+                  <li>
+                    <a href="#">Комоды</a>
+                  </li>
+                  <li>
+                    <a href="#">Шкафы</a>
+                  </li>
+                  <li>
+                    <a href="#">Шкафы-купе</a>
+                  </li>
+                  <li>
+                    <a href="#">Туалетные столики</a>
+                  </li>
+                  <li>
+                    <a href="#">Зеркала</a>
+                  </li>
+                  <li>
+                    <a href="#">Банкетки / пуфы</a>
+                  </li>
+                  <li>
+                    <a href="#">Матрасы </a>
+                  </li>
+                </ul>
+                <a class="fw-medium mt-4 mt-lg-5 d-block color-orange ml-lg-52" href="#">Все товары раздела</a>
+              </nav>
+              <img class="headerCatalogMenuImage" src="img/admin/catalog/image-6.jpg" alt="image">
+            </div>
+          </div>
+        </div>
+        <div class="headerCatalogContent" data-menu="cat_2">
+          <div class="container">
+            <div class="d-flex gap-30">
+              <nav class="headerCatalogContentNav">
+                <div class="d-flex gap-3 mb-0 mb-lg-4 headerCatalogContentHeadMobile px-3 px-lg-0 py-3 py-lg-0">
+                  <button class="headerCatalogContentPrev" type="button">
+                    <img src="img/icons/prev-arrow.svg" alt="icon">
+                  </button>
+                  <h4 class="fw-bold fw-lg-medium">Кровати и матрасы </h4>
+                </div>
+                <ul>
+
+                  <li>
+                    <a href="#">Прикроватные тумбы </a>
+                  </li>
+                  <li>
+                    <a href="#">Комоды</a>
+                  </li>
+                  <li>
+                    <a href="#">Шкафы</a>
+                  </li>
+                  <li>
+                    <a href="#">Шкафы-купе</a>
+                  </li>
+                  <li>
+                    <a href="#">Туалетные столики</a>
+                  </li>
+                  <li>
+                    <a href="#">Зеркала</a>
+                  </li>
+                  <li>
+                    <a href="#">Банкетки / пуфы</a>
+                  </li>
+                  <li>
+                    <a href="#">Матрасы </a>
+                  </li>
+                </ul>
+                <a class="fw-medium mt-4 mt-lg-5 d-block color-orange ml-lg-52" href="#">Все товары раздела</a>
+              </nav>
+              <img class="headerCatalogMenuImage" src="img/admin/catalog/image-5.jpg" alt="image">
+            </div>
+          </div>
+        </div>
+        <div class="headerCatalogContent" data-menu="cat_3">
+          <div class="container">
+            <div class="d-flex gap-30">
+              <nav class="headerCatalogContentNav">
+                <div class="d-flex gap-3 mb-0 mb-lg-4 headerCatalogContentHeadMobile px-3 px-lg-0 py-3 py-lg-0">
+                  <button class="headerCatalogContentPrev" type="button">
+                    <img src="img/icons/prev-arrow.svg" alt="icon">
+                  </button>
+                  <h4 class="fw-bold fw-lg-medium">Шкафы и системы хранения</h4>
+                </div>
+                <ul>
+                  <li>
+                    <a href="#">Коллекции для спальни </a>
+                  </li>
+                  <li>
+                    <a href="#">Мебель-трансформер (шкаф + диван + кровать)</a>
+                  </li>
+                  <li>
+                    <a href="#">Двуспальные кровати</a>
+                  </li>
+                  <li>
+                    <a href="#">Односпальные кровати</a>
+                  </li>
+                  <li>
+                    <a href="#">Прикроватные тумбы </a>
+                  </li>
+                  <li>
+                    <a href="#">Комоды</a>
+                  </li>
+                  <li>
+                    <a href="#">Шкафы</a>
+                  </li>
+                  <li>
+                    <a href="#">Шкафы-купе</a>
+                  </li>
+                  <li>
+                    <a href="#">Туалетные столики</a>
+                  </li>
+                  <li>
+                    <a href="#">Зеркала</a>
+                  </li>
+                  <li>
+                    <a href="#">Банкетки / пуфы</a>
+                  </li>
+                  <li>
+                    <a href="#">Матрасы </a>
+                  </li>
+                </ul>
+                <a class="fw-medium mt-4 mt-lg-5 d-block color-orange ml-lg-52" href="#">Все товары раздела</a>
+              </nav>
+              <img class="headerCatalogMenuImage" src="img/admin/catalog/image-6.jpg" alt="image">
+            </div>
+          </div>
+
+        </div>
+        <div class="headerCatalogContent" data-menu="cat_4">
+          <div class="container">
+            <div class="d-flex gap-30">
+              <nav class="headerCatalogContentNav">
+                <div class="d-flex gap-3 mb-0 mb-lg-4 headerCatalogContentHeadMobile px-3 px-lg-0 py-3 py-lg-0">
+                  <button class="headerCatalogContentPrev" type="button">
+                    <img src="img/icons/prev-arrow.svg" alt="icon">
+                  </button>
+                  <h4 class="fw-bold fw-lg-medium">Комоды и тумбы</h4>
+                </div>
+                <ul>
+                  <li>
+                    <a href="#">Коллекции для спальни </a>
+                  </li>
+                  <li>
+                    <a href="#">Мебель-трансформер (шкаф + диван + кровать)</a>
+                  </li>
+                  <li>
+                    <a href="#">Двуспальные кровати</a>
+                  </li>
+                  <li>
+                    <a href="#">Односпальные кровати</a>
+                  </li>
+                  <li>
+                    <a href="#">Прикроватные тумбы </a>
+                  </li>
+                  <li>
+                    <a href="#">Комоды</a>
+                  </li>
+                  <li>
+                    <a href="#">Шкафы</a>
+                  </li>
+                  <li>
+                    <a href="#">Шкафы-купе</a>
+                  </li>
+                  <li>
+                    <a href="#">Туалетные столики</a>
+                  </li>
+                  <li>
+                    <a href="#">Зеркала</a>
+                  </li>
+                  <li>
+                    <a href="#">Банкетки / пуфы</a>
+                  </li>
+                  <li>
+                    <a href="#">Матрасы </a>
+                  </li>
+                </ul>
+                <a class="fw-medium mt-4 mt-lg-5 d-block color-orange ml-lg-52" href="#">Все товары раздела</a>
+              </nav>
+              <img class="headerCatalogMenuImage" src="img/admin/catalog/image-6.jpg" alt="image">
+            </div>
+          </div>
+        </div>
+        <div class="headerCatalogContent" data-menu="cat_5">
+          <div class="container">
+            <div class="d-flex gap-30">
+              <nav class="headerCatalogContentNav">
+                <div class="d-flex gap-3 mb-0 mb-lg-4 headerCatalogContentHeadMobile px-3 px-lg-0 py-3 py-lg-0">
+                  <button class="headerCatalogContentPrev" type="button">
+                    <img src="img/icons/prev-arrow.svg" alt="icon">
+                  </button>
+                  <h4 class="fw-bold fw-lg-medium">Столы</h4>
+                </div>
+
+                <ul>
+
+                  <li>
+                    <a href="#">Двуспальные кровати</a>
+                  </li>
+                  <li>
+                    <a href="#">Односпальные кровати</a>
+                  </li>
+                  <li>
+                    <a href="#">Прикроватные тумбы </a>
+                  </li>
+                  <li>
+                    <a href="#">Комоды</a>
+                  </li>
+                  <li>
+                    <a href="#">Шкафы</a>
+                  </li>
+                  <li>
+                    <a href="#">Шкафы-купе</a>
+                  </li>
+                  <li>
+                    <a href="#">Туалетные столики</a>
+                  </li>
+                  <li>
+                    <a href="#">Зеркала</a>
+                  </li>
+                  <li>
+                    <a href="#">Банкетки / пуфы</a>
+                  </li>
+                  <li>
+                    <a href="#">Матрасы </a>
+                  </li>
+                </ul>
+                <a class="fw-medium mt-4 mt-lg-5 d-block color-orange ml-lg-52" href="#">Все товары раздела</a>
+              </nav>
+              <img class="headerCatalogMenuImage" src="img/admin/catalog/image-5.jpg" alt="image">
+            </div>
+          </div>
+        </div>
+        <div class="headerCatalogContent" data-menu="cat_6">
+          <div class="container">
+            <div class="d-flex gap-30">
+              <nav class="headerCatalogContentNav">
+                <div class="d-flex gap-3 mb-0 mb-lg-4 headerCatalogContentHeadMobile px-3 px-lg-0 py-3 py-lg-0">
+                  <button class="headerCatalogContentPrev" type="button">
+                    <img src="img/icons/prev-arrow.svg" alt="icon">
+                  </button>
+                  <h4 class="fw-bold fw-lg-medium">Стулья и табуреты</h4>
+                </div>
+
+                <ul>
+                  <li>
+                    <a href="#">Коллекции для спальни </a>
+                  </li>
+                  <li>
+                    <a href="#">Мебель-трансформер (шкаф + диван + кровать)</a>
+                  </li>
+                  <li>
+                    <a href="#">Двуспальные кровати</a>
+                  </li>
+                  <li>
+                    <a href="#">Односпальные кровати</a>
+                  </li>
+                  <li>
+                    <a href="#">Прикроватные тумбы </a>
+                  </li>
+                  <li>
+                    <a href="#">Комоды</a>
+                  </li>
+                  <li>
+                    <a href="#">Шкафы</a>
+                  </li>
+                  <li>
+                    <a href="#">Шкафы-купе</a>
+                  </li>
+                  <li>
+                    <a href="#">Туалетные столики</a>
+                  </li>
+                  <li>
+                    <a href="#">Зеркала</a>
+                  </li>
+                  <li>
+                    <a href="#">Банкетки / пуфы</a>
+                  </li>
+                  <li>
+                    <a href="#">Матрасы </a>
+                  </li>
+                </ul>
+                <a class="fw-medium mt-4 mt-lg-5 d-block color-orange ml-lg-52" href="#">Все товары раздела</a>
+              </nav>
+              <img class="headerCatalogMenuImage" src="img/admin/catalog/image-6.jpg" alt="image">
+            </div>
+          </div>
+        </div>
+        <div class="headerCatalogContent" data-menu="cat_7">
+          <div class="container">
+            <div class="d-flex gap-30">
+              <nav class="headerCatalogContentNav">
+                <div class="d-flex gap-3 mb-0 mb-lg-4 headerCatalogContentHeadMobile px-3 px-lg-0 py-3 py-lg-0">
+                  <button class="headerCatalogContentPrev" type="button">
+                    <img src="img/icons/prev-arrow.svg" alt="icon">
+                  </button>
+                  <h4 class="fw-bold fw-lg-medium">Стеллажи и полки</h4>
+                </div>
+                <ul>
+                  <li>
+                    <a href="#">Коллекции для спальни </a>
+                  </li>
+                  <li>
+                    <a href="#">Мебель-трансформер (шкаф + диван + кровать)</a>
+                  </li>
+                  <li>
+                    <a href="#">Двуспальные кровати</a>
+                  </li>
+                  <li>
+                    <a href="#">Односпальные кровати</a>
+                  </li>
+                  <li>
+                    <a href="#">Прикроватные тумбы </a>
+                  </li>
+                  <li>
+                    <a href="#">Комоды</a>
+                  </li>
+                  <li>
+                    <a href="#">Шкафы</a>
+                  </li>
+                  <li>
+                    <a href="#">Шкафы-купе</a>
+                  </li>
+                  <li>
+                    <a href="#">Туалетные столики</a>
+                  </li>
+                  <li>
+                    <a href="#">Зеркала</a>
+                  </li>
+                  <li>
+                    <a href="#">Банкетки / пуфы</a>
+                  </li>
+                  <li>
+                    <a href="#">Матрасы </a>
+                  </li>
+                </ul>
+                <a class="fw-medium mt-4 mt-lg-5 d-block color-orange ml-lg-52" href="#">Все товары раздела</a>
+              </nav>
+              <img class="headerCatalogMenuImage" src="img/admin/catalog/image-6.jpg" alt="image">
+            </div>
+          </div>
+        </div>
+        <div class="headerCatalogContent" data-menu="cat_8">
+          <div class="container">
+            <div class="d-flex gap-30">
+              <nav class="headerCatalogContentNav">
+                <div class="d-flex gap-3 mb-0 mb-lg-4 headerCatalogContentHeadMobile px-3 px-lg-0 py-3 py-lg-0">
+                  <button class="headerCatalogContentPrev" type="button">
+                    <img src="img/icons/prev-arrow.svg" alt="icon">
+                  </button>
+                  <h4 class="fw-bold fw-lg-medium">Детская мебель</h4>
+                </div>
+
+                <ul>
+                  <li>
+                    <a href="#">Коллекции для спальни </a>
+                  </li>
+                  <li>
+                    <a href="#">Мебель-трансформер (шкаф + диван + кровать)</a>
+                  </li>
+                  <li>
+                    <a href="#">Двуспальные кровати</a>
+                  </li>
+                  <li>
+                    <a href="#">Односпальные кровати</a>
+                  </li>
+                  <li>
+                    <a href="#">Прикроватные тумбы </a>
+                  </li>
+                  <li>
+                    <a href="#">Шкафы-купе</a>
+                  </li>
+                  <li>
+                    <a href="#">Туалетные столики</a>
+                  </li>
+                  <li>
+                    <a href="#">Зеркала</a>
+                  </li>
+                  <li>
+                    <a href="#">Банкетки / пуфы</a>
+                  </li>
+                  <li>
+                    <a href="#">Матрасы </a>
+                  </li>
+                </ul>
+                <a class="fw-medium mt-4 mt-lg-5 d-block color-orange ml-lg-52" href="#">Все товары раздела</a>
+              </nav>
+              <img class="headerCatalogMenuImage" src="img/admin/catalog/image-5.jpg" alt="image">
+            </div>
+          </div>
+        </div>
+        <div class="headerCatalogContent" data-menu="cat_9">
+          <div class="container">
+            <div class="d-flex gap-30">
+              <nav class="headerCatalogContentNav">
+                <div class="d-flex gap-3 mb-0 mb-lg-4 headerCatalogContentHeadMobile px-3 px-lg-0 py-3 py-lg-0">
+                  <button class="headerCatalogContentPrev" type="button">
+                    <img src="img/icons/prev-arrow.svg" alt="icon">
+                  </button>
+                  <h4 class="fw-bold fw-lg-medium">Мебель для офиса и кабинета</h4>
+                </div>
+                <ul>
+                  <li>
+                    <a href="#">Коллекции для спальни </a>
+                  </li>
+                  <li>
+                    <a href="#">Мебель-трансформер (шкаф + диван + кровать)</a>
+                  </li>
+                  <li>
+                    <a href="#">Двуспальные кровати</a>
+                  </li>
+                  <li>
+                    <a href="#">Односпальные кровати</a>
+                  </li>
+                  <li>
+                    <a href="#">Прикроватные тумбы </a>
+                  </li>
+                  <li>
+                    <a href="#">Комоды</a>
+                  </li>
+                  <li>
+                    <a href="#">Шкафы</a>
+                  </li>
+                  <li>
+                    <a href="#">Шкафы-купе</a>
+                  </li>
+                  <li>
+                    <a href="#">Туалетные столики</a>
+                  </li>
+                  <li>
+                    <a href="#">Зеркала</a>
+                  </li>
+                  <li>
+                    <a href="#">Банкетки / пуфы</a>
+                  </li>
+                  <li>
+                    <a href="#">Матрасы </a>
+                  </li>
+                </ul>
+                <a class="fw-medium mt-4 mt-lg-5 d-block color-orange ml-lg-52" href="#">Все товары раздела</a>
+              </nav>
+              <img class="headerCatalogMenuImage" src="img/admin/catalog/image-6.jpg" alt="image">
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+  </div>
+</div>
+<div class="headerMobileSearchW">
+  <div class="headerMobileSearchTop border-b-gray py-2">
+    <div class="container">
+      <div class="d-flex align-items-center">
+        <button class="headerMobileSearchBack" type="button">
+          <img src="img/icons/prev-arrow.svg" alt="icon">
+        </button>
+        <div class="searchField position-relative w-100">
+          <input class="formInput formInput--search pl-3 pr-75" type="search" placeholder="Найти мебель">
+          <button class="search-clear" type="button"><img src="img/icons/search-clear.svg" alt="icon"></button>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="headerMobileSearchContent">
+    <div class="container">
+      <div class="d-flex gap-2 py-4 flex-wrap">
+        <a class="button h-28 h-lg-28 bg py-1 px-2 fz-14 fw-medium" href="#">Диваны</a>
+        <a class="button h-28 h-lg-28 bg py-1 px-2 fz-14 fw-medium" href="#">Мебель-трансформер 3в1</a>
+        <a class="button h-28 h-lg-28 bg py-1 px-2 fz-14 fw-medium" href="#">Кровати</a>
+        <a class="button h-28 h-lg-28 bg py-1 px-2 fz-14 fw-medium" href="#">Матрасы</a>
+        <a class="button h-28 h-lg-28 bg py-1 px-2 fz-14 fw-medium" href="#">Шкафы</a>
+        <a class="button h-28 h-lg-28 bg py-1 px-2 fz-14 fw-medium" href="#">Кухни</a>
+        <a class="button h-28 h-lg-28 bg py-1 px-2 fz-14 fw-medium" href="#">Столы и стулья</a>
+      </div>
+    </div>
+  </div>
+</div>
+		<main class="main">
+			<section class="intro introMain sect pt-0 sliderW">
+  <div class="container">
+    <div class="row">
+      <div class="col-xl-9 mb-4 mb-xl-0">
+        <div class="swiper introMainSlider">
+          <div class="swiper-wrapper">
+
+            <a href="#" class="swiper-slide introMainSlide"
+              style="background-image: url('img/admin/intro/image-1.jpg');">
+              <div class="introMainSlideTitle">Заголовок рекламы</div>
+              <div class="introMainSlideDescr mt-3">
+                Подзаголовок рекламы
+              </div>
+            </a>
+
+            <a href="#" class="swiper-slide introMainSlide"
+              style="background-image: url('img/admin/intro/image-1.jpg');">
+              <div class="introMainSlideTitle">Продажа лучшего углового дивана</div>
+              <div class="introMainSlideDescr mt-3">
+                Описание о продаже лучшего углового дивана
+              </div>
+            </a>
+
+            <a href="#" class="swiper-slide introMainSlide"
+              style="background-image: url('img/admin/intro/image-1.jpg');">
+              <div class="introMainSlideTitle">Заголовок рекламы</div>
+              <div class="introMainSlideDescr mt-3">
+                Подзаголовок рекламы
+              </div>
+            </a>
+
+            <a href="#" class="swiper-slide introMainSlide"
+              style="background-image: url('img/admin/intro/image-1.jpg');">
+              <div class="introMainSlideTitle">Продажа лучшего углового дивана</div>
+              <div class="introMainSlideDescr mt-3">
+                Описание о продаже лучшего углового дивана
+              </div>
+            </a>
+
+          </div>
+          <div class="swiper-pagination"></div>
+        </div>
+      </div>
+      <div class="col-xl-3">
+        <div class="border-light-dark border-sm-none bg bg-sm-white p-sm-0px p-20-40 p-xxl-20 radius-20 radius-sm-0 ">
+          <div class="d-flex justify-content-between align-items-center gap-2 mb-20">
+            <h3 class="h3-lg-h4 fw-lg-bold">Хиты продаж!</h3>
+            <div class="d-none d-lg-flex gap-2">
+              <button class="navArrow navArrow--sm navArrowPrev">
+                <svg>
+                  <use xlink:href="img/icons/icons.svg#nav-arrow-prev"></use>
+                </svg>
+              </button>
+              <button class="navArrow navArrow--sm navArrowNext">
+                <svg>
+                  <use xlink:href="img/icons/icons.svg#nav-arrow-next"></use>
+                </svg>
+              </button>
+            </div>
+          </div>
+          <div class="swiper introCatalogSlider">
+
+            <div class="swiper-wrapper">
+
+              <div class="swiper-slide introCatalogSlide">
+                <div class="catalogCard">
+
+  <a href="#" class="swiper d-flex catalogCardSlider mb-10">
+    <div class="swiper-wrapper">
+      <div class="swiper-slide catalogCardImg catalogCardImg--cover d-flex">
+        <img src="img/admin/catalog/image-1.jpg" alt="image">
+      </div>
+      <div class="swiper-slide catalogCardImg d-flex">
+        <img src="img/admin/catalog/image-2.png" alt="image">
+      </div>
+      <div class="swiper-slide catalogCardImg catalogCardImg--cover d-flex">
+        <img src="img/admin/catalog/image-3.png" alt="image">
+      </div>
+      <div class="swiper-slide catalogCardImg d-flex">
+        <img src="img/admin/catalog/image-2.png" alt="image">
+      </div>
+      <div class="swiper-slide catalogCardImg catalogCardImg--cover d-flex">
+        <img src="img/admin/catalog/image-1.jpg" alt="image">
+      </div>
+    </div>
+    <div class="swiper-pagination"></div>
+    <div class="tag-list">
+      <ul class="d-flex gap-1 flex-wrap">
+        <li class="bg-orange color-white px-2 py-1 rounded-1 fw-medium fz-12">
+          Хит продаж!
+        </li>
+      </ul>
+    </div>
+  </a>
+
+  <div class="catalogCardPrice mb-1 d-flex gap-10 gap-lg-5px align-items-center flex-wrap">
+    <div class="p-1 bg-orange rounded-1 fz-12 fw-medium color-white">
+      -35%
+    </div>
+    <div class="h5">
+      85 000 ₽
+    </div>
+    <div class="color-grey line-through">
+      125 000 ₽
+    </div>
+    <div class="available fz-10 d-flex gap-1 align-items-center d-lg-none ml-auto">В наличии</div>
+  </div>
+  <a href="#" class="catalogCardTitle mb-1 fw-medium">
+    Угловой диван «Петербург» (категория 2)
+  </a>
+  <div class="catalogCardDescr mb-10 color-grey fz-14 fz-lg-10">
+    Стильный диван подойдет для любого интерьера. Простой механизм обеспечивает удобство в
+    использовании.
+  </div>
+  <div class="d-flex align-items-center gap-1">
+    <img src="img/admin/logo/brand-1.svg" alt="logo" class="catalogCardBrand">
+    <span class="fz-12 fz-lg-10">«Прогресс»</span>
+  </div>
+  <div class="available mt-10 fz-14 d-none d-lg-flex gap-1 align-items-center">В наличии</div>
+
+</div>
+              </div>
+
+              <div class="swiper-slide introCatalogSlide">
+                <div class="catalogCard">
+
+  <a href="#" class="swiper d-flex catalogCardSlider mb-10">
+    <div class="swiper-wrapper">
+      <div class="swiper-slide catalogCardImg d-flex">
+        <img src="img/admin/catalog/image-2.png" alt="image">
+      </div>
+      <div class="swiper-slide catalogCardImg catalogCardImg--cover d-flex">
+        <img src="img/admin/catalog/image-1.jpg" alt="image">
+      </div>
+      <div class="swiper-slide catalogCardImg catalogCardImg--cover d-flex">
+        <img src="img/admin/catalog/image-3.png" alt="image">
+      </div>
+      <div class="swiper-slide catalogCardImg d-flex">
+        <img src="img/admin/catalog/image-2.png" alt="image">
+      </div>
+      <div class="swiper-slide catalogCardImg catalogCardImg--cover d-flex">
+        <img src="img/admin/catalog/image-1.jpg" alt="image">
+      </div>
+    </div>
+    <div class="swiper-pagination"></div>
+    <div class="tag-list">
+      <ul class="d-flex gap-1 flex-wrap">
+        <li class="bg-green color-white px-2 py-1 rounded-1 fw-medium fz-12">
+          Новинка
+        </li>
+      </ul>
+    </div>
+  </a>
+
+  <div class="catalogCardPrice mb-1 d-flex flex-wrap gap-10 gap-lg-5px align-items-center">
+    <div class="h5">
+      127 300 ₽
+    </div>
+     <div class="available fz-10 d-flex gap-1 align-items-center d-lg-none ml-auto">В наличии</div>
+  </div>
+  <a href="#" class="catalogCardTitle mb-1 fw-medium">
+    Прямой диван «Петербург» Прямой диван «Петербург» (категория 5)
+  </a>
+  <div class="catalogCardDescr mb-10 color-grey fz-14 fz-lg-10">
+    Стильный диван подойдет для любого интерьера. Простой механизм обеспечивает удобство в
+    использовании.
+  </div>
+  <div class="d-flex align-items-center gap-1">
+    <img src="img/admin/logo/brand-2.svg" alt="logo" class="catalogCardBrand">
+    <span class="fz-12 fz-lg-10">«Прогресс»</span>
+  </div>
+  <div class="available mt-10 fz-14 d-none d-lg-flex gap-1 align-items-center">В наличии</div>
+</div>
+              </div>
+
+              <div class="swiper-slide introCatalogSlide">
+                <div class="catalogCard">
+
+  <a href="#" class="swiper d-flex catalogCardSlider mb-10">
+    <div class="swiper-wrapper">
+      <div class="swiper-slide catalogCardImg d-flex catalogCardImg--cover">
+        <img src="img/admin/catalog/image-3.png" alt="image">
+      </div>
+      <div class="swiper-slide catalogCardImg catalogCardImg--cover d-flex">
+        <img src="img/admin/catalog/image-1.jpg" alt="image">
+      </div>
+
+    </div>
+    <div class="swiper-pagination"></div>
+    <div class="tag-list">
+      <ul class="d-flex gap-1 flex-wrap">
+        <li class="bg-black color-white px-2 py-1 rounded-1 fw-medium fz-12">
+          Акция!
+        </li>
+      </ul>
+    </div>
+  </a>
+
+  <div class="catalogCardPrice mb-1 d-flex flex-wrap gap-10 gap-lg-5px align-items-center">
+    <div class="h5">
+      52 300 ₽
+    </div>
+  </div>
+  <a href="#" class="catalogCardTitle mb-1 fw-medium">
+    Тумба под ТВ из модульной серии «Хлоя» дуб канзас / лофт голден пэлас 0988.5 (КМК)
+  </a>
+  <div class="catalogCardDescr mb-10 color-grey fz-14 fz-lg-10">
+    Стильная тумба под ТВ из модульной серии «Хлоя» в цвете дуб канзас / лофт голден пэлас. Высокие металлические опоры,
+    современная фурнитура и приятные фасады из МДФ. Смотрите также шкафы из данной серии в рекомендациях.
+  </div>
+  <div class="d-flex align-items-center gap-1">
+    <img src="img/admin/logo/brand-3.svg" alt="logo" class="catalogCardBrand">
+    <span class="fz-12 fz-lg-10">«Прогресс»</span>
+  </div>
+
+</div>
+              </div>
+
+            </div>
+
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </div>
+</section>
+			<section class="categories sect pt-0 sliderW">
+  <div class="container">
+
+    <div class="sectHead mb-30 mb-lg-24 d-flex justify-content-between align-items-center gap-4">
+      <h2 class="h2">
+        Категории товаров
+      </h2>
+      <div class="d-none d-lg-flex gap-2">
+        <button class="navArrow navArrowPrev">
+          <svg>
+            <use xlink:href="img/icons/icons.svg#nav-arrow-prev"></use>
+          </svg>
+        </button>
+        <button class="navArrow navArrowNext">
+          <svg>
+            <use xlink:href="img/icons/icons.svg#nav-arrow-next"></use>
+          </svg>
+        </button>
+      </div>
+    </div>
+
+    <div class="swiper catSlider">
+      <div class="swiper-wrapper">
+
+        <div class="swiper-slide catSlide">
+          <div class="d-grid gap-20 gap-lg-8 grid-cols-2 mb-20 mb-lg-8">
+            <div class="col">
+              <a href="#" class="mainCatCard">
+                <div class="mainCatCardTitle h4 fw-bold">Спальня</div>
+                <img class="mainCatCardImg" src="img/admin/cat/image-1.png" alt="image">
+              </a>
+            </div>
+            <div class="col">
+              <a href="#" class="mainCatCard">
+                <div class="mainCatCardTitle h4 fw-bold">Гостиная</div>
+                <img class="mainCatCardImg" src="img/admin/cat/image-2.png" alt="image">
+              </a>
+            </div>
+          </div>
+          <div class="d-grid gap-20 gap-lg-8 grid-cols-3">
+            <div class="col">
+              <a href="#" class="mainCatCard">
+                <div class="mainCatCardTitle h6 fw-medium">Диваны и кресла</div>
+                <img class="mainCatCardImg" src="img/admin/cat/image-5.png" alt="image">
+              </a>
+            </div>
+            <div class="col">
+              <a href="#" class="mainCatCard">
+                <div class="mainCatCardTitle h6 fw-medium">Кровати и матрасы </div>
+                <img class="mainCatCardImg" src="img/admin/cat/image-6.png" alt="image">
+              </a>
+            </div>
+            <div class="col">
+              <a href="#" class="mainCatCard">
+                <div class="mainCatCardTitle h6 fw-medium">Столы</div>
+                <img class="mainCatCardImg" src="img/admin/cat/image-7.png" alt="image">
+              </a>
+            </div>
+          </div>
+        </div>
+
+        <div class="swiper-slide catSlide">
+          <div class="d-grid gap-20 gap-lg-8 grid-cols-2 mb-20 mb-lg-8">
+            <div class="col">
+              <a href="#" class="mainCatCard">
+                <div class="mainCatCardTitle h4 fw-bold">Кухня</div>
+                <img class="mainCatCardImg" src="img/admin/cat/image-3.png" alt="image">
+              </a>
+            </div>
+            <div class="col">
+              <a href="#" class="mainCatCard">
+                <div class="mainCatCardTitle h4 fw-bold">Прихожая</div>
+                <img class="mainCatCardImg" src="img/admin/cat/image-2.png" alt="image">
+              </a>
+            </div>
+          </div>
+          <div class="d-grid gap-20 gap-lg-8 grid-cols-3">
+            <div class="col">
+              <a href="#" class="mainCatCard">
+                <div class="mainCatCardTitle h6 fw-medium">Стулья и табуреты</div>
+                <img class="mainCatCardImg" src="img/admin/cat/image-8.png" alt="image">
+              </a>
+            </div>
+            <div class="col">
+              <a href="#" class="mainCatCard">
+                <div class="mainCatCardTitle h6 fw-medium">Комоды и тумбы</div>
+                <img class="mainCatCardImg" src="img/admin/cat/image-9.png" alt="image">
+              </a>
+            </div>
+            <div class="col">
+              <a href="#" class="mainCatCard">
+                <div class="mainCatCardTitle h6 fw-medium">Стеллажи и полки</div>
+                <img class="mainCatCardImg" src="img/admin/cat/image-10.png" alt="image">
+              </a>
+            </div>
+          </div>
+        </div>
+
+        <div class="swiper-slide catSlide">
+          <div class="d-grid gap-20 gap-lg-8 grid-cols-2 mb-20 mb-lg-8">
+            <div class="col">
+              <a href="#" class="mainCatCard">
+                <div class="mainCatCardTitle h4 fw-bold">Спальня</div>
+                <img class="mainCatCardImg" src="img/admin/cat/image-1.png" alt="image">
+              </a>
+            </div>
+            <div class="col">
+              <a href="#" class="mainCatCard">
+                <div class="mainCatCardTitle h4 fw-bold">Гостиная</div>
+                <img class="mainCatCardImg" src="img/admin/cat/image-2.png" alt="image">
+              </a>
+            </div>
+          </div>
+          <div class="d-grid gap-20 gap-lg-8 grid-cols-3">
+            <div class="col">
+              <a href="#" class="mainCatCard">
+                <div class="mainCatCardTitle h6 fw-medium">Диваны и кресла</div>
+                <img class="mainCatCardImg" src="img/admin/cat/image-5.png" alt="image">
+              </a>
+            </div>
+            <div class="col">
+              <a href="#" class="mainCatCard">
+                <div class="mainCatCardTitle h6 fw-medium">Кровати и матрасы </div>
+                <img class="mainCatCardImg" src="img/admin/cat/image-6.png" alt="image">
+              </a>
+            </div>
+            <div class="col">
+              <a href="#" class="mainCatCard">
+                <div class="mainCatCardTitle h6 fw-medium">Столы</div>
+                <img class="mainCatCardImg" src="img/admin/cat/image-7.png" alt="image">
+              </a>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </div>
+
+  </div>
+</section>
+			<section class="podbor sect pt-0">
+  <div class="container">
+    <div class="podborW rounded-20 bg p-30 p-lg-24-30-30 border-light position-relative">
+      <div class="row align-items-center">
+        <div class="col-lg-6">
+          <div class="podborContent">
+            <h2 class="podborTitle mb-2 mb-lg-3">
+              Какой <div> <span>Д</span>иван</div> идеально впишется в ваш интерьер?
+            </h2>
+            <div class="d-flex gap-2 align-items-center fz-20 fz-lg-14 fw-medium color-grey">
+              Подберем подходящие варианты и покажем их в вашем интерьере
+              <button class="button button--orange w-28 h-28 flex-shrink-0" data-fancybox data-src="#modalQuiz">
+                <svg style="width: 20px; height: 20px;">
+                  <use xlink:href="img/icons/icons.svg#nav-arrow-next"></use>
+                </svg>
+              </button>
+            </div>
+          </div>
+
+        </div>
+        <div class="col-lg-6">
+          <div class="podborImagesW d-none d-lg-block">
+            <img src="img/podbor/bg.svg" alt="bg" class="podborBg">
+            <div class="podborImages">
+              <div class="image">
+                <img src="img/admin/podbor/image-1.jpg" alt="image">
+              </div>
+              <div class="image">
+                <img src="img/admin/podbor/image-2.jpg" alt="image">
+              </div>
+              <div class="image">
+                <img src="img/admin/intro/image-1.jpg" alt="image">
+              </div>
+              <div class="image">
+                <img src="img/admin/catalog/image-1.jpg" alt="image">
+              </div>
+            </div>
+          </div>
+          <div class="swiper podborSlider mt-4 d-block d-lg-none">
+            <div class="swiper-wrapper">
+
+              <div class="swiper-slide podborSlide" style="background-color: var(--orange);">
+                <img src="img/admin/podbor/image-1.jpg" alt="image">
+              </div>
+
+              <div class="swiper-slide podborSlide" style="background-color: var(--black);">
+                <img src="img/admin/podbor/image-2.jpg" alt="image">
+              </div>
+
+              <div class="swiper-slide podborSlide" style="background-color: var(--light-dark);">
+                <img src="img/admin/podbor/image-1.jpg" alt="image">
+              </div>
+
+            </div>
+          </div>
+           <img src="img/podbor/bg.svg" alt="bg" class="podborBg d-block d-lg-none">
+        </div>
+      </div>
+    </div>
+
+  </div>
+</section>
+			<section class="products sect pt-0 sliderW">
+  <div class="container">
+
+    <div class="sectHead mb-30 mb-lg-20 d-flex justify-content-between align-items-center gap-4">
+      <h2 class="h2">
+        Новые поступления
+      </h2>
+      <div class="d-none d-lg-flex gap-2">
+        <button class="navArrow navArrowPrev">
+          <svg>
+            <use xlink:href="img/icons/icons.svg#nav-arrow-prev"></use>
+          </svg>
+        </button>
+        <button class="navArrow navArrowNext">
+          <svg>
+            <use xlink:href="img/icons/icons.svg#nav-arrow-next"></use>
+          </svg>
+        </button>
+      </div>
+    </div>
+
+    <div class="swiper catalogSlider">
+      <div class="swiper-wrapper">
+
+        <div class="swiper-slide catalogSlide">
+          <div class="catalogCard">
+
+  <a href="#" class="swiper d-flex catalogCardSlider mb-10">
+    <div class="swiper-wrapper">
+      <div class="swiper-slide catalogCardImg catalogCardImg--cover d-flex">
+        <img src="img/admin/catalog/image-1.jpg" alt="image">
+      </div>
+      <div class="swiper-slide catalogCardImg d-flex">
+        <img src="img/admin/catalog/image-2.png" alt="image">
+      </div>
+      <div class="swiper-slide catalogCardImg catalogCardImg--cover d-flex">
+        <img src="img/admin/catalog/image-3.png" alt="image">
+      </div>
+      <div class="swiper-slide catalogCardImg d-flex">
+        <img src="img/admin/catalog/image-2.png" alt="image">
+      </div>
+      <div class="swiper-slide catalogCardImg catalogCardImg--cover d-flex">
+        <img src="img/admin/catalog/image-1.jpg" alt="image">
+      </div>
+    </div>
+    <div class="swiper-pagination"></div>
+    <div class="tag-list">
+      <ul class="d-flex gap-1 flex-wrap">
+        <li class="bg-orange color-white px-2 py-1 rounded-1 fw-medium fz-12">
+          Хит продаж!
+        </li>
+      </ul>
+    </div>
+  </a>
+
+  <div class="catalogCardPrice mb-1 d-flex gap-10 gap-lg-5px align-items-center flex-wrap">
+    <div class="p-1 bg-orange rounded-1 fz-12 fw-medium color-white">
+      -35%
+    </div>
+    <div class="h5">
+      85 000 ₽
+    </div>
+    <div class="color-grey line-through">
+      125 000 ₽
+    </div>
+    <div class="available fz-10 d-flex gap-1 align-items-center d-lg-none ml-auto">В наличии</div>
+  </div>
+  <a href="#" class="catalogCardTitle mb-1 fw-medium">
+    Угловой диван «Петербург» (категория 2)
+  </a>
+  <div class="catalogCardDescr mb-10 color-grey fz-14 fz-lg-10">
+    Стильный диван подойдет для любого интерьера. Простой механизм обеспечивает удобство в
+    использовании.
+  </div>
+  <div class="d-flex align-items-center gap-1">
+    <img src="img/admin/logo/brand-1.svg" alt="logo" class="catalogCardBrand">
+    <span class="fz-12 fz-lg-10">«Прогресс»</span>
+  </div>
+  <div class="available mt-10 fz-14 d-none d-lg-flex gap-1 align-items-center">В наличии</div>
+
+</div>
+        </div>
+
+        <div class="swiper-slide catalogSlide">
+          <div class="catalogCard">
+
+  <a href="#" class="swiper d-flex catalogCardSlider mb-10">
+    <div class="swiper-wrapper">
+      <div class="swiper-slide catalogCardImg d-flex">
+        <img src="img/admin/catalog/image-2.png" alt="image">
+      </div>
+      <div class="swiper-slide catalogCardImg catalogCardImg--cover d-flex">
+        <img src="img/admin/catalog/image-1.jpg" alt="image">
+      </div>
+      <div class="swiper-slide catalogCardImg catalogCardImg--cover d-flex">
+        <img src="img/admin/catalog/image-3.png" alt="image">
+      </div>
+      <div class="swiper-slide catalogCardImg d-flex">
+        <img src="img/admin/catalog/image-2.png" alt="image">
+      </div>
+      <div class="swiper-slide catalogCardImg catalogCardImg--cover d-flex">
+        <img src="img/admin/catalog/image-1.jpg" alt="image">
+      </div>
+    </div>
+    <div class="swiper-pagination"></div>
+    <div class="tag-list">
+      <ul class="d-flex gap-1 flex-wrap">
+        <li class="bg-green color-white px-2 py-1 rounded-1 fw-medium fz-12">
+          Новинка
+        </li>
+      </ul>
+    </div>
+  </a>
+
+  <div class="catalogCardPrice mb-1 d-flex flex-wrap gap-10 gap-lg-5px align-items-center">
+    <div class="h5">
+      127 300 ₽
+    </div>
+     <div class="available fz-10 d-flex gap-1 align-items-center d-lg-none ml-auto">В наличии</div>
+  </div>
+  <a href="#" class="catalogCardTitle mb-1 fw-medium">
+    Прямой диван «Петербург» Прямой диван «Петербург» (категория 5)
+  </a>
+  <div class="catalogCardDescr mb-10 color-grey fz-14 fz-lg-10">
+    Стильный диван подойдет для любого интерьера. Простой механизм обеспечивает удобство в
+    использовании.
+  </div>
+  <div class="d-flex align-items-center gap-1">
+    <img src="img/admin/logo/brand-2.svg" alt="logo" class="catalogCardBrand">
+    <span class="fz-12 fz-lg-10">«Прогресс»</span>
+  </div>
+  <div class="available mt-10 fz-14 d-none d-lg-flex gap-1 align-items-center">В наличии</div>
+</div>
+        </div>
+
+        <div class="swiper-slide catalogSlide">
+          <div class="catalogCard">
+
+  <a href="#" class="swiper d-flex catalogCardSlider mb-10">
+    <div class="swiper-wrapper">
+      <div class="swiper-slide catalogCardImg d-flex catalogCardImg--cover">
+        <img src="img/admin/catalog/image-3.png" alt="image">
+      </div>
+      <div class="swiper-slide catalogCardImg catalogCardImg--cover d-flex">
+        <img src="img/admin/catalog/image-1.jpg" alt="image">
+      </div>
+
+    </div>
+    <div class="swiper-pagination"></div>
+    <div class="tag-list">
+      <ul class="d-flex gap-1 flex-wrap">
+        <li class="bg-black color-white px-2 py-1 rounded-1 fw-medium fz-12">
+          Акция!
+        </li>
+      </ul>
+    </div>
+  </a>
+
+  <div class="catalogCardPrice mb-1 d-flex flex-wrap gap-10 gap-lg-5px align-items-center">
+    <div class="h5">
+      52 300 ₽
+    </div>
+  </div>
+  <a href="#" class="catalogCardTitle mb-1 fw-medium">
+    Тумба под ТВ из модульной серии «Хлоя» дуб канзас / лофт голден пэлас 0988.5 (КМК)
+  </a>
+  <div class="catalogCardDescr mb-10 color-grey fz-14 fz-lg-10">
+    Стильная тумба под ТВ из модульной серии «Хлоя» в цвете дуб канзас / лофт голден пэлас. Высокие металлические опоры,
+    современная фурнитура и приятные фасады из МДФ. Смотрите также шкафы из данной серии в рекомендациях.
+  </div>
+  <div class="d-flex align-items-center gap-1">
+    <img src="img/admin/logo/brand-3.svg" alt="logo" class="catalogCardBrand">
+    <span class="fz-12 fz-lg-10">«Прогресс»</span>
+  </div>
+
+</div>
+        </div>
+
+        <div class="swiper-slide catalogSlide">
+          <div class="catalogCard">
+
+  <a href="#" class="swiper d-flex catalogCardSlider mb-10">
+    <div class="swiper-wrapper">
+      <div class="swiper-slide catalogCardImg catalogCardImg--cover d-flex">
+        <img src="img/admin/catalog/image-1.jpg" alt="image">
+      </div>
+      <div class="swiper-slide catalogCardImg d-flex">
+        <img src="img/admin/catalog/image-2.png" alt="image">
+      </div>
+      <div class="swiper-slide catalogCardImg catalogCardImg--cover d-flex">
+        <img src="img/admin/catalog/image-3.png" alt="image">
+      </div>
+      <div class="swiper-slide catalogCardImg d-flex">
+        <img src="img/admin/catalog/image-2.png" alt="image">
+      </div>
+      <div class="swiper-slide catalogCardImg catalogCardImg--cover d-flex">
+        <img src="img/admin/catalog/image-1.jpg" alt="image">
+      </div>
+    </div>
+    <div class="swiper-pagination"></div>
+    <div class="tag-list">
+      <ul class="d-flex gap-1 flex-wrap">
+        <li class="bg-orange color-white px-2 py-1 rounded-1 fw-medium fz-12">
+          Хит продаж!
+        </li>
+      </ul>
+    </div>
+  </a>
+
+  <div class="catalogCardPrice mb-1 d-flex gap-10 gap-lg-5px align-items-center flex-wrap">
+    <div class="p-1 bg-orange rounded-1 fz-12 fw-medium color-white">
+      -35%
+    </div>
+    <div class="h5">
+      85 000 ₽
+    </div>
+    <div class="color-grey line-through">
+      125 000 ₽
+    </div>
+    <div class="available fz-10 d-flex gap-1 align-items-center d-lg-none ml-auto">В наличии</div>
+  </div>
+  <a href="#" class="catalogCardTitle mb-1 fw-medium">
+    Угловой диван «Петербург» (категория 2)
+  </a>
+  <div class="catalogCardDescr mb-10 color-grey fz-14 fz-lg-10">
+    Стильный диван подойдет для любого интерьера. Простой механизм обеспечивает удобство в
+    использовании.
+  </div>
+  <div class="d-flex align-items-center gap-1">
+    <img src="img/admin/logo/brand-1.svg" alt="logo" class="catalogCardBrand">
+    <span class="fz-12 fz-lg-10">«Прогресс»</span>
+  </div>
+  <div class="available mt-10 fz-14 d-none d-lg-flex gap-1 align-items-center">В наличии</div>
+
+</div>
+        </div>
+
+        <div class="swiper-slide catalogSlide">
+          <div class="catalogCard">
+
+  <a href="#" class="swiper d-flex catalogCardSlider mb-10">
+    <div class="swiper-wrapper">
+      <div class="swiper-slide catalogCardImg d-flex">
+        <img src="img/admin/catalog/image-2.png" alt="image">
+      </div>
+      <div class="swiper-slide catalogCardImg catalogCardImg--cover d-flex">
+        <img src="img/admin/catalog/image-1.jpg" alt="image">
+      </div>
+      <div class="swiper-slide catalogCardImg catalogCardImg--cover d-flex">
+        <img src="img/admin/catalog/image-3.png" alt="image">
+      </div>
+      <div class="swiper-slide catalogCardImg d-flex">
+        <img src="img/admin/catalog/image-2.png" alt="image">
+      </div>
+      <div class="swiper-slide catalogCardImg catalogCardImg--cover d-flex">
+        <img src="img/admin/catalog/image-1.jpg" alt="image">
+      </div>
+    </div>
+    <div class="swiper-pagination"></div>
+    <div class="tag-list">
+      <ul class="d-flex gap-1 flex-wrap">
+        <li class="bg-green color-white px-2 py-1 rounded-1 fw-medium fz-12">
+          Новинка
+        </li>
+      </ul>
+    </div>
+  </a>
+
+  <div class="catalogCardPrice mb-1 d-flex flex-wrap gap-10 gap-lg-5px align-items-center">
+    <div class="h5">
+      127 300 ₽
+    </div>
+     <div class="available fz-10 d-flex gap-1 align-items-center d-lg-none ml-auto">В наличии</div>
+  </div>
+  <a href="#" class="catalogCardTitle mb-1 fw-medium">
+    Прямой диван «Петербург» Прямой диван «Петербург» (категория 5)
+  </a>
+  <div class="catalogCardDescr mb-10 color-grey fz-14 fz-lg-10">
+    Стильный диван подойдет для любого интерьера. Простой механизм обеспечивает удобство в
+    использовании.
+  </div>
+  <div class="d-flex align-items-center gap-1">
+    <img src="img/admin/logo/brand-2.svg" alt="logo" class="catalogCardBrand">
+    <span class="fz-12 fz-lg-10">«Прогресс»</span>
+  </div>
+  <div class="available mt-10 fz-14 d-none d-lg-flex gap-1 align-items-center">В наличии</div>
+</div>
+        </div>
+
+        <div class="swiper-slide catalogSlide">
+          <div class="catalogCard">
+
+  <a href="#" class="swiper d-flex catalogCardSlider mb-10">
+    <div class="swiper-wrapper">
+      <div class="swiper-slide catalogCardImg catalogCardImg--cover d-flex">
+        <img src="img/admin/catalog/image-1.jpg" alt="image">
+      </div>
+      <div class="swiper-slide catalogCardImg d-flex">
+        <img src="img/admin/catalog/image-2.png" alt="image">
+      </div>
+      <div class="swiper-slide catalogCardImg catalogCardImg--cover d-flex">
+        <img src="img/admin/catalog/image-3.png" alt="image">
+      </div>
+      <div class="swiper-slide catalogCardImg d-flex">
+        <img src="img/admin/catalog/image-2.png" alt="image">
+      </div>
+      <div class="swiper-slide catalogCardImg catalogCardImg--cover d-flex">
+        <img src="img/admin/catalog/image-1.jpg" alt="image">
+      </div>
+    </div>
+    <div class="swiper-pagination"></div>
+    <div class="tag-list">
+      <ul class="d-flex gap-1 flex-wrap">
+        <li class="bg-orange color-white px-2 py-1 rounded-1 fw-medium fz-12">
+          Хит продаж!
+        </li>
+      </ul>
+    </div>
+  </a>
+
+  <div class="catalogCardPrice mb-1 d-flex gap-10 gap-lg-5px align-items-center flex-wrap">
+    <div class="p-1 bg-orange rounded-1 fz-12 fw-medium color-white">
+      -35%
+    </div>
+    <div class="h5">
+      85 000 ₽
+    </div>
+    <div class="color-grey line-through">
+      125 000 ₽
+    </div>
+    <div class="available fz-10 d-flex gap-1 align-items-center d-lg-none ml-auto">В наличии</div>
+  </div>
+  <a href="#" class="catalogCardTitle mb-1 fw-medium">
+    Угловой диван «Петербург» (категория 2)
+  </a>
+  <div class="catalogCardDescr mb-10 color-grey fz-14 fz-lg-10">
+    Стильный диван подойдет для любого интерьера. Простой механизм обеспечивает удобство в
+    использовании.
+  </div>
+  <div class="d-flex align-items-center gap-1">
+    <img src="img/admin/logo/brand-1.svg" alt="logo" class="catalogCardBrand">
+    <span class="fz-12 fz-lg-10">«Прогресс»</span>
+  </div>
+  <div class="available mt-10 fz-14 d-none d-lg-flex gap-1 align-items-center">В наличии</div>
+
+</div>
+        </div>
+
+        <div class="swiper-slide catalogSlide">
+          <div class="catalogCard">
+
+  <a href="#" class="swiper d-flex catalogCardSlider mb-10">
+    <div class="swiper-wrapper">
+      <div class="swiper-slide catalogCardImg d-flex">
+        <img src="img/admin/catalog/image-2.png" alt="image">
+      </div>
+      <div class="swiper-slide catalogCardImg catalogCardImg--cover d-flex">
+        <img src="img/admin/catalog/image-1.jpg" alt="image">
+      </div>
+      <div class="swiper-slide catalogCardImg catalogCardImg--cover d-flex">
+        <img src="img/admin/catalog/image-3.png" alt="image">
+      </div>
+      <div class="swiper-slide catalogCardImg d-flex">
+        <img src="img/admin/catalog/image-2.png" alt="image">
+      </div>
+      <div class="swiper-slide catalogCardImg catalogCardImg--cover d-flex">
+        <img src="img/admin/catalog/image-1.jpg" alt="image">
+      </div>
+    </div>
+    <div class="swiper-pagination"></div>
+    <div class="tag-list">
+      <ul class="d-flex gap-1 flex-wrap">
+        <li class="bg-green color-white px-2 py-1 rounded-1 fw-medium fz-12">
+          Новинка
+        </li>
+      </ul>
+    </div>
+  </a>
+
+  <div class="catalogCardPrice mb-1 d-flex flex-wrap gap-10 gap-lg-5px align-items-center">
+    <div class="h5">
+      127 300 ₽
+    </div>
+     <div class="available fz-10 d-flex gap-1 align-items-center d-lg-none ml-auto">В наличии</div>
+  </div>
+  <a href="#" class="catalogCardTitle mb-1 fw-medium">
+    Прямой диван «Петербург» Прямой диван «Петербург» (категория 5)
+  </a>
+  <div class="catalogCardDescr mb-10 color-grey fz-14 fz-lg-10">
+    Стильный диван подойдет для любого интерьера. Простой механизм обеспечивает удобство в
+    использовании.
+  </div>
+  <div class="d-flex align-items-center gap-1">
+    <img src="img/admin/logo/brand-2.svg" alt="logo" class="catalogCardBrand">
+    <span class="fz-12 fz-lg-10">«Прогресс»</span>
+  </div>
+  <div class="available mt-10 fz-14 d-none d-lg-flex gap-1 align-items-center">В наличии</div>
+</div>
+        </div>
+
+        <div class="swiper-slide catalogSlide">
+          <div class="catalogCard">
+
+  <a href="#" class="swiper d-flex catalogCardSlider mb-10">
+    <div class="swiper-wrapper">
+      <div class="swiper-slide catalogCardImg d-flex catalogCardImg--cover">
+        <img src="img/admin/catalog/image-3.png" alt="image">
+      </div>
+      <div class="swiper-slide catalogCardImg catalogCardImg--cover d-flex">
+        <img src="img/admin/catalog/image-1.jpg" alt="image">
+      </div>
+
+    </div>
+    <div class="swiper-pagination"></div>
+    <div class="tag-list">
+      <ul class="d-flex gap-1 flex-wrap">
+        <li class="bg-black color-white px-2 py-1 rounded-1 fw-medium fz-12">
+          Акция!
+        </li>
+      </ul>
+    </div>
+  </a>
+
+  <div class="catalogCardPrice mb-1 d-flex flex-wrap gap-10 gap-lg-5px align-items-center">
+    <div class="h5">
+      52 300 ₽
+    </div>
+  </div>
+  <a href="#" class="catalogCardTitle mb-1 fw-medium">
+    Тумба под ТВ из модульной серии «Хлоя» дуб канзас / лофт голден пэлас 0988.5 (КМК)
+  </a>
+  <div class="catalogCardDescr mb-10 color-grey fz-14 fz-lg-10">
+    Стильная тумба под ТВ из модульной серии «Хлоя» в цвете дуб канзас / лофт голден пэлас. Высокие металлические опоры,
+    современная фурнитура и приятные фасады из МДФ. Смотрите также шкафы из данной серии в рекомендациях.
+  </div>
+  <div class="d-flex align-items-center gap-1">
+    <img src="img/admin/logo/brand-3.svg" alt="logo" class="catalogCardBrand">
+    <span class="fz-12 fz-lg-10">«Прогресс»</span>
+  </div>
+
+</div>
+        </div>
+
+        <div class="swiper-slide catalogSlide">
+          <div class="catalogCard">
+
+  <a href="#" class="swiper d-flex catalogCardSlider mb-10">
+    <div class="swiper-wrapper">
+      <div class="swiper-slide catalogCardImg catalogCardImg--cover d-flex">
+        <img src="img/admin/catalog/image-1.jpg" alt="image">
+      </div>
+      <div class="swiper-slide catalogCardImg d-flex">
+        <img src="img/admin/catalog/image-2.png" alt="image">
+      </div>
+      <div class="swiper-slide catalogCardImg catalogCardImg--cover d-flex">
+        <img src="img/admin/catalog/image-3.png" alt="image">
+      </div>
+      <div class="swiper-slide catalogCardImg d-flex">
+        <img src="img/admin/catalog/image-2.png" alt="image">
+      </div>
+      <div class="swiper-slide catalogCardImg catalogCardImg--cover d-flex">
+        <img src="img/admin/catalog/image-1.jpg" alt="image">
+      </div>
+    </div>
+    <div class="swiper-pagination"></div>
+    <div class="tag-list">
+      <ul class="d-flex gap-1 flex-wrap">
+        <li class="bg-orange color-white px-2 py-1 rounded-1 fw-medium fz-12">
+          Хит продаж!
+        </li>
+      </ul>
+    </div>
+  </a>
+
+  <div class="catalogCardPrice mb-1 d-flex gap-10 gap-lg-5px align-items-center flex-wrap">
+    <div class="p-1 bg-orange rounded-1 fz-12 fw-medium color-white">
+      -35%
+    </div>
+    <div class="h5">
+      85 000 ₽
+    </div>
+    <div class="color-grey line-through">
+      125 000 ₽
+    </div>
+    <div class="available fz-10 d-flex gap-1 align-items-center d-lg-none ml-auto">В наличии</div>
+  </div>
+  <a href="#" class="catalogCardTitle mb-1 fw-medium">
+    Угловой диван «Петербург» (категория 2)
+  </a>
+  <div class="catalogCardDescr mb-10 color-grey fz-14 fz-lg-10">
+    Стильный диван подойдет для любого интерьера. Простой механизм обеспечивает удобство в
+    использовании.
+  </div>
+  <div class="d-flex align-items-center gap-1">
+    <img src="img/admin/logo/brand-1.svg" alt="logo" class="catalogCardBrand">
+    <span class="fz-12 fz-lg-10">«Прогресс»</span>
+  </div>
+  <div class="available mt-10 fz-14 d-none d-lg-flex gap-1 align-items-center">В наличии</div>
+
+</div>
+        </div>
+
+        <div class="swiper-slide catalogSlide">
+          <div class="catalogCard">
+
+  <a href="#" class="swiper d-flex catalogCardSlider mb-10">
+    <div class="swiper-wrapper">
+      <div class="swiper-slide catalogCardImg d-flex">
+        <img src="img/admin/catalog/image-2.png" alt="image">
+      </div>
+      <div class="swiper-slide catalogCardImg catalogCardImg--cover d-flex">
+        <img src="img/admin/catalog/image-1.jpg" alt="image">
+      </div>
+      <div class="swiper-slide catalogCardImg catalogCardImg--cover d-flex">
+        <img src="img/admin/catalog/image-3.png" alt="image">
+      </div>
+      <div class="swiper-slide catalogCardImg d-flex">
+        <img src="img/admin/catalog/image-2.png" alt="image">
+      </div>
+      <div class="swiper-slide catalogCardImg catalogCardImg--cover d-flex">
+        <img src="img/admin/catalog/image-1.jpg" alt="image">
+      </div>
+    </div>
+    <div class="swiper-pagination"></div>
+    <div class="tag-list">
+      <ul class="d-flex gap-1 flex-wrap">
+        <li class="bg-green color-white px-2 py-1 rounded-1 fw-medium fz-12">
+          Новинка
+        </li>
+      </ul>
+    </div>
+  </a>
+
+  <div class="catalogCardPrice mb-1 d-flex flex-wrap gap-10 gap-lg-5px align-items-center">
+    <div class="h5">
+      127 300 ₽
+    </div>
+     <div class="available fz-10 d-flex gap-1 align-items-center d-lg-none ml-auto">В наличии</div>
+  </div>
+  <a href="#" class="catalogCardTitle mb-1 fw-medium">
+    Прямой диван «Петербург» Прямой диван «Петербург» (категория 5)
+  </a>
+  <div class="catalogCardDescr mb-10 color-grey fz-14 fz-lg-10">
+    Стильный диван подойдет для любого интерьера. Простой механизм обеспечивает удобство в
+    использовании.
+  </div>
+  <div class="d-flex align-items-center gap-1">
+    <img src="img/admin/logo/brand-2.svg" alt="logo" class="catalogCardBrand">
+    <span class="fz-12 fz-lg-10">«Прогресс»</span>
+  </div>
+  <div class="available mt-10 fz-14 d-none d-lg-flex gap-1 align-items-center">В наличии</div>
+</div>
+        </div>
+
+      </div>
+    </div>
+
+  </div>
+</section>
+			<section class="about pt-0 sect">
+  <div class="container">
+    <div class="d-grid grid-12 gap-20 gap-lg-8">
+      <div class="column column-8 column-xl-6 order-1">
+        <img src="img/admin/about/image-1.jpg" alt="image"
+          class="w-100 h-320 h-md-180 radius-20 radius-lg-12 image-cover">
+      </div>
+      <div class="column column-4 column-xl-6 order-2">
+        <div class="p-35 p-35-lg-20 radius-20 radius-lg-12 bg h-100 border-lg-light">
+          <div class="mb-2 mb-lg-1 color-orange fz-72 fz-xxl-40 fw-bold font-family-second">200+</div>
+          <div class="fz-40 fz-xxl-30 fz-md-24 fz-sm-16 mb-4 mb-lg-3 font-family-second fw-lg-medium">
+            наименований в наличии
+          </div>
+          <div class="d-flex gap-2 align-items-center fz-20 fz-lg-16 fz-sm-12 fw-medium color-grey">
+            Перейти в каталог
+            <a href="#" class="button button--orange w-28 h-28 flex-shrink-0">
+              <svg style="width: 20px; height: 20px;">
+                <use xlink:href="img/icons/icons.svg#nav-arrow-next"></use>
+              </svg>
+            </a>
+          </div>
+        </div>
+      </div>
+      <div class="column column-5 column-xl-6 order-3">
+        <div class="p-35 p-35-lg-20 radius-20 radius-lg-12 bg-orange h-320 h-md-180 position-relative border-lg-light">
+          <div class="fz-40 fz-lg-30 fz-md-24 fz-sm-16 font-family-second color-white mb-2">
+            Собственный склад
+          </div>
+          <div class="fz-64 fz-xxl-24 font-family-second fw-bold color-white">
+            в г.Томск
+          </div>
+          <img class="position-absolute b-0 r-0 w-1600-200" src="img/admin/about/place.svg" alt="icon">
+        </div>
+      </div>
+      <div class="column column-4 column-xl-6 order-4">
+        <img src="img/admin/about/image-2.jpg" alt="image"
+          class="w-100 h-320 h-md-180 radius-20 radius-lg-12 image-cover">
+      </div>
+      <div class="column column-3 column-xl-6 order-6 order-lg-5">
+        <div class="p-35 p-35-lg-20 radius-20 radius-lg-12 bg-black h-320 h-md-180 border-lg-light">
+          <div class="mb-1 fz-72 fz-xxl-40 color-orange font-family-second fw-bold">
+            4
+          </div>
+          <div class="fz-40 fz-xxl-30 fz-md-24 fz-sm-16 font-family-second color-white mb-20 mb-lg-24">
+            выставочных
+            зала
+          </div>
+          <div class="d-flex gap-2 align-items-center fz-20 fz-lg-16 fz-sm-12 fw-medium color-white">
+            Адреса магазинов
+            <a href="#" class="button button--orange w-28 h-28 flex-shrink-0">
+              <svg style="width: 20px; height: 20px;">
+                <use xlink:href="img/icons/icons.svg#nav-arrow-next"></use>
+              </svg>
+            </a>
+          </div>
+        </div>
+      </div>
+      <div class="column column-6 order-5 order-lg-6">
+        <img src="img/admin/about/image-3.jpg" alt="image"
+          class="w-100 h-320 h-md-180 radius-20 radius-lg-12 image-cover">
+      </div>
+      <div class="column column-6 order-7">
+        <div class="p-35 p-35-lg-20 radius-20 radius-lg-12 bg h-100 position-relative d-flex flex-column">
+          <div class="mb-1 color-orange fz-72 fz-72 fz-xxl-40 fw-bold font-family-second order-1">1 <span
+              class="fz-xxl-24">день</span> </div>
+          <div class="fz-40 fz-lg-30 fz-md-24 fz-sm-16 mb-2 mb-lg-4 font-family-second fw-lg-medium order-2 position-relative z-1">
+            доставка и сборка<span class="color-orange fz-24 font-family-second position-relative b-13 b-md-0 mx-1">*
+            </span>
+          </div>
+          <div class="d-flex gap-2 align-items-center fz-20 fz-lg-16 fz-sm-12 fw-medium color-grey order-4 order-lg-3">
+            Перейти в раздел
+            <a href="#" class="button button--orange w-28 h-28 flex-shrink-0">
+              <svg style="width: 20px; height: 20px;">
+                <use xlink:href="img/icons/icons.svg#nav-arrow-next"></use>
+              </svg>
+            </a>
+          </div>
+          <div class="fz-14 fz-lg-10 mt-auto order-3 order-lg-4 mb-2 mb-lg-0">
+            * минимальный срок
+          </div>
+          <img class="position-absolute b-0 r-0 d-none d-lg-block w-xxl-200" src="img/admin/about/repair.png" alt="icon">
+        </div>
+      </div>
+      <div class="column column-6 order-8 d-block d-lg-none">
+        <div class="radius-12 bg h-100 position-relative overflow-hidden">
+
+          <img class="position-absolute repair-mobile b-0 z-1 mx-auto l-0 r-0" style="width: 150px;" src="img/admin/about/repair.png" alt="image">
+          <img class="repair-abstract" src="img/admin/about/abstract-repair.svg" alt="image">
+        </div>
+      </div>
+
+    </div>
+  </div>
+</section>
+			<section class="products sect pt-0 sliderW">
+  <div class="container">
+
+    <div class="sectHead mb-30 mb-lg-20 d-flex justify-content-between align-items-center gap-4">
+      <h2 class="h2">
+        Популярные товары
+      </h2>
+      <div class="d-none d-lg-flex gap-2">
+        <button class="navArrow navArrowPrev">
+          <svg>
+            <use xlink:href="img/icons/icons.svg#nav-arrow-prev"></use>
+          </svg>
+        </button>
+        <button class="navArrow navArrowNext">
+          <svg>
+            <use xlink:href="img/icons/icons.svg#nav-arrow-next"></use>
+          </svg>
+        </button>
+      </div>
+    </div>
+
+    <div class="swiper catalogSlider">
+      <div class="swiper-wrapper">
+
+        <div class="swiper-slide catalogSlide">
+          <div class="catalogCard">
+
+  <a href="#" class="swiper d-flex catalogCardSlider mb-10">
+    <div class="swiper-wrapper">
+      <div class="swiper-slide catalogCardImg catalogCardImg--cover d-flex">
+        <img src="img/admin/catalog/image-1.jpg" alt="image">
+      </div>
+      <div class="swiper-slide catalogCardImg d-flex">
+        <img src="img/admin/catalog/image-2.png" alt="image">
+      </div>
+      <div class="swiper-slide catalogCardImg catalogCardImg--cover d-flex">
+        <img src="img/admin/catalog/image-3.png" alt="image">
+      </div>
+      <div class="swiper-slide catalogCardImg d-flex">
+        <img src="img/admin/catalog/image-2.png" alt="image">
+      </div>
+      <div class="swiper-slide catalogCardImg catalogCardImg--cover d-flex">
+        <img src="img/admin/catalog/image-1.jpg" alt="image">
+      </div>
+    </div>
+    <div class="swiper-pagination"></div>
+    <div class="tag-list">
+      <ul class="d-flex gap-1 flex-wrap">
+        <li class="bg-orange color-white px-2 py-1 rounded-1 fw-medium fz-12">
+          Хит продаж!
+        </li>
+      </ul>
+    </div>
+  </a>
+
+  <div class="catalogCardPrice mb-1 d-flex gap-10 gap-lg-5px align-items-center flex-wrap">
+    <div class="p-1 bg-orange rounded-1 fz-12 fw-medium color-white">
+      -35%
+    </div>
+    <div class="h5">
+      85 000 ₽
+    </div>
+    <div class="color-grey line-through">
+      125 000 ₽
+    </div>
+    <div class="available fz-10 d-flex gap-1 align-items-center d-lg-none ml-auto">В наличии</div>
+  </div>
+  <a href="#" class="catalogCardTitle mb-1 fw-medium">
+    Угловой диван «Петербург» (категория 2)
+  </a>
+  <div class="catalogCardDescr mb-10 color-grey fz-14 fz-lg-10">
+    Стильный диван подойдет для любого интерьера. Простой механизм обеспечивает удобство в
+    использовании.
+  </div>
+  <div class="d-flex align-items-center gap-1">
+    <img src="img/admin/logo/brand-1.svg" alt="logo" class="catalogCardBrand">
+    <span class="fz-12 fz-lg-10">«Прогресс»</span>
+  </div>
+  <div class="available mt-10 fz-14 d-none d-lg-flex gap-1 align-items-center">В наличии</div>
+
+</div>
+        </div>
+
+        <div class="swiper-slide catalogSlide">
+          <div class="catalogCard">
+
+  <a href="#" class="swiper d-flex catalogCardSlider mb-10">
+    <div class="swiper-wrapper">
+      <div class="swiper-slide catalogCardImg d-flex">
+        <img src="img/admin/catalog/image-2.png" alt="image">
+      </div>
+      <div class="swiper-slide catalogCardImg catalogCardImg--cover d-flex">
+        <img src="img/admin/catalog/image-1.jpg" alt="image">
+      </div>
+      <div class="swiper-slide catalogCardImg catalogCardImg--cover d-flex">
+        <img src="img/admin/catalog/image-3.png" alt="image">
+      </div>
+      <div class="swiper-slide catalogCardImg d-flex">
+        <img src="img/admin/catalog/image-2.png" alt="image">
+      </div>
+      <div class="swiper-slide catalogCardImg catalogCardImg--cover d-flex">
+        <img src="img/admin/catalog/image-1.jpg" alt="image">
+      </div>
+    </div>
+    <div class="swiper-pagination"></div>
+    <div class="tag-list">
+      <ul class="d-flex gap-1 flex-wrap">
+        <li class="bg-green color-white px-2 py-1 rounded-1 fw-medium fz-12">
+          Новинка
+        </li>
+      </ul>
+    </div>
+  </a>
+
+  <div class="catalogCardPrice mb-1 d-flex flex-wrap gap-10 gap-lg-5px align-items-center">
+    <div class="h5">
+      127 300 ₽
+    </div>
+     <div class="available fz-10 d-flex gap-1 align-items-center d-lg-none ml-auto">В наличии</div>
+  </div>
+  <a href="#" class="catalogCardTitle mb-1 fw-medium">
+    Прямой диван «Петербург» Прямой диван «Петербург» (категория 5)
+  </a>
+  <div class="catalogCardDescr mb-10 color-grey fz-14 fz-lg-10">
+    Стильный диван подойдет для любого интерьера. Простой механизм обеспечивает удобство в
+    использовании.
+  </div>
+  <div class="d-flex align-items-center gap-1">
+    <img src="img/admin/logo/brand-2.svg" alt="logo" class="catalogCardBrand">
+    <span class="fz-12 fz-lg-10">«Прогресс»</span>
+  </div>
+  <div class="available mt-10 fz-14 d-none d-lg-flex gap-1 align-items-center">В наличии</div>
+</div>
+        </div>
+
+        <div class="swiper-slide catalogSlide">
+          <div class="catalogCard">
+
+  <a href="#" class="swiper d-flex catalogCardSlider mb-10">
+    <div class="swiper-wrapper">
+      <div class="swiper-slide catalogCardImg d-flex catalogCardImg--cover">
+        <img src="img/admin/catalog/image-3.png" alt="image">
+      </div>
+      <div class="swiper-slide catalogCardImg catalogCardImg--cover d-flex">
+        <img src="img/admin/catalog/image-1.jpg" alt="image">
+      </div>
+
+    </div>
+    <div class="swiper-pagination"></div>
+    <div class="tag-list">
+      <ul class="d-flex gap-1 flex-wrap">
+        <li class="bg-black color-white px-2 py-1 rounded-1 fw-medium fz-12">
+          Акция!
+        </li>
+      </ul>
+    </div>
+  </a>
+
+  <div class="catalogCardPrice mb-1 d-flex flex-wrap gap-10 gap-lg-5px align-items-center">
+    <div class="h5">
+      52 300 ₽
+    </div>
+  </div>
+  <a href="#" class="catalogCardTitle mb-1 fw-medium">
+    Тумба под ТВ из модульной серии «Хлоя» дуб канзас / лофт голден пэлас 0988.5 (КМК)
+  </a>
+  <div class="catalogCardDescr mb-10 color-grey fz-14 fz-lg-10">
+    Стильная тумба под ТВ из модульной серии «Хлоя» в цвете дуб канзас / лофт голден пэлас. Высокие металлические опоры,
+    современная фурнитура и приятные фасады из МДФ. Смотрите также шкафы из данной серии в рекомендациях.
+  </div>
+  <div class="d-flex align-items-center gap-1">
+    <img src="img/admin/logo/brand-3.svg" alt="logo" class="catalogCardBrand">
+    <span class="fz-12 fz-lg-10">«Прогресс»</span>
+  </div>
+
+</div>
+        </div>
+
+        <div class="swiper-slide catalogSlide">
+          <div class="catalogCard">
+
+  <a href="#" class="swiper d-flex catalogCardSlider mb-10">
+    <div class="swiper-wrapper">
+      <div class="swiper-slide catalogCardImg catalogCardImg--cover d-flex">
+        <img src="img/admin/catalog/image-1.jpg" alt="image">
+      </div>
+      <div class="swiper-slide catalogCardImg d-flex">
+        <img src="img/admin/catalog/image-2.png" alt="image">
+      </div>
+      <div class="swiper-slide catalogCardImg catalogCardImg--cover d-flex">
+        <img src="img/admin/catalog/image-3.png" alt="image">
+      </div>
+      <div class="swiper-slide catalogCardImg d-flex">
+        <img src="img/admin/catalog/image-2.png" alt="image">
+      </div>
+      <div class="swiper-slide catalogCardImg catalogCardImg--cover d-flex">
+        <img src="img/admin/catalog/image-1.jpg" alt="image">
+      </div>
+    </div>
+    <div class="swiper-pagination"></div>
+    <div class="tag-list">
+      <ul class="d-flex gap-1 flex-wrap">
+        <li class="bg-orange color-white px-2 py-1 rounded-1 fw-medium fz-12">
+          Хит продаж!
+        </li>
+      </ul>
+    </div>
+  </a>
+
+  <div class="catalogCardPrice mb-1 d-flex gap-10 gap-lg-5px align-items-center flex-wrap">
+    <div class="p-1 bg-orange rounded-1 fz-12 fw-medium color-white">
+      -35%
+    </div>
+    <div class="h5">
+      85 000 ₽
+    </div>
+    <div class="color-grey line-through">
+      125 000 ₽
+    </div>
+    <div class="available fz-10 d-flex gap-1 align-items-center d-lg-none ml-auto">В наличии</div>
+  </div>
+  <a href="#" class="catalogCardTitle mb-1 fw-medium">
+    Угловой диван «Петербург» (категория 2)
+  </a>
+  <div class="catalogCardDescr mb-10 color-grey fz-14 fz-lg-10">
+    Стильный диван подойдет для любого интерьера. Простой механизм обеспечивает удобство в
+    использовании.
+  </div>
+  <div class="d-flex align-items-center gap-1">
+    <img src="img/admin/logo/brand-1.svg" alt="logo" class="catalogCardBrand">
+    <span class="fz-12 fz-lg-10">«Прогресс»</span>
+  </div>
+  <div class="available mt-10 fz-14 d-none d-lg-flex gap-1 align-items-center">В наличии</div>
+
+</div>
+        </div>
+
+        <div class="swiper-slide catalogSlide">
+          <div class="catalogCard">
+
+  <a href="#" class="swiper d-flex catalogCardSlider mb-10">
+    <div class="swiper-wrapper">
+      <div class="swiper-slide catalogCardImg d-flex">
+        <img src="img/admin/catalog/image-2.png" alt="image">
+      </div>
+      <div class="swiper-slide catalogCardImg catalogCardImg--cover d-flex">
+        <img src="img/admin/catalog/image-1.jpg" alt="image">
+      </div>
+      <div class="swiper-slide catalogCardImg catalogCardImg--cover d-flex">
+        <img src="img/admin/catalog/image-3.png" alt="image">
+      </div>
+      <div class="swiper-slide catalogCardImg d-flex">
+        <img src="img/admin/catalog/image-2.png" alt="image">
+      </div>
+      <div class="swiper-slide catalogCardImg catalogCardImg--cover d-flex">
+        <img src="img/admin/catalog/image-1.jpg" alt="image">
+      </div>
+    </div>
+    <div class="swiper-pagination"></div>
+    <div class="tag-list">
+      <ul class="d-flex gap-1 flex-wrap">
+        <li class="bg-green color-white px-2 py-1 rounded-1 fw-medium fz-12">
+          Новинка
+        </li>
+      </ul>
+    </div>
+  </a>
+
+  <div class="catalogCardPrice mb-1 d-flex flex-wrap gap-10 gap-lg-5px align-items-center">
+    <div class="h5">
+      127 300 ₽
+    </div>
+     <div class="available fz-10 d-flex gap-1 align-items-center d-lg-none ml-auto">В наличии</div>
+  </div>
+  <a href="#" class="catalogCardTitle mb-1 fw-medium">
+    Прямой диван «Петербург» Прямой диван «Петербург» (категория 5)
+  </a>
+  <div class="catalogCardDescr mb-10 color-grey fz-14 fz-lg-10">
+    Стильный диван подойдет для любого интерьера. Простой механизм обеспечивает удобство в
+    использовании.
+  </div>
+  <div class="d-flex align-items-center gap-1">
+    <img src="img/admin/logo/brand-2.svg" alt="logo" class="catalogCardBrand">
+    <span class="fz-12 fz-lg-10">«Прогресс»</span>
+  </div>
+  <div class="available mt-10 fz-14 d-none d-lg-flex gap-1 align-items-center">В наличии</div>
+</div>
+        </div>
+
+        <div class="swiper-slide catalogSlide">
+          <div class="catalogCard">
+
+  <a href="#" class="swiper d-flex catalogCardSlider mb-10">
+    <div class="swiper-wrapper">
+      <div class="swiper-slide catalogCardImg catalogCardImg--cover d-flex">
+        <img src="img/admin/catalog/image-1.jpg" alt="image">
+      </div>
+      <div class="swiper-slide catalogCardImg d-flex">
+        <img src="img/admin/catalog/image-2.png" alt="image">
+      </div>
+      <div class="swiper-slide catalogCardImg catalogCardImg--cover d-flex">
+        <img src="img/admin/catalog/image-3.png" alt="image">
+      </div>
+      <div class="swiper-slide catalogCardImg d-flex">
+        <img src="img/admin/catalog/image-2.png" alt="image">
+      </div>
+      <div class="swiper-slide catalogCardImg catalogCardImg--cover d-flex">
+        <img src="img/admin/catalog/image-1.jpg" alt="image">
+      </div>
+    </div>
+    <div class="swiper-pagination"></div>
+    <div class="tag-list">
+      <ul class="d-flex gap-1 flex-wrap">
+        <li class="bg-orange color-white px-2 py-1 rounded-1 fw-medium fz-12">
+          Хит продаж!
+        </li>
+      </ul>
+    </div>
+  </a>
+
+  <div class="catalogCardPrice mb-1 d-flex gap-10 gap-lg-5px align-items-center flex-wrap">
+    <div class="p-1 bg-orange rounded-1 fz-12 fw-medium color-white">
+      -35%
+    </div>
+    <div class="h5">
+      85 000 ₽
+    </div>
+    <div class="color-grey line-through">
+      125 000 ₽
+    </div>
+    <div class="available fz-10 d-flex gap-1 align-items-center d-lg-none ml-auto">В наличии</div>
+  </div>
+  <a href="#" class="catalogCardTitle mb-1 fw-medium">
+    Угловой диван «Петербург» (категория 2)
+  </a>
+  <div class="catalogCardDescr mb-10 color-grey fz-14 fz-lg-10">
+    Стильный диван подойдет для любого интерьера. Простой механизм обеспечивает удобство в
+    использовании.
+  </div>
+  <div class="d-flex align-items-center gap-1">
+    <img src="img/admin/logo/brand-1.svg" alt="logo" class="catalogCardBrand">
+    <span class="fz-12 fz-lg-10">«Прогресс»</span>
+  </div>
+  <div class="available mt-10 fz-14 d-none d-lg-flex gap-1 align-items-center">В наличии</div>
+
+</div>
+        </div>
+
+        <div class="swiper-slide catalogSlide">
+          <div class="catalogCard">
+
+  <a href="#" class="swiper d-flex catalogCardSlider mb-10">
+    <div class="swiper-wrapper">
+      <div class="swiper-slide catalogCardImg d-flex">
+        <img src="img/admin/catalog/image-2.png" alt="image">
+      </div>
+      <div class="swiper-slide catalogCardImg catalogCardImg--cover d-flex">
+        <img src="img/admin/catalog/image-1.jpg" alt="image">
+      </div>
+      <div class="swiper-slide catalogCardImg catalogCardImg--cover d-flex">
+        <img src="img/admin/catalog/image-3.png" alt="image">
+      </div>
+      <div class="swiper-slide catalogCardImg d-flex">
+        <img src="img/admin/catalog/image-2.png" alt="image">
+      </div>
+      <div class="swiper-slide catalogCardImg catalogCardImg--cover d-flex">
+        <img src="img/admin/catalog/image-1.jpg" alt="image">
+      </div>
+    </div>
+    <div class="swiper-pagination"></div>
+    <div class="tag-list">
+      <ul class="d-flex gap-1 flex-wrap">
+        <li class="bg-green color-white px-2 py-1 rounded-1 fw-medium fz-12">
+          Новинка
+        </li>
+      </ul>
+    </div>
+  </a>
+
+  <div class="catalogCardPrice mb-1 d-flex flex-wrap gap-10 gap-lg-5px align-items-center">
+    <div class="h5">
+      127 300 ₽
+    </div>
+     <div class="available fz-10 d-flex gap-1 align-items-center d-lg-none ml-auto">В наличии</div>
+  </div>
+  <a href="#" class="catalogCardTitle mb-1 fw-medium">
+    Прямой диван «Петербург» Прямой диван «Петербург» (категория 5)
+  </a>
+  <div class="catalogCardDescr mb-10 color-grey fz-14 fz-lg-10">
+    Стильный диван подойдет для любого интерьера. Простой механизм обеспечивает удобство в
+    использовании.
+  </div>
+  <div class="d-flex align-items-center gap-1">
+    <img src="img/admin/logo/brand-2.svg" alt="logo" class="catalogCardBrand">
+    <span class="fz-12 fz-lg-10">«Прогресс»</span>
+  </div>
+  <div class="available mt-10 fz-14 d-none d-lg-flex gap-1 align-items-center">В наличии</div>
+</div>
+        </div>
+
+        <div class="swiper-slide catalogSlide">
+          <div class="catalogCard">
+
+  <a href="#" class="swiper d-flex catalogCardSlider mb-10">
+    <div class="swiper-wrapper">
+      <div class="swiper-slide catalogCardImg d-flex catalogCardImg--cover">
+        <img src="img/admin/catalog/image-3.png" alt="image">
+      </div>
+      <div class="swiper-slide catalogCardImg catalogCardImg--cover d-flex">
+        <img src="img/admin/catalog/image-1.jpg" alt="image">
+      </div>
+
+    </div>
+    <div class="swiper-pagination"></div>
+    <div class="tag-list">
+      <ul class="d-flex gap-1 flex-wrap">
+        <li class="bg-black color-white px-2 py-1 rounded-1 fw-medium fz-12">
+          Акция!
+        </li>
+      </ul>
+    </div>
+  </a>
+
+  <div class="catalogCardPrice mb-1 d-flex flex-wrap gap-10 gap-lg-5px align-items-center">
+    <div class="h5">
+      52 300 ₽
+    </div>
+  </div>
+  <a href="#" class="catalogCardTitle mb-1 fw-medium">
+    Тумба под ТВ из модульной серии «Хлоя» дуб канзас / лофт голден пэлас 0988.5 (КМК)
+  </a>
+  <div class="catalogCardDescr mb-10 color-grey fz-14 fz-lg-10">
+    Стильная тумба под ТВ из модульной серии «Хлоя» в цвете дуб канзас / лофт голден пэлас. Высокие металлические опоры,
+    современная фурнитура и приятные фасады из МДФ. Смотрите также шкафы из данной серии в рекомендациях.
+  </div>
+  <div class="d-flex align-items-center gap-1">
+    <img src="img/admin/logo/brand-3.svg" alt="logo" class="catalogCardBrand">
+    <span class="fz-12 fz-lg-10">«Прогресс»</span>
+  </div>
+
+</div>
+        </div>
+
+        <div class="swiper-slide catalogSlide">
+          <div class="catalogCard">
+
+  <a href="#" class="swiper d-flex catalogCardSlider mb-10">
+    <div class="swiper-wrapper">
+      <div class="swiper-slide catalogCardImg catalogCardImg--cover d-flex">
+        <img src="img/admin/catalog/image-1.jpg" alt="image">
+      </div>
+      <div class="swiper-slide catalogCardImg d-flex">
+        <img src="img/admin/catalog/image-2.png" alt="image">
+      </div>
+      <div class="swiper-slide catalogCardImg catalogCardImg--cover d-flex">
+        <img src="img/admin/catalog/image-3.png" alt="image">
+      </div>
+      <div class="swiper-slide catalogCardImg d-flex">
+        <img src="img/admin/catalog/image-2.png" alt="image">
+      </div>
+      <div class="swiper-slide catalogCardImg catalogCardImg--cover d-flex">
+        <img src="img/admin/catalog/image-1.jpg" alt="image">
+      </div>
+    </div>
+    <div class="swiper-pagination"></div>
+    <div class="tag-list">
+      <ul class="d-flex gap-1 flex-wrap">
+        <li class="bg-orange color-white px-2 py-1 rounded-1 fw-medium fz-12">
+          Хит продаж!
+        </li>
+      </ul>
+    </div>
+  </a>
+
+  <div class="catalogCardPrice mb-1 d-flex gap-10 gap-lg-5px align-items-center flex-wrap">
+    <div class="p-1 bg-orange rounded-1 fz-12 fw-medium color-white">
+      -35%
+    </div>
+    <div class="h5">
+      85 000 ₽
+    </div>
+    <div class="color-grey line-through">
+      125 000 ₽
+    </div>
+    <div class="available fz-10 d-flex gap-1 align-items-center d-lg-none ml-auto">В наличии</div>
+  </div>
+  <a href="#" class="catalogCardTitle mb-1 fw-medium">
+    Угловой диван «Петербург» (категория 2)
+  </a>
+  <div class="catalogCardDescr mb-10 color-grey fz-14 fz-lg-10">
+    Стильный диван подойдет для любого интерьера. Простой механизм обеспечивает удобство в
+    использовании.
+  </div>
+  <div class="d-flex align-items-center gap-1">
+    <img src="img/admin/logo/brand-1.svg" alt="logo" class="catalogCardBrand">
+    <span class="fz-12 fz-lg-10">«Прогресс»</span>
+  </div>
+  <div class="available mt-10 fz-14 d-none d-lg-flex gap-1 align-items-center">В наличии</div>
+
+</div>
+        </div>
+
+        <div class="swiper-slide catalogSlide">
+          <div class="catalogCard">
+
+  <a href="#" class="swiper d-flex catalogCardSlider mb-10">
+    <div class="swiper-wrapper">
+      <div class="swiper-slide catalogCardImg d-flex">
+        <img src="img/admin/catalog/image-2.png" alt="image">
+      </div>
+      <div class="swiper-slide catalogCardImg catalogCardImg--cover d-flex">
+        <img src="img/admin/catalog/image-1.jpg" alt="image">
+      </div>
+      <div class="swiper-slide catalogCardImg catalogCardImg--cover d-flex">
+        <img src="img/admin/catalog/image-3.png" alt="image">
+      </div>
+      <div class="swiper-slide catalogCardImg d-flex">
+        <img src="img/admin/catalog/image-2.png" alt="image">
+      </div>
+      <div class="swiper-slide catalogCardImg catalogCardImg--cover d-flex">
+        <img src="img/admin/catalog/image-1.jpg" alt="image">
+      </div>
+    </div>
+    <div class="swiper-pagination"></div>
+    <div class="tag-list">
+      <ul class="d-flex gap-1 flex-wrap">
+        <li class="bg-green color-white px-2 py-1 rounded-1 fw-medium fz-12">
+          Новинка
+        </li>
+      </ul>
+    </div>
+  </a>
+
+  <div class="catalogCardPrice mb-1 d-flex flex-wrap gap-10 gap-lg-5px align-items-center">
+    <div class="h5">
+      127 300 ₽
+    </div>
+     <div class="available fz-10 d-flex gap-1 align-items-center d-lg-none ml-auto">В наличии</div>
+  </div>
+  <a href="#" class="catalogCardTitle mb-1 fw-medium">
+    Прямой диван «Петербург» Прямой диван «Петербург» (категория 5)
+  </a>
+  <div class="catalogCardDescr mb-10 color-grey fz-14 fz-lg-10">
+    Стильный диван подойдет для любого интерьера. Простой механизм обеспечивает удобство в
+    использовании.
+  </div>
+  <div class="d-flex align-items-center gap-1">
+    <img src="img/admin/logo/brand-2.svg" alt="logo" class="catalogCardBrand">
+    <span class="fz-12 fz-lg-10">«Прогресс»</span>
+  </div>
+  <div class="available mt-10 fz-14 d-none d-lg-flex gap-1 align-items-center">В наличии</div>
+</div>
+        </div>
+
+      </div>
+    </div>
+
+  </div>
+</section>
+			<div class="bg">
+				<section class="production sect">
+  <div class="container">
+    <img class="productionLogo d-block d-lg-none mb-4" style="width: 150px;" src="img/admin/production/logo.svg" alt="logo">
+    <div class="sectHead">
+      <h2 class="h2-lg-h5">Собственное производство мебели</h2>
+    </div>
+    <div class="row mb-30 mb-lg-20">
+
+      <div class="col-lg-8">
+
+        <div class="fz-20 fz-lg-16 fw-medium mb-20 mb-lg-8">
+          В 2014 году мы открыли свое производство мягкой мебели под брендом «Домой».
+        </div>
+        <div class="content fz-lg-12">
+          <p>
+            Главная цель – предложить нашим клиентам максимально качественные диваны, кресла и пуфы по доступной цене.
+          </p>
+          <p>
+            У нас свой столярный, швейный и обивочный цеха, поэтому мы можем быстро реагировать на потребности клиентов,
+            предлагать новые модели, новые ткани и учитывать индивидуальные пожелания.
+          </p>
+        </div>
+      </div>
+      <div class="col-lg-4 d-none d-lg-block">
+        <img class="productionLogo" src="img/admin/production/logo.svg" alt="logo">
+      </div>
+    </div>
+    <div class="row">
+      <h3 class="mb-30 mb-lg-24 h3-lg-h5">
+        Наши преимущества:
+      </h3>
+      <div class="col-xl-9">
+        <div class="row">
+          <div class="col-6 col-lg-4 mb-30 mb-lg-24">
+            <div class="d-flex gap-2 gap-sm-3 productionAdv align-items-start flex-column flex-sm-row">
+              <img class="productionAdvIcon" src="img/admin/production/adv-1.svg" alt="icon">
+              <div class="d-flex flex-column gap-1">
+                <div class="fw-medium font-family-second lh-140 fz-lg-14">
+                  Сроки изготовления заказных позиций от 7 дней
+                </div>
+                <div class="fz-14 fz-lg-12 color-lg-grey">
+                  Сроки изготовления нестандартных изделий от 10 дней.
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-6 col-lg-4 mb-30 mb-lg-24">
+            <div class="d-flex gap-2 gap-sm-3 productionAdv align-items-start flex-column flex-sm-row">
+              <img class="productionAdvIcon" src="img/admin/production/adv-2.svg" alt="icon">
+              <div class="d-flex flex-column gap-1">
+                <div class="fw-medium font-family-second lh-140 fz-lg-14">
+                  Гибкость в габаритах и шитье
+                </div>
+                <div class="fz-14 fz-lg-12 color-lg-grey">
+                  Можем подогнать любой диван под размеры клиента, изменить шитье, дизайн и наполнение подушек и т.д.
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-6 col-lg-4 mb-30 mb-lg-24">
+            <div class="d-flex gap-2 gap-sm-3 productionAdv align-items-start flex-column flex-sm-row">
+              <img class="productionAdvIcon" src="img/admin/production/adv-3.svg" alt="icon">
+              <div class="d-flex flex-column gap-1">
+                <div class="fw-medium font-family-second lh-140 fz-lg-14">
+                  Низкий процент рекламаций
+                </div>
+                <div class="fz-14 fz-lg-12 color-lg-grey">
+                  (менее 0,5%) – знак высокого качества.
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-6 col-lg-4 mb-30 mb-lg-24">
+            <div class="d-flex gap-2 gap-sm-3 productionAdv align-items-start flex-column flex-sm-row">
+              <img class="productionAdvIcon" src="img/admin/production/adv-4.svg" alt="icon">
+              <div class="d-flex flex-column gap-1">
+                <div class="fw-medium font-family-second lh-140 fz-lg-14">
+                  Используем высокоплотный пенополиуретан и независимые пружинный блоки
+                </div>
+                <div class="fz-14 fz-lg-12 color-lg-grey">
+                  это обеспечивает комфорт и долгий срок службы.
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-6 col-lg-4 mb-30 mb-lg-24">
+            <div class="d-flex gap-2 gap-sm-3 productionAdv align-items-start flex-column flex-sm-row">
+              <img class="productionAdvIcon" src="img/admin/production/adv-5.svg" alt="icon">
+              <div class="d-flex flex-column gap-1">
+                <div class="fw-medium font-family-second lh-140 fz-lg-14">
+                  Крепкие каркасы из сухой сосны, фанеры и «толстого» ДВП – защита от деформаций
+                </div>
+                <div class="fz-14 fz-lg-12 color-lg-grey">
+                  Наши диваны выдерживают и прыжки ребенка, и жесткую эксплуатацию людьми самого разного веса.
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-6 col-lg-4 mb-30 mb-lg-24">
+            <div class="d-flex gap-2 gap-sm-3 productionAdv align-items-start flex-column flex-sm-row">
+              <img class="productionAdvIcon" src="img/admin/production/adv-6.svg" alt="icon">
+              <div class="d-flex flex-column gap-1">
+                <div class="fw-medium font-family-second lh-140 fz-lg-14">
+                  Внимательно слушаем потребности клиента
+                </div>
+                <div class="fz-14 fz-lg-12 color-lg-grey">
+                  делаем «помягче», «пожестче», подберем ткань даже если дома есть когтистое животное, поменяем цвет
+                  нитки, изменим форму подушек. Главное, чтобы клиент купил то, что ему нужно, а не то, что предлагает
+                  магазин.
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+				<section class="products sect pt-0 sliderW">
+  <div class="container">
+
+    <div class="sectHead mb-30 mb-lg-20 d-flex justify-content-between align-items-center gap-4">
+      <h2 class="h2">
+        Продукция нашего производства
+      </h2>
+      <div class="d-none d-lg-flex gap-2">
+        <button class="navArrow navArrowPrev">
+          <svg>
+            <use xlink:href="img/icons/icons.svg#nav-arrow-prev"></use>
+          </svg>
+        </button>
+        <button class="navArrow navArrowNext">
+          <svg>
+            <use xlink:href="img/icons/icons.svg#nav-arrow-next"></use>
+          </svg>
+        </button>
+      </div>
+    </div>
+
+    <div class="swiper catalogSlider">
+      <div class="swiper-wrapper">
+
+        <div class="swiper-slide catalogSlide">
+          <div class="catalogCard">
+
+  <a href="#" class="swiper d-flex catalogCardSlider mb-10">
+    <div class="swiper-wrapper">
+      <div class="swiper-slide catalogCardImg catalogCardImg--cover d-flex">
+        <img src="img/admin/catalog/image-3.png" alt="image">
+      </div>
+      <div class="swiper-slide catalogCardImg catalogCardImg--cover d-flex">
+        <img src="img/admin/catalog/image-1.jpg" alt="image">
+      </div>
+
+    </div>
+    <div class="swiper-pagination"></div>
+  </a>
+
+  <div class="catalogCardPrice mb-1 d-flex flex-wrap gap-10 gap-lg-5px align-items-center">
+    <div class="h5">
+      52 300 ₽
+    </div>
+  </div>
+  <a href="#" class="catalogCardTitle mb-1 fw-medium">
+    Тумба под ТВ из модульной серии «Хлоя» дуб канзас / лофт голден пэлас 0988.5 (КМК)
+  </a>
+  <div class="catalogCardDescr mb-10 color-grey fz-14 fz-lg-10">
+    Стильная тумба под ТВ из модульной серии «Хлоя» в цвете дуб канзас / лофт голден пэлас. Высокие металлические опоры,
+    современная фурнитура и приятные фасады из МДФ. Смотрите также шкафы из данной серии в рекомендациях.
+  </div>
+  <div class="d-flex align-items-center gap-1">
+    <img src="img/admin/logo/brand-3.svg" alt="logo" class="catalogCardBrand">
+    <span class="fz-12 fz-lg-10">«Прогресс»</span>
+  </div>
+
+</div>
+        </div>
+
+        <div class="swiper-slide catalogSlide">
+          <div class="catalogCard">
+
+  <a href="#" class="swiper d-flex catalogCardSlider mb-10">
+    <div class="swiper-wrapper">
+      <div class="swiper-slide catalogCardImg d-flex">
+        <img src="img/admin/catalog/image-2.png" alt="image">
+      </div>
+      <div class="swiper-slide catalogCardImg catalogCardImg--cover d-flex">
+        <img src="img/admin/catalog/image-1.jpg" alt="image">
+      </div>
+      <div class="swiper-slide catalogCardImg catalogCardImg--cover d-flex">
+        <img src="img/admin/catalog/image-3.png" alt="image">
+      </div>
+      <div class="swiper-slide catalogCardImg d-flex">
+        <img src="img/admin/catalog/image-2.png" alt="image">
+      </div>
+      <div class="swiper-slide catalogCardImg catalogCardImg--cover d-flex">
+        <img src="img/admin/catalog/image-1.jpg" alt="image">
+      </div>
+    </div>
+    <div class="swiper-pagination"></div>
+    <div class="tag-list">
+      <ul class="d-flex gap-1 flex-wrap">
+        <li class="bg-green color-white px-2 py-1 rounded-1 fw-medium fz-12">
+          Новинка
+        </li>
+      </ul>
+    </div>
+  </a>
+
+  <div class="catalogCardPrice mb-1 d-flex flex-wrap gap-10 gap-lg-5px align-items-center">
+    <div class="h5">
+      127 300 ₽
+    </div>
+     <div class="available fz-10 d-flex gap-1 align-items-center d-lg-none ml-auto">В наличии</div>
+  </div>
+  <a href="#" class="catalogCardTitle mb-1 fw-medium">
+    Прямой диван «Петербург» Прямой диван «Петербург» (категория 5)
+  </a>
+  <div class="catalogCardDescr mb-10 color-grey fz-14 fz-lg-10">
+    Стильный диван подойдет для любого интерьера. Простой механизм обеспечивает удобство в
+    использовании.
+  </div>
+  <div class="d-flex align-items-center gap-1">
+    <img src="img/admin/logo/brand-2.svg" alt="logo" class="catalogCardBrand">
+    <span class="fz-12 fz-lg-10">«Прогресс»</span>
+  </div>
+  <div class="available mt-10 fz-14 d-none d-lg-flex gap-1 align-items-center">В наличии</div>
+</div>
+        </div>
+
+        <div class="swiper-slide catalogSlide">
+          <div class="catalogCard">
+
+  <a href="#" class="swiper d-flex catalogCardSlider mb-10">
+    <div class="swiper-wrapper">
+      <div class="swiper-slide catalogCardImg d-flex catalogCardImg--cover">
+        <img src="img/admin/catalog/image-3.png" alt="image">
+      </div>
+      <div class="swiper-slide catalogCardImg catalogCardImg--cover d-flex">
+        <img src="img/admin/catalog/image-1.jpg" alt="image">
+      </div>
+
+    </div>
+    <div class="swiper-pagination"></div>
+    <div class="tag-list">
+      <ul class="d-flex gap-1 flex-wrap">
+        <li class="bg-black color-white px-2 py-1 rounded-1 fw-medium fz-12">
+          Акция!
+        </li>
+      </ul>
+    </div>
+  </a>
+
+  <div class="catalogCardPrice mb-1 d-flex flex-wrap gap-10 gap-lg-5px align-items-center">
+    <div class="h5">
+      52 300 ₽
+    </div>
+  </div>
+  <a href="#" class="catalogCardTitle mb-1 fw-medium">
+    Тумба под ТВ из модульной серии «Хлоя» дуб канзас / лофт голден пэлас 0988.5 (КМК)
+  </a>
+  <div class="catalogCardDescr mb-10 color-grey fz-14 fz-lg-10">
+    Стильная тумба под ТВ из модульной серии «Хлоя» в цвете дуб канзас / лофт голден пэлас. Высокие металлические опоры,
+    современная фурнитура и приятные фасады из МДФ. Смотрите также шкафы из данной серии в рекомендациях.
+  </div>
+  <div class="d-flex align-items-center gap-1">
+    <img src="img/admin/logo/brand-3.svg" alt="logo" class="catalogCardBrand">
+    <span class="fz-12 fz-lg-10">«Прогресс»</span>
+  </div>
+
+</div>
+        </div>
+
+        <div class="swiper-slide catalogSlide">
+          <div class="catalogCard">
+
+  <a href="#" class="swiper d-flex catalogCardSlider mb-10">
+    <div class="swiper-wrapper">
+      <div class="swiper-slide catalogCardImg catalogCardImg--cover d-flex">
+        <img src="img/admin/catalog/image-1.jpg" alt="image">
+      </div>
+      <div class="swiper-slide catalogCardImg d-flex">
+        <img src="img/admin/catalog/image-2.png" alt="image">
+      </div>
+      <div class="swiper-slide catalogCardImg catalogCardImg--cover d-flex">
+        <img src="img/admin/catalog/image-3.png" alt="image">
+      </div>
+      <div class="swiper-slide catalogCardImg d-flex">
+        <img src="img/admin/catalog/image-2.png" alt="image">
+      </div>
+      <div class="swiper-slide catalogCardImg catalogCardImg--cover d-flex">
+        <img src="img/admin/catalog/image-1.jpg" alt="image">
+      </div>
+    </div>
+    <div class="swiper-pagination"></div>
+    <div class="tag-list">
+      <ul class="d-flex gap-1 flex-wrap">
+        <li class="bg-orange color-white px-2 py-1 rounded-1 fw-medium fz-12">
+          Хит продаж!
+        </li>
+      </ul>
+    </div>
+  </a>
+
+  <div class="catalogCardPrice mb-1 d-flex gap-10 gap-lg-5px align-items-center flex-wrap">
+    <div class="p-1 bg-orange rounded-1 fz-12 fw-medium color-white">
+      -35%
+    </div>
+    <div class="h5">
+      85 000 ₽
+    </div>
+    <div class="color-grey line-through">
+      125 000 ₽
+    </div>
+    <div class="available fz-10 d-flex gap-1 align-items-center d-lg-none ml-auto">В наличии</div>
+  </div>
+  <a href="#" class="catalogCardTitle mb-1 fw-medium">
+    Угловой диван «Петербург» (категория 2)
+  </a>
+  <div class="catalogCardDescr mb-10 color-grey fz-14 fz-lg-10">
+    Стильный диван подойдет для любого интерьера. Простой механизм обеспечивает удобство в
+    использовании.
+  </div>
+  <div class="d-flex align-items-center gap-1">
+    <img src="img/admin/logo/brand-1.svg" alt="logo" class="catalogCardBrand">
+    <span class="fz-12 fz-lg-10">«Прогресс»</span>
+  </div>
+  <div class="available mt-10 fz-14 d-none d-lg-flex gap-1 align-items-center">В наличии</div>
+
+</div>
+        </div>
+
+        <div class="swiper-slide catalogSlide">
+          <div class="catalogCard">
+
+  <a href="#" class="swiper d-flex catalogCardSlider mb-10">
+    <div class="swiper-wrapper">
+      <div class="swiper-slide catalogCardImg d-flex">
+        <img src="img/admin/catalog/image-2.png" alt="image">
+      </div>
+      <div class="swiper-slide catalogCardImg catalogCardImg--cover d-flex">
+        <img src="img/admin/catalog/image-1.jpg" alt="image">
+      </div>
+      <div class="swiper-slide catalogCardImg catalogCardImg--cover d-flex">
+        <img src="img/admin/catalog/image-3.png" alt="image">
+      </div>
+      <div class="swiper-slide catalogCardImg d-flex">
+        <img src="img/admin/catalog/image-2.png" alt="image">
+      </div>
+      <div class="swiper-slide catalogCardImg catalogCardImg--cover d-flex">
+        <img src="img/admin/catalog/image-1.jpg" alt="image">
+      </div>
+    </div>
+    <div class="swiper-pagination"></div>
+    <div class="tag-list">
+      <ul class="d-flex gap-1 flex-wrap">
+        <li class="bg-green color-white px-2 py-1 rounded-1 fw-medium fz-12">
+          Новинка
+        </li>
+      </ul>
+    </div>
+  </a>
+
+  <div class="catalogCardPrice mb-1 d-flex flex-wrap gap-10 gap-lg-5px align-items-center">
+    <div class="h5">
+      127 300 ₽
+    </div>
+     <div class="available fz-10 d-flex gap-1 align-items-center d-lg-none ml-auto">В наличии</div>
+  </div>
+  <a href="#" class="catalogCardTitle mb-1 fw-medium">
+    Прямой диван «Петербург» Прямой диван «Петербург» (категория 5)
+  </a>
+  <div class="catalogCardDescr mb-10 color-grey fz-14 fz-lg-10">
+    Стильный диван подойдет для любого интерьера. Простой механизм обеспечивает удобство в
+    использовании.
+  </div>
+  <div class="d-flex align-items-center gap-1">
+    <img src="img/admin/logo/brand-2.svg" alt="logo" class="catalogCardBrand">
+    <span class="fz-12 fz-lg-10">«Прогресс»</span>
+  </div>
+  <div class="available mt-10 fz-14 d-none d-lg-flex gap-1 align-items-center">В наличии</div>
+</div>
+        </div>
+
+        <div class="swiper-slide catalogSlide">
+          <div class="catalogCard">
+
+  <a href="#" class="swiper d-flex catalogCardSlider mb-10">
+    <div class="swiper-wrapper">
+      <div class="swiper-slide catalogCardImg catalogCardImg--cover d-flex">
+        <img src="img/admin/catalog/image-1.jpg" alt="image">
+      </div>
+      <div class="swiper-slide catalogCardImg d-flex">
+        <img src="img/admin/catalog/image-2.png" alt="image">
+      </div>
+      <div class="swiper-slide catalogCardImg catalogCardImg--cover d-flex">
+        <img src="img/admin/catalog/image-3.png" alt="image">
+      </div>
+      <div class="swiper-slide catalogCardImg d-flex">
+        <img src="img/admin/catalog/image-2.png" alt="image">
+      </div>
+      <div class="swiper-slide catalogCardImg catalogCardImg--cover d-flex">
+        <img src="img/admin/catalog/image-1.jpg" alt="image">
+      </div>
+    </div>
+    <div class="swiper-pagination"></div>
+    <div class="tag-list">
+      <ul class="d-flex gap-1 flex-wrap">
+        <li class="bg-orange color-white px-2 py-1 rounded-1 fw-medium fz-12">
+          Хит продаж!
+        </li>
+      </ul>
+    </div>
+  </a>
+
+  <div class="catalogCardPrice mb-1 d-flex gap-10 gap-lg-5px align-items-center flex-wrap">
+    <div class="p-1 bg-orange rounded-1 fz-12 fw-medium color-white">
+      -35%
+    </div>
+    <div class="h5">
+      85 000 ₽
+    </div>
+    <div class="color-grey line-through">
+      125 000 ₽
+    </div>
+    <div class="available fz-10 d-flex gap-1 align-items-center d-lg-none ml-auto">В наличии</div>
+  </div>
+  <a href="#" class="catalogCardTitle mb-1 fw-medium">
+    Угловой диван «Петербург» (категория 2)
+  </a>
+  <div class="catalogCardDescr mb-10 color-grey fz-14 fz-lg-10">
+    Стильный диван подойдет для любого интерьера. Простой механизм обеспечивает удобство в
+    использовании.
+  </div>
+  <div class="d-flex align-items-center gap-1">
+    <img src="img/admin/logo/brand-1.svg" alt="logo" class="catalogCardBrand">
+    <span class="fz-12 fz-lg-10">«Прогресс»</span>
+  </div>
+  <div class="available mt-10 fz-14 d-none d-lg-flex gap-1 align-items-center">В наличии</div>
+
+</div>
+        </div>
+
+        <div class="swiper-slide catalogSlide">
+          <div class="catalogCard">
+
+  <a href="#" class="swiper d-flex catalogCardSlider mb-10">
+    <div class="swiper-wrapper">
+      <div class="swiper-slide catalogCardImg d-flex">
+        <img src="img/admin/catalog/image-2.png" alt="image">
+      </div>
+      <div class="swiper-slide catalogCardImg catalogCardImg--cover d-flex">
+        <img src="img/admin/catalog/image-1.jpg" alt="image">
+      </div>
+      <div class="swiper-slide catalogCardImg catalogCardImg--cover d-flex">
+        <img src="img/admin/catalog/image-3.png" alt="image">
+      </div>
+      <div class="swiper-slide catalogCardImg d-flex">
+        <img src="img/admin/catalog/image-2.png" alt="image">
+      </div>
+      <div class="swiper-slide catalogCardImg catalogCardImg--cover d-flex">
+        <img src="img/admin/catalog/image-1.jpg" alt="image">
+      </div>
+    </div>
+    <div class="swiper-pagination"></div>
+    <div class="tag-list">
+      <ul class="d-flex gap-1 flex-wrap">
+        <li class="bg-green color-white px-2 py-1 rounded-1 fw-medium fz-12">
+          Новинка
+        </li>
+      </ul>
+    </div>
+  </a>
+
+  <div class="catalogCardPrice mb-1 d-flex flex-wrap gap-10 gap-lg-5px align-items-center">
+    <div class="h5">
+      127 300 ₽
+    </div>
+     <div class="available fz-10 d-flex gap-1 align-items-center d-lg-none ml-auto">В наличии</div>
+  </div>
+  <a href="#" class="catalogCardTitle mb-1 fw-medium">
+    Прямой диван «Петербург» Прямой диван «Петербург» (категория 5)
+  </a>
+  <div class="catalogCardDescr mb-10 color-grey fz-14 fz-lg-10">
+    Стильный диван подойдет для любого интерьера. Простой механизм обеспечивает удобство в
+    использовании.
+  </div>
+  <div class="d-flex align-items-center gap-1">
+    <img src="img/admin/logo/brand-2.svg" alt="logo" class="catalogCardBrand">
+    <span class="fz-12 fz-lg-10">«Прогресс»</span>
+  </div>
+  <div class="available mt-10 fz-14 d-none d-lg-flex gap-1 align-items-center">В наличии</div>
+</div>
+        </div>
+
+        <div class="swiper-slide catalogSlide">
+          <div class="catalogCard">
+
+  <a href="#" class="swiper d-flex catalogCardSlider mb-10">
+    <div class="swiper-wrapper">
+      <div class="swiper-slide catalogCardImg d-flex catalogCardImg--cover">
+        <img src="img/admin/catalog/image-3.png" alt="image">
+      </div>
+      <div class="swiper-slide catalogCardImg catalogCardImg--cover d-flex">
+        <img src="img/admin/catalog/image-1.jpg" alt="image">
+      </div>
+
+    </div>
+    <div class="swiper-pagination"></div>
+    <div class="tag-list">
+      <ul class="d-flex gap-1 flex-wrap">
+        <li class="bg-black color-white px-2 py-1 rounded-1 fw-medium fz-12">
+          Акция!
+        </li>
+      </ul>
+    </div>
+  </a>
+
+  <div class="catalogCardPrice mb-1 d-flex flex-wrap gap-10 gap-lg-5px align-items-center">
+    <div class="h5">
+      52 300 ₽
+    </div>
+  </div>
+  <a href="#" class="catalogCardTitle mb-1 fw-medium">
+    Тумба под ТВ из модульной серии «Хлоя» дуб канзас / лофт голден пэлас 0988.5 (КМК)
+  </a>
+  <div class="catalogCardDescr mb-10 color-grey fz-14 fz-lg-10">
+    Стильная тумба под ТВ из модульной серии «Хлоя» в цвете дуб канзас / лофт голден пэлас. Высокие металлические опоры,
+    современная фурнитура и приятные фасады из МДФ. Смотрите также шкафы из данной серии в рекомендациях.
+  </div>
+  <div class="d-flex align-items-center gap-1">
+    <img src="img/admin/logo/brand-3.svg" alt="logo" class="catalogCardBrand">
+    <span class="fz-12 fz-lg-10">«Прогресс»</span>
+  </div>
+
+</div>
+        </div>
+
+        <div class="swiper-slide catalogSlide">
+          <div class="catalogCard">
+
+  <a href="#" class="swiper d-flex catalogCardSlider mb-10">
+    <div class="swiper-wrapper">
+      <div class="swiper-slide catalogCardImg catalogCardImg--cover d-flex">
+        <img src="img/admin/catalog/image-1.jpg" alt="image">
+      </div>
+      <div class="swiper-slide catalogCardImg d-flex">
+        <img src="img/admin/catalog/image-2.png" alt="image">
+      </div>
+      <div class="swiper-slide catalogCardImg catalogCardImg--cover d-flex">
+        <img src="img/admin/catalog/image-3.png" alt="image">
+      </div>
+      <div class="swiper-slide catalogCardImg d-flex">
+        <img src="img/admin/catalog/image-2.png" alt="image">
+      </div>
+      <div class="swiper-slide catalogCardImg catalogCardImg--cover d-flex">
+        <img src="img/admin/catalog/image-1.jpg" alt="image">
+      </div>
+    </div>
+    <div class="swiper-pagination"></div>
+    <div class="tag-list">
+      <ul class="d-flex gap-1 flex-wrap">
+        <li class="bg-orange color-white px-2 py-1 rounded-1 fw-medium fz-12">
+          Хит продаж!
+        </li>
+      </ul>
+    </div>
+  </a>
+
+  <div class="catalogCardPrice mb-1 d-flex gap-10 gap-lg-5px align-items-center flex-wrap">
+    <div class="p-1 bg-orange rounded-1 fz-12 fw-medium color-white">
+      -35%
+    </div>
+    <div class="h5">
+      85 000 ₽
+    </div>
+    <div class="color-grey line-through">
+      125 000 ₽
+    </div>
+    <div class="available fz-10 d-flex gap-1 align-items-center d-lg-none ml-auto">В наличии</div>
+  </div>
+  <a href="#" class="catalogCardTitle mb-1 fw-medium">
+    Угловой диван «Петербург» (категория 2)
+  </a>
+  <div class="catalogCardDescr mb-10 color-grey fz-14 fz-lg-10">
+    Стильный диван подойдет для любого интерьера. Простой механизм обеспечивает удобство в
+    использовании.
+  </div>
+  <div class="d-flex align-items-center gap-1">
+    <img src="img/admin/logo/brand-1.svg" alt="logo" class="catalogCardBrand">
+    <span class="fz-12 fz-lg-10">«Прогресс»</span>
+  </div>
+  <div class="available mt-10 fz-14 d-none d-lg-flex gap-1 align-items-center">В наличии</div>
+
+</div>
+        </div>
+
+        <div class="swiper-slide catalogSlide">
+          <div class="catalogCard">
+
+  <a href="#" class="swiper d-flex catalogCardSlider mb-10">
+    <div class="swiper-wrapper">
+      <div class="swiper-slide catalogCardImg d-flex">
+        <img src="img/admin/catalog/image-2.png" alt="image">
+      </div>
+      <div class="swiper-slide catalogCardImg catalogCardImg--cover d-flex">
+        <img src="img/admin/catalog/image-1.jpg" alt="image">
+      </div>
+      <div class="swiper-slide catalogCardImg catalogCardImg--cover d-flex">
+        <img src="img/admin/catalog/image-3.png" alt="image">
+      </div>
+      <div class="swiper-slide catalogCardImg d-flex">
+        <img src="img/admin/catalog/image-2.png" alt="image">
+      </div>
+      <div class="swiper-slide catalogCardImg catalogCardImg--cover d-flex">
+        <img src="img/admin/catalog/image-1.jpg" alt="image">
+      </div>
+    </div>
+    <div class="swiper-pagination"></div>
+    <div class="tag-list">
+      <ul class="d-flex gap-1 flex-wrap">
+        <li class="bg-green color-white px-2 py-1 rounded-1 fw-medium fz-12">
+          Новинка
+        </li>
+      </ul>
+    </div>
+  </a>
+
+  <div class="catalogCardPrice mb-1 d-flex flex-wrap gap-10 gap-lg-5px align-items-center">
+    <div class="h5">
+      127 300 ₽
+    </div>
+     <div class="available fz-10 d-flex gap-1 align-items-center d-lg-none ml-auto">В наличии</div>
+  </div>
+  <a href="#" class="catalogCardTitle mb-1 fw-medium">
+    Прямой диван «Петербург» Прямой диван «Петербург» (категория 5)
+  </a>
+  <div class="catalogCardDescr mb-10 color-grey fz-14 fz-lg-10">
+    Стильный диван подойдет для любого интерьера. Простой механизм обеспечивает удобство в
+    использовании.
+  </div>
+  <div class="d-flex align-items-center gap-1">
+    <img src="img/admin/logo/brand-2.svg" alt="logo" class="catalogCardBrand">
+    <span class="fz-12 fz-lg-10">«Прогресс»</span>
+  </div>
+  <div class="available mt-10 fz-14 d-none d-lg-flex gap-1 align-items-center">В наличии</div>
+</div>
+        </div>
+
+      </div>
+    </div>
+
+  </div>
+</section>
+			</div>
+			<section class="comfort sect">
+  <div class="container">
+    <div class="d-grid grid-12 gap-20 gap-lg-8 mb-20">
+      <div class="column column-7 column-lg-6 order-1">
+        <div class="p-35 p-35-lg-20 radius-20 radius-lg-12 bg-orange h-320 h-md-180 position-relative px-20 px-lg-5">
+          <div class="fz-72 font-family-second color-white mb-2 fw-bold" style="max-width: 550px;">
+            Создаем уют и&nbsp;комфорт в&nbsp;вашем доме
+          </div>
+          <img class="position-absolute b-0 r-0 w-1600-200" src="img/admin/about/house.svg" alt="icon">
+        </div>
+      </div>
+      <div class="column column-5 column-lg-6 order-2">
+        <img src="img/admin/about/image-4.jpg" alt="image"
+          class="w-100 h-320 h-md-180 radius-20 radius-lg-12 image-cover">
+      </div>
+      <div class="column column-4 column-lg-6 order-4 order-lg-3">
+        <div class="p-35 p-35-lg-20 radius-20 radius-lg-12 bg h-100">
+
+          <div class="fz-40 fz-lg-30 fz-md-24 fz-sm-16 fz-390-14 mb-2 fw-bold fw-lg-semibold color-orange font-family-second"
+            style="max-width: 370px;">
+            Эксперты своего&nbsp;дела
+          </div>
+          <div class="fz-20 fz-lg-16 fz-sm-12 font-family-second" style="max-width: 370px;">
+            Помогаем томичам с выбором мебели уже 20 лет
+          </div>
+        </div>
+      </div>
+      <div class="column column-4 column-lg-6 order-3 order-lg-4">
+        <img src="img/admin/about/image-5.jpg" alt="image"
+          class="w-100 h-320 h-md-180 radius-20 radius-lg-12 image-cover">
+      </div>
+      <div class="column column-4 column-lg-6 order-5">
+        <div class="p-35 p-35-lg-20 radius-20 radius-lg-12 bg-black h-320 h-md-180 position-relative">
+          <div
+            class="mb-2 fz-40 fz-lg-30 fz-md-24 fz-sm-16 fz-390-14 color-orange font-family-second fw-bold fw-lg-semibold position-relative z-1">
+            Честные цены
+          </div>
+          <div class="fz-20 fz-lg-16 fz-sm-12 lh-140 font-family-second color-white position-relative z-1">
+            Продаем напрямую от фабрик, поэтому дешевле, чем у посредников.
+          </div>
+          <img class="position-absolute b-0 r-0 w-xl-150 w-md-100 w-370-80" src="img/admin/about/sale.png" alt="icon">
+        </div>
+      </div>
+      <div class="column-6 order-6 d-block d-lg-none">
+        <img src="img/admin/about/image-6.jpg" alt="image"
+          class="w-100 h-320 h-md-180 radius-20 radius-lg-12 image-cover">
+      </div>
+    </div>
+    <div class="d-grid grid-12 gap-20 gap-lg-8">
+      <div class="column column-9 column-lg-6 d-grid grid-12 gap-20 gap-lg-8 order-2 order-lg-1">
+        <div class="column column-4 d-none d-lg-block">
+          <div
+            class="h-320 h-md-180 bg-black radius-20 radius-lg-12 d-flex flex-column align-items-center justify-content-center">
+            <img class="w-180" src="img/admin/about/m-logo.svg" alt="logo" class="mx-auto">
+          </div>
+        </div>
+        <div class="column column-4 column-lg-6 d-none d-lg-block">
+          <img src="img/admin/about/image-6.jpg" alt="image"
+            class="w-100 h-320 h-md-180 radius-20 radius-lg-12 image-cover">
+        </div>
+        <div class="column column-4 column-lg-12">
+          <div class="p-35 p-35-lg-20 radius-20 radius-lg-12 bg h-100">
+
+            <div class="fz-40 fz-lg-30 fz-md-24 fz-sm-16 fz-390-14 mb-2 fw-bold fw-lg-semibold color-orange font-family-second"
+              style="max-width: 370px;">
+              Удобный выбор
+            </div>
+            <div class="fz-20 fz-lg-16 fz-sm-12 lh-140 font-family-second" style="max-width: 370px;">
+              4 выставочных зала и большой склад — посмотрите и заберите сегодня.
+            </div>
+          </div>
+        </div>
+        <div class="column column-7 d-none d-lg-block">
+          <div class="p-35 p-35-lg-20 radius-20 radius-lg-12 bg h-100">
+
+            <div class="fz-40 fz-lg-30 fz-md-24 fz-sm-16 fz-390-14 mb-2 fw-bold fw-lg-semibold color-orange font-family-second"
+              style="max-width: 450px;">
+              Индивидуальный подход
+            </div>
+            <div class="fz-20 fz-lg-16 fz-sm-12 lh-140 font-family-second" style="max-width: 450px;">
+              Если нужного нет в каталоге — сделаем для вас на собственном производстве.
+            </div>
+          </div>
+        </div>
+        <div class="column column-5 column-lg-6 d-none d-lg-block">
+          <img src="img/admin/about/image-7.jpg" alt="image"
+            class="w-100 h-320 h-md-180 radius-20 radius-lg-12 image-cover">
+        </div>
+      </div>
+      <div class="column column-3 column-lg-6 order-1 order-lg-2">
+        <img src="img/admin/about/image-8.jpg" alt="image"
+          class="w-100 h-100 h-lg-320 h-md-180 radius-20 radius-lg-12 image-cover">
+      </div>
+      <div class="column column-6 d-block d-lg-none order-3">
+        <div class="p-20 radius-12 bg h-100">
+
+          <div class="fz-40 fz-lg-30 fz-md-24 fz-sm-16 fz-390-14 mb-2 fw-bold fw-lg-semibold color-orange font-family-second"
+            style="max-width: 450px;">
+            Индивидуальный подход
+          </div>
+          <div class="fz-20 fz-lg-16 fz-sm-12 lh-140 font-family-second" style="max-width: 450px;">
+            Если нужного нет в каталоге — сделаем для вас на собственном производстве.
+          </div>
+          <img class="ml-auto" src="img/admin/about/m-dark-logo.svg" alt="logo">
+        </div>
+      </div>
+      <div class="column column-6 d-block d-lg-none order-4">
+        <img src="img/admin/about/image-7.jpg" alt="image"
+          class="w-100 h-100 radius-20 radius-lg-12 image-cover">
+      </div>
+    </div>
+  </div>
+</section>
+			<section class="sect bg sliderW partnersSliderW partners">
+  <div class="container">
+
+    <div class="sectHead d-flex justify-content-between align-items-center gap-4">
+      <div class="d-flex flex-column">
+        <h2 class="h2 mb-1">
+          Крупнейшие фабрики <span>России</span> и <span>Беларуси</span>
+        </h2>
+        <div class="fz-24 fz-lg-16 font-family-second">
+          прямые эксклюзивные поставки корпусной мебели
+        </div>
+      </div>
+
+      <div class="d-none d-lg-flex gap-2">
+        <button class="navArrow navArrowPrev">
+          <svg>
+            <use xlink:href="img/icons/icons.svg#nav-arrow-prev"></use>
+          </svg>
+        </button>
+        <button class="navArrow navArrowNext">
+          <svg>
+            <use xlink:href="img/icons/icons.svg#nav-arrow-next"></use>
+          </svg>
+        </button>
+      </div>
+    </div>
+
+    <div class="partnersSlider slider1">
+      <div class="swiper-wrapper">
+        <!-- Слайды для первой строки -->
+        <a href="#" class="swiper-slide logo-slide">
+          <img src="img/admin/partners/logo-1.svg" alt="Логотип">
+        </a>
+        <a href="#" class="swiper-slide logo-slide">
+          <img src="img/admin/partners/logo-2.svg" alt="Логотип">
+        </a>
+        <a href="#" class="swiper-slide logo-slide">
+          <img src="img/admin/partners/logo-3.svg" alt="Логотип">
+        </a>
+        <!-- ... добавьте столько слайдов, сколько нужно -->
+        <a href="#" class="swiper-slide logo-slide">
+          <img src="img/admin/partners/logo-4.svg" alt="Логотип">
+        </a>
+      </div>
+    </div>
+
+    <div class="partnersSlider slider2 mt-2 mt-xl-20">
+      <div class="swiper-wrapper">
+        <!-- Слайды для второй строки (могут быть те же или другие) -->
+        <a href="#" class="swiper-slide logo-slide">
+          <img src="img/admin/partners/logo-3.svg" alt="Логотип">
+        </a>
+        <a href="#" class="swiper-slide logo-slide">
+          <img src="img/admin/partners/logo-1.svg" alt="Логотип">
+        </a>
+        <a href="#" class="swiper-slide logo-slide">
+          <img src="img/admin/partners/logo-2.svg" alt="Логотип">
+        </a>
+        <!-- ... -->
+        <a href="#" class="swiper-slide logo-slide">
+          <img src="img/admin/partners/logo-4.svg" alt="Логотип">
+        </a>
+      </div>
+    </div>
+
+  </div>
+</section>
+			<section class="news sect sliderW">
+  <div class="container">
+
+    <div class="sectHead d-flex justify-content-between align-items-center gap-4 flex-wrap">
+      <h2 class="h2">
+        Акции и новости
+      </h2>
+      <div class="d-flex align-items-center gap-30">
+        <div class="d-flex gap-2 align-items-center fz-20 fz-lg-12 fw-medium color-grey">
+          Все публикации
+          <a href="#" class="button button--orange w-28 h-28 flex-shrink-0">
+            <svg style="width: 20px; height: 20px;">
+              <use xlink:href="img/icons/icons.svg#nav-arrow-next"></use>
+            </svg>
+          </a>
+        </div>
+        <div class="d-none d-lg-flex gap-2">
+          <button class="navArrow navArrowPrev">
+            <svg>
+              <use xlink:href="img/icons/icons.svg#nav-arrow-prev"></use>
+            </svg>
+          </button>
+          <button class="navArrow navArrowNext">
+            <svg>
+              <use xlink:href="img/icons/icons.svg#nav-arrow-next"></use>
+            </svg>
+          </button>
+        </div>
+      </div>
+    </div>
+
+    <div class="swiper newsSlider">
+      <div class="swiper-wrapper">
+
+        <div class="swiper-slide newsSlide">
+          <div class="newsCard">
+  <a href="#" class="newsCardImg d-flex mb-3">
+    <img class="rounded-2" src="img/admin/news/image-1.jpg" alt="image">
+  </a>
+  <a href="#" class="newsCardTitle h5 mb-2 d-block">Доставка габаритных товаров БЕСПЛАТНО</a>
+  <div class="newsCardDescr fz-lg-12">
+    В чем заключается секрет красивого и гармоничного интерьера? Многие скажут, что всё дело в качестве и сочетаемости
+    предметов мебели, однако на самом деле подбор мебели – это только часть успеха.
+  </div>
+  <div class="newsCardDate fz-lg-12 color-grey mt-2">
+    12.04.2026
+  </div>
+</div>
+        </div>
+
+        <div class="swiper-slide newsSlide">
+          <div class="newsCard">
+  <a href="#" class="newsCardImg d-flex mb-3">
+    <img class="rounded-2" src="img/admin/news/image-2.jpg" alt="image">
+  </a>
+  <a href="#" class="newsCardTitle h5 mb-2 d-block">Принципы расстановки мебели</a>
+  <div class="newsCardDescr fz-lg-12">
+    В чем заключается секрет красивого и гармоничного интерьера?
+  </div>
+  <div class="newsCardDate fz-lg-12 color-grey mt-2">
+    12.04.2026
+  </div>
+</div>
+        </div>
+
+        <div class="swiper-slide newsSlide">
+          <div class="newsCard">
+  <a href="#" class="newsCardImg d-flex mb-3">
+    <img class="rounded-2" src="img/admin/news/image-3.jpg" alt="image">
+  </a>
+  <a href="#" class="newsCardTitle h5 mb-2 d-block">Скидка на наборы детской мебели 20%</a>
+  <div class="newsCardDescr fz-lg-12">
+    В чем заключается секрет красивого и гармоничного интерьера? Многие скажут, что всё дело в качестве и сочетаемости
+    предметов мебели, однако на самом деле подбор мебели – это только часть успеха.
+  </div>
+  <div class="newsCardDate fz-lg-12 color-grey mt-2">
+    12.04.2026
+  </div>
+</div>
+        </div>
+
+        <div class="swiper-slide newsSlide">
+          <div class="newsCard">
+  <a href="#" class="newsCardImg d-flex mb-3">
+    <img class="rounded-2" src="img/admin/news/image-1.jpg" alt="image">
+  </a>
+  <a href="#" class="newsCardTitle h5 mb-2 d-block">Доставка габаритных товаров БЕСПЛАТНО</a>
+  <div class="newsCardDescr fz-lg-12">
+    В чем заключается секрет красивого и гармоничного интерьера? Многие скажут, что всё дело в качестве и сочетаемости
+    предметов мебели, однако на самом деле подбор мебели – это только часть успеха.
+  </div>
+  <div class="newsCardDate fz-lg-12 color-grey mt-2">
+    12.04.2026
+  </div>
+</div>
+        </div>
+
+        <div class="swiper-slide newsSlide">
+          <div class="newsCard">
+  <a href="#" class="newsCardImg d-flex mb-3">
+    <img class="rounded-2" src="img/admin/news/image-2.jpg" alt="image">
+  </a>
+  <a href="#" class="newsCardTitle h5 mb-2 d-block">Принципы расстановки мебели</a>
+  <div class="newsCardDescr fz-lg-12">
+    В чем заключается секрет красивого и гармоничного интерьера?
+  </div>
+  <div class="newsCardDate fz-lg-12 color-grey mt-2">
+    12.04.2026
+  </div>
+</div>
+        </div>
+
+        <div class="swiper-slide newsSlide">
+          <div class="newsCard">
+  <a href="#" class="newsCardImg d-flex mb-3">
+    <img class="rounded-2" src="img/admin/news/image-3.jpg" alt="image">
+  </a>
+  <a href="#" class="newsCardTitle h5 mb-2 d-block">Скидка на наборы детской мебели 20%</a>
+  <div class="newsCardDescr fz-lg-12">
+    В чем заключается секрет красивого и гармоничного интерьера? Многие скажут, что всё дело в качестве и сочетаемости
+    предметов мебели, однако на самом деле подбор мебели – это только часть успеха.
+  </div>
+  <div class="newsCardDate fz-lg-12 color-grey mt-2">
+    12.04.2026
+  </div>
+</div>
+        </div>
+
+      </div>
+    </div>
+
+  </div>
+</section>
+			<section class="faq bg sect">
+  <div class="container">
+
+    <div class="sectHead">
+      <h2 class="h2">
+        Часто задаваемые вопросы
+      </h2>
+    </div>
+
+    <div class="accordion" id="accordionExample">
+      <div class="accordion-item">
+        <h4 class="accordion-header" id="headingOne">
+          <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne"
+            aria-expanded="true" aria-controls="collapseOne">
+            Как выбрать мебель?
+          </button>
+        </h4>
+        <div id="collapseOne" class="accordion-collapse collapse show" aria-labelledby="headingOne"
+          data-bs-parent="#accordionExample">
+          <div class="accordion-body">
+            <div class="content">
+              <p>
+                Как правильно подобрать мебель для дома? Перед тем, как отправиться в магазин, определите, какая именно
+                мебель Вам нужна.
+              </p>
+              <p>
+                Например, если нужно приобрести шкаф, стеллаж или комплексную систему для хранения,
+                заранее продумайте, сколько нужно места, чтобы расположить все необходимые вещи, сколько потребуется
+                открытых полок, ящиков и т. д. Обязательно посчитайте габариты мебели, чтобы покупка органично вписалась
+                в
+                интерьер.
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="accordion-item">
+        <h4 class="accordion-header" id="headingTwo">
+          <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+            data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+            Как выбрать мебель?
+          </button>
+        </h4>
+        <div id="collapseTwo" class="accordion-collapse collapse" aria-labelledby="headingTwo"
+          data-bs-parent="#accordionExample">
+          <div class="accordion-body">
+            <p>
+              <strong>Например,</strong> если нужно приобрести шкаф, стеллаж или комплексную систему для хранения,
+              заранее продумайте, сколько нужно места, чтобы расположить все необходимые вещи, сколько потребуется
+              открытых полок, ящиков и т. д. Обязательно посчитайте габариты мебели, чтобы покупка органично вписалась
+              в
+              интерьер.
+            </p>
+          </div>
+        </div>
+      </div>
+      <div class="accordion-item">
+        <h4 class="accordion-header" id="headingThree">
+          <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+            data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+            Accordion Item #3
+          </button>
+        </h4>
+        <div id="collapseThree" class="accordion-collapse collapse" aria-labelledby="headingThree"
+          data-bs-parent="#accordionExample">
+          <div class="accordion-body">
+            <strong>This is the third item's accordion body.</strong> It is hidden by default, until the collapse plugin
+            adds the appropriate classes that we use to style each element. These classes control the overall
+            appearance, as well as the showing and hiding via CSS transitions. You can modify any of this with custom
+            CSS or overriding our default variables. It's also worth noting that just about any HTML can go within the
+            <code>.accordion-body</code>, though the transition does limit overflow.
+          </div>
+        </div>
+      </div>
+    </div>
+
+  </div>
+</section>
+		</main>
+		<footer class="footer">
+  <div class="footerT">
+    <div class="container">
+      <div class="row">
+        <div class="col-sm-6 col-lg-4 col-xl-2">
+          <a href="#" class="footerLogo logo">
+            <img class="d-none d-sm-block" src="img/admin/about/m-logo.svg" alt="logo">
+            <img class="d-block d-sm-none" src="img/admin/logo/footer.svg" alt="logo">
+          </a>
+        </div>
+        <div class="col-sm-6 col-lg-4 col-xl-3 mt-30 mt-sm-0">
+          <nav class="footerNav">
+            <h5 class="color-orange">Компания</h5>
+            <ul>
+              <li><a href="#">О компании</a></li>
+              <li><a href="#">Акции и новости</a></li>
+              <li><a href="#">Адреса магазинов</a></li>
+            </ul>
+          </nav>
+        </div>
+        <div class="col-sm-6 col-lg-4 col-xl-3 mt-30 mt-lg-0">
+          <nav class="footerNav">
+            <h5 class="color-orange">Покупателям</h5>
+            <ul>
+              <li><a href="#">Доставка и сборка</a></li>
+              <li><a href="#">Полезные материалы</a></li>
+            </ul>
+          </nav>
+        </div>
+        <div class="col-sm-6 col-lg-4 col-xl-4 mt-30 mt-xl-0">
+          <nav class="footerNav">
+            <h5 class="color-orange">Свяжитесь с нами</h5>
+            <ul>
+              <li><a href="tel:+73822726723">+7 (3822) 726-723</a></li>
+              <li><a href="mailto:m251037@mail.ru">m251037@mail.ru</a></li>
+              <li><a href="#" data-fancybox data-src="#modalOrder">Заказать обратный звонок</a></li>
+            </ul>
+          </nav>
+        </div>
+      </div>
+    </div>
+
+  </div>
+  <div class="footerB py-30 py-lg-4">
+    <div class="container">
+      <div class="row align-items-center">
+        <div class="col-sm-6 col-xl-3 order-2 order-xl-1 mt-20 mt-sm-0">
+          <span class="fz-12">©2007-2026 Мебельный салон «Меридиан»</span>
+        </div>
+        <div class="col-sm-6 col-xl-3 mt-20 mt-xl-0 order-3 order-xl-2">
+          <a class="fz-12 link hover-orange" href="#">Соглашение на обработку персональных данных</a>
+        </div>
+        <div class="col-sm-6 col-xl-3 col-xxl-4 order-1 order-xl-3">
+          <div class="d-flex align-items-center gap-20">
+            <img class="footer-logo-m" src="img/admin/footer/m.svg" alt="logo">
+            <a class="fz-12 link hover-orange" href="#">Реквизиты организации</a>
+          </div>
+        </div>
+        <div class="col-sm-6 col-xl-3 col-xxl-2 mt-20 mt-xl-0 order-4">
+          <a href="#" class="develop d-flex gap-2 fz-12 hover-orange fw-medium">
+            <img src="img/icons/develop.svg" alt="icon">
+            Разработка сайта – Вангер.рф
+          </a>
+        </div>
+      </div>
+    </div>
+  </div>
+</footer>
+
+<nav class="navBar d-block d-lg-none">
+  <ul>
+    <li class="active">
+      <a href="#">
+        <svg>
+          <use xlink:href="img/icons/icons.svg#home"></use>
+        </svg>
+        <span>Главная</span>
+      </a>
+    </li>
+    <li>
+      <a class="navBarCatalogBtn" href="#">
+        <svg>
+          <use xlink:href="img/icons/icons.svg#catalog"></use>
+        </svg>
+        <span>Каталог</span>
+      </a>
+    </li>
+    <li>
+      <a href="#">
+        <svg>
+          <use xlink:href="img/icons/icons.svg#shops"></use>
+        </svg>
+        <span>Магазины</span>
+      </a>
+    </li>
+    <li>
+      <a href="#">
+        <svg>
+          <use xlink:href="img/icons/icons.svg#buyers"></use>
+        </svg>
+        <span>Покупателям</span>
+      </a>
+    </li>
+    <li>
+      <a href="#">
+       <img src="img/icons/about.svg" alt="icon">
+        <span>О нас</span>
+      </a>
+    </li>
+  </ul>
+</nav>
+		<!-- modal -->
+<!-- Напишите нам -->
+<div class="modal" id="modalOrder">
+
+  <div class="modalHead py-3 px-4 bg d-flex align-items-center justify-content-between border-b-gray">
+    <h4 class="h4 fw-bold">Напишите нам</h4>
+    <button data-fancybox-close class="f-button is-close-btn" title="Close">
+      <svg>
+        <use xlink:href="img/icons/icons.svg#remove"></use>
+      </svg>
+    </button>
+  </div>
+
+  <div class="modalContent p-4">
+    <form action="#">
+      <div class="d-flex gap-2 mb-2 flex-column flex-sm-row">
+        <div class="inputW form-floating flex-1">
+          <input type="text" class="formInput form-control" id="call_name" placeholder="Ваше имя">
+          <label for="call_name">Ваше имя</label>
+        </div>
+        <div class="inputW form-floating flex-1">
+          <input type="tel" class="formInput form-control" id="call_tel" placeholder="Телефон">
+          <label for="call_tel">Телефон</label>
+        </div>
+        <div class="inputW form-floating flex-1">
+          <input type="email" class="formInput form-control" id="call_mail" placeholder="Email">
+          <label for="call_mail">Email</label>
+        </div>
+      </div>
+      <div class="form-floating">
+        <textarea class="form-control" placeholder="Ваше сообщение" id="call_text" style="height: 120px;"></textarea>
+        <label for="call_text">Ваше сообщение</label>
+      </div>
+      <p class="fz-12 mt-2 mb-2" style="opacity: .8">
+        Мы собираем ваши контакты только чтобы связаться с вами, мы не добавляем ваши данные в базы рассылок или
+        обзвонов.
+      </p>
+      <div class="d-flex gap-3 align-items-center justify-content-between flex-column flex-sm-row">
+        <div class="agreement">
+          <input id="call_agree_1" type="checkbox">
+          <label for="call_agree_1">
+            <div class="rect"></div>
+            <div class="agreementText" style="opacity: 0.8">
+              Подтверждаю, что согласен/согласна с <a href="#">политикой конфиденциальности</a>
+            </div>
+          </label>
+        </div>
+        <button class="button modalFormBtn button--orange h-50px w-sm-100" type="submit">
+          Отправить
+        </button>
+      </div>
+    </form>
+
+
+  </div>
+</div>
+
+<!-- Заказать звонок -->
+<div class="modal" id="modalCall">
+
+  <div class="modalHead py-3 px-4 bg d-flex align-items-center justify-content-between border-b-gray">
+    <h4 class="h4 fw-bold">Заказать звонок</h4>
+    <button data-fancybox-close class="f-button is-close-btn" title="Close">
+      <svg>
+        <use xlink:href="img/icons/icons.svg#remove"></use>
+      </svg>
+    </button>
+  </div>
+
+  <div class="modalContent p-4">
+    <form action="#">
+      <div class="d-flex gap-2 mb-2 flex-column flex-sm-row">
+        <div class="inputW form-floating flex-1">
+          <input type="text" class="formInput form-control" id="call_name" placeholder="Ваше имя">
+          <label for="call_name">Ваше имя</label>
+        </div>
+        <div class="inputW form-floating flex-1">
+          <input type="tel" class="formInput form-control" id="call_tel" placeholder="Телефон">
+          <label for="call_tel">Телефон</label>
+        </div>
+      </div>
+      <p class="fz-12 mt-2 mb-2" style="opacity: .8">
+        Мы собираем ваши контакты только чтобы связаться с вами, мы не добавляем ваши данные в базы рассылок или
+        обзвонов.
+      </p>
+      <div class="d-flex gap-3 align-items-center justify-content-between flex-column flex-sm-row">
+        <div class="agreement">
+          <input id="phone_agree_1" type="checkbox">
+          <label for="phone_agree_1">
+            <div class="rect"></div>
+            <div class="agreementText" style="opacity: 0.8">
+              Подтверждаю, что согласен/согласна с <a href="#">политикой конфиденциальности</a>
+            </div>
+          </label>
+        </div>
+        <button class="button modalFormBtn button--orange h-50px w-sm-100" type="submit">
+          Отправить
+        </button>
+      </div>
+    </form>
+
+
+  </div>
+</div>
+
+<!-- Оставить заявку  -->
+<div class="modal" id="modalProductOrder">
+
+  <div class="modalHead py-3 px-4 bg d-flex align-items-center justify-content-between border-b-gray">
+    <h4 class="h4 fw-bold">Оставить заявку</h4>
+    <button data-fancybox-close class="f-button is-close-btn" title="Close">
+      <svg>
+        <use xlink:href="img/icons/icons.svg#remove"></use>
+      </svg>
+    </button>
+  </div>
+
+  <div class="modalContent p-4">
+
+    <h3 class="mb-1 h3">Угловой диван «Марвел», 707 (МФ Прогресс)</h3>
+    <div class="d-flex gap-1 mb-20 fz-lg-14">
+      <span class="color-grey">Артикул:</span>
+      <span>0000030839</span>
+    </div>
+    <form action="#">
+      <div class="d-flex gap-2 mb-2 flex-column flex-sm-row">
+        <div class="inputW form-floating flex-1">
+          <input type="text" class="formInput form-control" id="call_name" placeholder="Ваше имя">
+          <label for="call_name">Ваше имя</label>
+        </div>
+        <div class="inputW form-floating flex-1">
+          <input type="tel" class="formInput form-control" id="call_tel" placeholder="Телефон">
+          <label for="call_tel">Телефон</label>
+        </div>
+      </div>
+      <p class="fz-12 mt-2 mb-2" style="opacity: .8">
+        Мы собираем ваши контакты только чтобы связаться с вами, мы не добавляем ваши данные в базы рассылок или
+        обзвонов.
+      </p>
+      <div class="d-flex gap-3 align-items-center justify-content-between flex-column flex-sm-row">
+        <div class="agreement">
+          <input id="product_order_agree" type="checkbox">
+          <label for="product_order_agree">
+            <div class="rect"></div>
+            <div class="agreementText" style="opacity: 0.8">
+              Подтверждаю, что согласен/согласна с <a href="#">политикой конфиденциальности</a>
+            </div>
+          </label>
+        </div>
+        <button class="button modalFormBtn button--orange h-50px w-sm-100" type="submit">
+          Отправить
+        </button>
+      </div>
+    </form>
+
+
+  </div>
+</div>
+
+<!-- Квиз  -->
+<div class="modal" id="modalQuiz">
+
+  <div class="modalHead py-3 px-4 bg d-flex align-items-center justify-content-between border-b-gray">
+    <h3 class="h3 fw-medium">Подберем <span class="color-orange">идеальный</span> вариант мебели</h3>
+    <button data-fancybox-close class="f-button is-close-btn" title="Close">
+      <svg>
+        <use xlink:href="img/icons/icons.svg#remove"></use>
+      </svg>
+    </button>
+  </div>
+
+  <div class="modalContent p-4">
+
+    <form class="modalQuizForm" action="#">
+
+      <div class="modalQuizFormBlock" data-block="quiz-1">
+        <div class="fz-18 fw-medium mb-4">
+          Вопрос 1
+        </div>
+        <div class="d-grid grid-cols-2 grid-cols-sm-1 gap-3 gap-md-4 mb-2">
+          <div class="col">
+            <div class="quizRadioImg">
+              <input type="radio" id="quest_1_1" name="quest_1" hidden checked>
+              <label class="d-flex flex-column gap-2" for="quest_1_1">
+                <img src="img/admin/quiz/image-1.jpg" alt="image">
+                <div class="d-flex align-items-center gap-2">
+                  <div class="rect"></div>
+                  <div class="quizRadioImgText">Вариант ответа</div>
+                </div>
+              </label>
+            </div>
+          </div>
+          <div class="col">
+            <div class="quizRadioImg">
+              <input type="radio" id="quest_1_2" name="quest_1" hidden>
+              <label class="d-flex flex-column gap-2" for="quest_1_2">
+                <img src="img/admin/quiz/image-2.jpg" alt="image">
+                <div class="d-flex align-items-center gap-2">
+                  <div class="rect"></div>
+                  <div class="quizRadioImgText">Вариант ответа 2</div>
+                </div>
+              </label>
+            </div>
+          </div>
+          <div class="col">
+            <div class="quizRadioImg">
+              <input type="radio" id="quest_1_3" name="quest_1" hidden>
+              <label class="d-flex flex-column gap-2" for="quest_1_3">
+
+                <div class="d-flex align-items-center gap-2">
+                  <div class="rect"></div>
+                  <div class="quizRadioImgText">Другое</div>
+                </div>
+              </label>
+            </div>
+          </div>
+        </div>
+
+        <div class="inputW form-floating flex-1">
+          <input type="text" class="formInput form-control" id="call_name" placeholder="Ваше имя">
+          <label for="call_name">Ваше сообщение</label>
+        </div>
+
+      </div>
+
+      <div class="modalQuizFormBlock" data-block="quiz-2" style="display: none;">
+        <div class="fz-18 fw-medium mb-4">
+          Вопрос 2
+        </div>
+        <div class="d-flex flex-column gap-4 mb-4">
+          <div class="quizRadioImg">
+            <input type="radio" id="quest_2_1" name="quest_2" hidden checked>
+            <label class="d-flex align-items-center gap-2" for="quest_2_1">
+              <div class="rect"></div>
+              <div class="quizRadioImgText">Вариант ответа</div>
+            </label>
+          </div>
+          <div class="quizRadioImg">
+            <input type="radio" id="quest_2_2" name="quest_2" hidden>
+            <label class="d-flex align-items-center gap-2" for="quest_2_2">
+              <div class="rect"></div>
+              <div class="quizRadioImgText">Вариант ответа 2</div>
+            </label>
+          </div>
+          <div class="quizRadioImg">
+            <input type="radio" id="quest_2_3" name="quest_2" hidden>
+            <label class="d-flex align-items-center gap-2" for="quest_2_3">
+              <div class="rect"></div>
+              <div class="quizRadioImgText">Вариант ответа 3</div>
+            </label>
+          </div>
+          <div class="quizRadioImg">
+            <input type="radio" id="quest_2_4" name="quest_2" hidden>
+            <label class="d-flex align-items-center gap-2" for="quest_2_4">
+              <div class="rect"></div>
+              <div class="quizRadioImgText">Другое</div>
+            </label>
+          </div>
+        </div>
+
+        <div class="inputW form-floating flex-1">
+          <input type="text" class="formInput form-control" id="call_name" placeholder="Ваше имя">
+          <label for="call_name">Ваше сообщение</label>
+        </div>
+
+      </div>
+
+      <div class="modalQuizFormBlock" data-block="quiz-3" style="display: none;">
+        <div class="fz-18 fw-medium mb-4">
+          Вопрос 3
+        </div>
+        <div class="d-flex flex-column gap-4 mb-4">
+          <div class="checkbox-item mb-0">
+            <input type="checkbox" id="quest_3_1" name="quest_3" hidden checked>
+            <label class="font-family d-flex align-items-center gap-2 fz-16" for="quest_3_1">
+              Вариант ответа
+            </label>
+          </div>
+          <div class="checkbox-item mb-0">
+            <input type="checkbox" id="quest_3_2" name="quest_3" hidden>
+            <label class="font-family d-flex align-items-center gap-2 fz-16" for="quest_3_2">
+              Вариант ответа 2
+            </label>
+          </div>
+          <div class="checkbox-item mb-0">
+            <input type="radio" id="quest_3_3" name="quest_3" hidden>
+            <label class="font-family d-flex align-items-center gap-2 fz-16" for="quest_3_3">
+              Вариант ответа 3
+            </label>
+          </div>
+          <div class="checkbox-item mb-0">
+            <input type="radio" id="quest_3_4" name="quest_3" hidden>
+            <label class="font-family d-flex align-items-center gap-2 fz-16" for="quest_3_4">
+              Другое
+            </label>
+          </div>
+        </div>
+
+        <div class="inputW form-floating flex-1">
+          <input type="text" class="formInput form-control" id="call_name" placeholder="Ваше имя">
+          <label for="call_name">Ваше сообщение</label>
+        </div>
+
+      </div>
+
+      <div class="modalQuizFormBlock" data-block="quiz-4" style="display: none;">
+        <div class="fz-18 fw-medium mb-4">
+          Загрузите свои фотографии
+        </div>
+
+        <div class="file-wrap d-flex flex-column justify-content-center gap-3 align-items mb-4 p-4 p-sm-5">
+          <img class="file-upload-icon mx-auto" src="img/icons/photo-upload.svg" alt="icon">
+          <div class="d-flex flex-column">
+            <div class="fw-medium text-center gap-1">
+              Выберите файлы или перетащите в эту область
+            </div>
+            <div class="fz-14 color-grey text-center">
+              Указать форматы файлов и максимальный размер
+            </div>
+          </div>
+          <div class="fileUploadInputW">
+            <input type="file" id="photoUploadInput" hidden>
+            <label class="button bg px-3 h-32 fw-medium mx-auto" for="photoUploadInput">Выбрать файлы</label>
+          </div>
+        </div>
+
+        <div class="file-result d-flex flex-column gap-2 mb-4">
+
+          <div class="file-result-item bg radius-4 py-3 px-4">
+            <div class="d-flex justify-content-between gap-1 gap-sm-3 mb-1 mb-sm-3">
+
+              <div class="d-flex align-items-start align-items-sm-center gap-3 flex-column flex-sm-row">
+                <img src="img/icons/file.svg" alt="icon">
+                <div class="d-flex flex-column gap-1">
+                  <div class="fw-medium">
+                    Название файла.xlsx
+                  </div>
+                  <div class="d-flex gap-1">
+                    <span class="fz-12 color-grey text-nowrap">60 KB of 12O KB •</span>
+                    <img src="img/icons/process-upload.svg" alt="process-upload">
+                    <span class="fz-12 color-grey text-nowrap">Загрузка...</span>
+                  </div>
+                </div>
+              </div>
+              <button class="file-result-icon mx-0 mx-sm-3">
+                <svg>
+                  <use xlink:href="img/icons/icons.svg#file-close"></use>
+                </svg>
+              </button>
+            </div>
+            <div class="file-result-line w-100">
+              <div class="drag" style="background-color: var(--orange); width: 55%;"></div>
+            </div>
+          </div>
+
+          <div class="file-result-item bg radius-4 py-3 px-4">
+            <div class="d-flex justify-content-between gap-1 gap-sm-3 mb-1 mb-sm-3">
+
+              <div class="d-flex align-items-start align-items-sm-center gap-3 flex-column flex-sm-row">
+                <img src="img/icons/file.svg" alt="icon">
+                <div class="d-flex flex-column gap-1">
+                  <div class="fw-medium">
+                    Название файла.xlsx
+                  </div>
+                  <div class="d-flex gap-1">
+                    <span class="fz-12 color-grey text-nowrap">120 KB of 12O KB •</span>
+                    <img src="img/icons/success-upload.svg" alt="process-upload">
+                    <span class="fz-12 color-grey text-nowrap">Готово</span>
+                  </div>
+                </div>
+              </div>
+              <button class="file-result-icon mx-0 mx-sm-3">
+                <svg>
+                  <use xlink:href="img/icons/icons.svg#file-remove"></use>
+                </svg>
+              </button>
+            </div>
+            <div class="file-result-line w-100">
+              <div class="drag" style="background-color: var(--green); width: 100%;"></div>
+            </div>
+          </div>
+
+          <div class="file-result-item bg radius-4 py-3 px-4">
+            <div class="d-flex justify-content-between gap-1 gap-sm-3 mb-1 mb-sm-3">
+
+              <div class="d-flex align-items-start align-items-sm-center gap-3 flex-column flex-sm-row">
+                <img src="img/icons/file.svg" alt="icon">
+                <div class="d-flex flex-column gap-1">
+                  <div class="fw-medium">
+                    Название файла.xlsx
+                  </div>
+                  <div class="d-flex gap-1">
+                    <span class="fz-12 color-grey text-nowrap">0 KB of 12O KB •</span>
+                    <img src="img/icons/failed-upload.svg" alt="process-upload">
+                    <span class="fz-12 color-grey text-nowrap">Сбой при загрузке</span>
+                  </div>
+                </div>
+              </div>
+              <button class="file-result-icon mx-0 mx-sm-3">
+                <svg>
+                  <use xlink:href="img/icons/icons.svg#file-update"></use>
+                </svg>
+              </button>
+            </div>
+            <div class="file-result-line w-100" style="background-color: var(--light-dark);">
+              <div class="drag" style="background-color: var(--green); width: 0%;"></div>
+            </div>
+          </div>
+
+        </div>
+
+        <div class="inputW form-floating flex-1">
+          <input type="text" class="formInput form-control" id="call_name" placeholder="Ваше имя">
+          <label for="call_name">Ваше сообщение</label>
+        </div>
+
+      </div>
+
+      <div class="modalQuizFormBlock" data-block="quiz-5" style="display: none;">
+
+        <div class="d-flex gap-2 mb-2 flex-column flex-sm-row">
+          <div class="inputW form-floating flex-1">
+            <input type="text" class="formInput form-control" id="call_name" placeholder="Ваше имя">
+            <label for="call_name">Ваше имя</label>
+          </div>
+          <div class="inputW form-floating flex-1">
+            <input type="tel" class="formInput form-control" id="call_tel" placeholder="Телефон">
+            <label for="call_tel">Телефон</label>
+          </div>
+          <div class="inputW form-floating flex-1">
+            <input type="email" class="formInput form-control" id="call_mail" placeholder="Email">
+            <label for="call_mail">Email</label>
+          </div>
+        </div>
+
+        <p class="fz-12 mt-2 mb-3 mb-sm-4" style="opacity: .8">
+          Мы собираем ваши контакты только чтобы связаться с вами, мы не добавляем ваши данные в базы рассылок или
+          обзвонов.
+        </p>
+        <div class="agreement">
+          <input id="quiz_agree_1" type="checkbox">
+          <label for="quiz_agree_1">
+            <div class="rect"></div>
+            <div class="agreementText" style="opacity: 0.8">
+              Подтверждаю, что согласен/согласна с <a href="#">политикой конфиденциальности</a>
+            </div>
+          </label>
+        </div>
+      </div>
+
+      <div class="modalQuizFormAction d-flex gap-2 gap-sm-3 justify-content-between mt-4">
+        <button class="button bg button--gray h-50px modalQuizFormPrev fz-18 fw-medium" style="display: none;"
+          type="button">
+          Назад
+        </button>
+        <button class="button button--orange h-50px modalQuizFormNext fz-18 fw-medium" type="button">
+          Далее
+        </button>
+      </div>
+    </form>
+
+  </div>
+</div>
+	</div>
+
+	<script src="js/app.min.js"></script>
+
+
+
+</body>
+
+</html>

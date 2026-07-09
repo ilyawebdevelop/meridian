@@ -1,0 +1,104 @@
+.intro {
+  .catalogCard {
+    &Img {
+      img {
+        height: 180px;
+
+        @media(max-width: 991px) {
+          height: 120px;
+        }
+      }
+    }
+  }
+}
+
+.introMain {
+
+  &Slide {
+    padding-top: 40px;
+    padding-bottom: 40px;
+    min-height: 420px;
+    border-radius: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding-left: 95px;
+    padding-right: 95px;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+
+    @media(max-width: 1199px) {
+      min-height: 500px;
+    }
+
+    @media(max-width: 991px) {
+      padding-left: 40px;
+      padding-right: 40px;
+      border-radius: 16px;
+    }
+
+    @media(max-width: 767px) {
+      min-height: 320px;
+    }
+
+    &Title {
+      font-size: 64px;
+      line-height: 100%;
+      font-weight: 500;
+      max-width: 520px;
+      color: #fff;
+      font-family: var(--second-family);
+
+      @media(max-width: 1500px) {
+        font-size: 50px;
+      }
+      @media(max-width: 767px){
+        font-size: 40px;
+        line-height: 44px;
+      }
+      @media(max-width: 575px){
+        font-size: 35px;
+        line-height: 40px;
+      }
+    }
+
+    &Descr {
+      max-width: 350px;
+      color: #fff;
+      font-weight: 500;
+      font-size: 20px;
+      line-height: 140%;
+      @media(max-width: 991px){
+        font-size: 16px;
+        line-height: 24px;
+      }
+    }
+  }
+
+  .swiper-pagination {
+    position: absolute;
+    bottom: 20px;
+    &-bullet {
+      width: 32px;
+    }
+  }
+}
+
+.introMainSlider {
+  height: 100%;
+  @media(max-width: 575px){
+    margin-left: -16px;
+    margin-right: -16px;
+  }
+
+  .swiper-slide {
+    height: auto;
+  }
+}
+
+.introCatalogSlider {
+  @media(max-width: 575px) {
+    overflow: visible;
+  }
+}

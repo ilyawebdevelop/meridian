@@ -1,0 +1,56 @@
+.partners {
+  .logo-slide {
+    border: 1px solid var(--light);
+    border-radius: 12px;
+    padding: 20px;
+    background: var(--white);
+    width: auto;
+    width: 364px;
+    height: 150px;
+    display: flex;
+    align-items: center;
+    transition: opacity .2s linear;
+    &:hover {
+      opacity: .85;
+    }
+    @media(max-width: 991px){
+      width: 180px;
+      height: 100px;
+    }
+
+    img {
+      max-width: 220px;
+      max-height: 90px;
+      margin-left: auto;
+      margin-right: auto;
+      @media(max-width: 991px){
+        max-width: 100px;
+        max-height: 50px;
+      }
+    }
+  }
+  .sectHead {
+    @media(max-width: 767px){
+      max-width: 235px;
+    }
+  }
+}
+
+.partnersSlider {
+  width: 100%;
+  /* Важно: чтобы слайды "вылетали", родительский контейнер .sliderW
+       должен иметь overflow: hidden, но сам .swiper-container
+       должен позволять слайдам выходить за границы.
+       Иногда это достигается настройкой margin/padding на .swiper-wrapper
+       или, как в этом примере, через стили самого .sliderW */
+  overflow: visible !important;
+  /* Разрешаем выход за границы */
+}
+
+.partnersSlider.slider2 {
+  transform: translateX(180px);
+  /* Смещаем вторую строку */
+  @media(max-width: 991px){
+     transform: translateX(90px);
+  }
+}
