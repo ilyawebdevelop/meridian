@@ -13,6 +13,9 @@
 }
 
 .introMain {
+  @media(max-width: 1199px) {
+    border-bottom: 1px solid var(--light);
+  }
 
   &Slide {
     padding-top: 40px;
@@ -53,11 +56,13 @@
       @media(max-width: 1500px) {
         font-size: 50px;
       }
-      @media(max-width: 767px){
+
+      @media(max-width: 767px) {
         font-size: 40px;
         line-height: 44px;
       }
-      @media(max-width: 575px){
+
+      @media(max-width: 575px) {
         font-size: 35px;
         line-height: 40px;
       }
@@ -69,7 +74,8 @@
       font-weight: 500;
       font-size: 20px;
       line-height: 140%;
-      @media(max-width: 991px){
+
+      @media(max-width: 991px) {
         font-size: 16px;
         line-height: 24px;
       }
@@ -79,6 +85,7 @@
   .swiper-pagination {
     position: absolute;
     bottom: 20px;
+
     &-bullet {
       width: 32px;
     }
@@ -87,7 +94,8 @@
 
 .introMainSlider {
   height: 100%;
-  @media(max-width: 575px){
+
+  @media(max-width: 575px) {
     margin-left: -16px;
     margin-right: -16px;
   }
