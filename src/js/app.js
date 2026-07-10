@@ -558,7 +558,7 @@ headerSearchBtnClose?.addEventListener('click', () => {
 let searchInputArray = document.querySelectorAll('.formInput--search');
 searchInputArray.forEach(el => {
   let clearValue = el.closest('.searchField').querySelector('.search-clear');
-  console.log(clearValue);
+  // console.log(clearValue);
   el?.addEventListener('input', (event) => {
     clearValue.classList.add('active');
   });
@@ -621,18 +621,34 @@ const words = document.querySelectorAll('.podborWordAction>span');
 let currentIndex = 0;
 
 function showNextWord() {
-    // Скрываем текущий элемент
-    words[currentIndex].classList.remove('active');
+  // Скрываем текущий элемент
+  words[currentIndex]?.classList.remove('active');
 
-    // Переход к следующему элементу
-    currentIndex = (currentIndex + 1) % words.length;
+  // Переход к следующему элементу
+  currentIndex = (currentIndex + 1) % words.length;
 
-    // Показываем следующий элемент
-    words[currentIndex].classList.add('active');
+  // Показываем следующий элемент
+  words[currentIndex]?.classList.add('active');
 }
 
 // Показываем первый элемент сразу
-words[currentIndex].classList.add('active');
+words[currentIndex]?.classList.add('active');
 
 // Меняем элементы каждые 3 секунды
 setInterval(showNextWord, 3000);
+
+
+const podborImages = document.querySelector('.podborImages');
+const images = document.querySelectorAll('.podborImages .image');
+let currentIndexOfImages = 0;
+
+function showNextImage() {
+  // Перемещаем текущий элемент в конец
+  podborImages.appendChild(images[currentIndexOfImages]);
+
+  // currentIndexOfImages к следующему индексу
+  currentIndexOfImages = (currentIndexOfImages + 1) % images.length;
+}
+
+// Меняем изображения каждые 2 секунды
+setInterval(showNextImage, 4000);
