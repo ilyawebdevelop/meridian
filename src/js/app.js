@@ -2,6 +2,7 @@ import * as flsFunctions from "./modules/functions.js";
 import "./modules/jquery-3.7.1.min.js";
 import "./modules/bootstrap.bundle.min.js";
 import { Fancybox } from "./modules/fancybox.esm.js";
+import AOS from "../../node_modules/aos/dist/aos.js";
 import './components.js';
 
 flsFunctions.isWebp();
@@ -9,6 +10,9 @@ flsFunctions.isWebp();
 Fancybox.bind("[data-fancybox]", {
   closeButton: false,
 });
+
+AOS.init();
+
 
 // Import swiper
 import Swiper, { Navigation, Pagination, Autoplay, Mousewheel, EffectFade, Thumbs, Scrollbar } from 'swiper';
