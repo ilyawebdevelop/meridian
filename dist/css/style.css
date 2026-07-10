@@ -16431,6 +16431,10 @@ a.hover-orange:hover {
   height: 320px;
 }
 
+.w-fit {
+  width: fit-content;
+}
+
 @media (max-width: 991px) {
   .h-lg-320 {
     height: 320px !important;

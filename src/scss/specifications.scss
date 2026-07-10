@@ -1287,7 +1287,9 @@ a.hover-orange {
 .h-320 {
   height: 320px;
 }
-
+.w-fit {
+  width: fit-content;
+}
 .h-lg-320 {
   @media(max-width: 991px) {
     height: 320px !important;
