@@ -265,14 +265,33 @@ document.querySelectorAll('.catalogCardSlider').forEach(n => {
     slidesPerView: 1,
     spaceBetween: 0,
     speed: 600,
-    autoplay: false,
+    autoplay: {
+      delay: 1000,
+      disableOnInteraction: false,
+    },
     pagination: {
       el: n?.closest('.catalogCard').querySelector('.swiper-pagination'),
       clickable: true,
       type: 'bullets',
     },
   });
+  mySwiperCatalogCard.autoplay.stop();
+  const card = n.closest('.catalogCard'); // или .catalogCard, в зависимости от вашей верстки
+
+  // Запускаем при наведении
+  card.addEventListener('mouseenter', () => {
+    mySwiperCatalogCard.autoplay.start();
+  });
+
+  // Останавливаем при уходе курсора
+  card.addEventListener('mouseleave', () => {
+    mySwiperCatalogCard.autoplay.stop();
+    // Опционально: возвращаем на первый слайд при уходе мыши
+    mySwiperCatalogCard.slideTo(0, 0);
+  });
 });
+
+
 
 // Инициализация слайдера catIntroSlider
 const catIntroSlider = document.querySelector('.catIntroSlider');
@@ -596,3 +615,24 @@ collectionSidebarClose?.addEventListener('click', () => {
   catalogColSidebar.classList.remove('active');
   bodyEl.classList.remove('hidden');
 });
+
+
+const words = document.querySelectorAll('.podborWordAction>span');
+let currentIndex = 0;
+
+function showNextWord() {
+    // Скрываем текущий элемент
+    words[currentIndex].classList.remove('active');
+
+    // Переход к следующему элементу
+    currentIndex = (currentIndex + 1) % words.length;
+
+    // Показываем следующий элемент
+    words[currentIndex].classList.add('active');
+}
+
+// Показываем первый элемент сразу
+words[currentIndex].classList.add('active');
+
+// Меняем элементы каждые 3 секунды
+setInterval(showNextWord, 3000);

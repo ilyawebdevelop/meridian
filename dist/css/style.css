@@ -18508,7 +18508,10 @@ a.hover-orange:hover {
     font-size: 32px;
   }
 }
-.podborTitle div span {
+.podborTitle div > span {
+  color: #fff;
+}
+.podborTitle div > span > span {
   color: var(--orange);
 }
 
@@ -18631,6 +18634,24 @@ a.hover-orange:hover {
   .podborSlide img {
     height: 50vw;
   }
+}
+
+.podborWordAction > span {
+  display: none;
+  /* Скрываем все элементы */
+  opacity: 0;
+  /* Начальная непрозрачность */
+  transition: opacity 1s;
+  /* Плавный переход */
+}
+
+.podborWordAction > span.active {
+  display: inline;
+  /* Отображаем активный элемент */
+  -webkit-animation: shows 0.2s;
+  animation: shows 0.2s;
+  opacity: 1;
+  /* Устанавливаем полную непрозрачность */
 }
 
 .productionLogo {
