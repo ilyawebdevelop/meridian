@@ -78,13 +78,13 @@
   width: fit-content;
   margin-left: auto;
   margin-right: 180px;
-
+  transition: transform 1s;
   /* Плавный переход для перемещения */
 
   .image {
     z-index: 1;
     border-radius: 4px;
-    transition: transform .2s;
+    transition: transform .2s linear;
 
     img {
       width: 100%;
@@ -96,6 +96,7 @@
 
     &:nth-child(1) {
       padding: 32px;
+      background-color: var(--orange);
       width: 360px;
       height: 360px;
       position: relative;
@@ -110,7 +111,7 @@
       transform: translateY(-50%);
       width: 320px;
       height: 320px;
-
+      background-color: var(--black);
       padding: 28px;
       z-index: 3;
 
@@ -123,6 +124,7 @@
       transform: translateY(-50%);
       left: 175px;
       padding: 24px;
+      background-color: #565F68;
       width: 280px;
       height: 280px;
 
@@ -132,7 +134,7 @@
       position: absolute;
       top: 50%;
       transform: translateY(-50%);
-
+      background-color: #7F858C;
       left: 255px;
       width: 240px;
       height: 240px;
