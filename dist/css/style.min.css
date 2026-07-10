@@ -16611,6 +16611,8 @@ a.hover-orange:hover {
   margin: auto;
   background-color: #fff;
   width: 100%;
+  display: none;
+  box-shadow: 1px 15px 27px -12px rgba(34, 60, 80, 0.3);
 }
 .headerCatalog.active {
   display: block;
@@ -16825,10 +16827,6 @@ a.hover-orange:hover {
   }
 }
 
-.headerCatalog {
-  display: none;
-}
-
 .headerMainMobile {
   display: flex;
   width: 100%;
@@ -16903,6 +16901,22 @@ a.hover-orange:hover {
   .headerCatalogContentHeadMobile {
     background-color: var(--background);
   }
+}
+
+.headerMobilePhone svg,
+.headerMobileMessage svg {
+  width: 20px;
+  height: 20px;
+  fill: transparent;
+  stroke: var(--main-color);
+}
+.headerMobilePhone:hover svg,
+.headerMobileMessage:hover svg {
+  stroke: var(--orange);
+}
+
+.headerMobileMessage:hover svg {
+  stroke: var(--orange);
 }
 
 .socials ul {

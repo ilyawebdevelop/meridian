@@ -82,6 +82,10 @@
   margin: auto;
   background-color: #fff;
   width: 100%;
+  display: none;
+  box-shadow: 1px 15px 27px -12px rgba(34, 60, 80, 0.3);
+
+
 
   &.active {
     display: block;
@@ -164,7 +168,8 @@
         height: 54px;
         padding-left: 8px;
       }
-      @media(max-width: 991px){
+
+      @media(max-width: 991px) {
         padding-left: 0;
       }
 
@@ -300,9 +305,7 @@
   }
 }
 
-.headerCatalog {
-  display: none;
-}
+
 
 .headerMainMobile {
   display: flex;
@@ -383,4 +386,29 @@
   @media(max-width: 991px) {
     background-color: var(--background);
   }
+}
+
+.headerMobilePhone,
+.headerMobileMessage {
+  svg {
+    width: 20px;
+    height: 20px;
+    fill: transparent;
+    stroke: var(--main-color);
+  }
+
+  &:hover {
+    svg {
+      stroke: var(--orange);
+    }
+  }
+}
+
+.headerMobileMessage {
+  &:hover {
+    svg {
+      stroke: var(--orange);
+    }
+  }
+
 }
